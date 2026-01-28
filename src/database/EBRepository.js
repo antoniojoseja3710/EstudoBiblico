@@ -79,7 +79,7 @@ export default class EBRepository {
     );
   `);
 
-    // 🔒 VERIFICA SE JÁ EXISTE CATEGORIA
+    // VERIFICA SE JÁ EXISTE CATEGORIA
     const seeded = await this.db.getAllAsync(
       "SELECT id FROM categories LIMIT 1"
     );
@@ -93,7 +93,7 @@ export default class EBRepository {
 
 
   // =============================
-  // 🔐 SEGURANÇA
+  // SEGURANÇA
   // =============================
   async hashPassword(password) {
     return Crypto.digestStringAsync(
@@ -103,7 +103,7 @@ export default class EBRepository {
   }
 
   // =============================
-  // 👤 USUÁRIOS
+  // USUÁRIOS
   // =============================
   async registerUser({ firstName, lastName, email, password }) {
     const hash = await this.hashPassword(password);
@@ -130,7 +130,7 @@ export default class EBRepository {
   }
 
   // =============================
-  // 🔹 CATEGORIAS
+  // CATEGORIAS
   // =============================
   async getCategories() {
     return this.db.getAllAsync("SELECT * FROM categories ORDER BY name");
@@ -165,7 +165,7 @@ export default class EBRepository {
   }
 
   // =============================
-  // 🔹 GUIAS DE ESTUDO
+  // GUIAS DE ESTUDO
   // =============================
   async createStudyGuide({ category_id, title, description }) {
     await this.db.runAsync(
@@ -258,7 +258,7 @@ export default class EBRepository {
   }
 
   // =============================
-  // 🔹 PROGRESSO
+  // PROGRESSO
   // =============================
   async saveProgress(userId, lessonId, points) {
   const grade = Number(points);
@@ -326,7 +326,7 @@ export default class EBRepository {
   }
 
   // =============================
-  // 🌱 SEED
+  // SEED
   // =============================
   async seedCategories() {
     const cats = ["Fundamentos do Evangelho", "Profecia", "Família", "Missão"];
@@ -442,7 +442,7 @@ export default class EBRepository {
     }
   }
   // =============================
-  // 👥 GERENCIAMENTO DE USUÁRIOS
+  // GERENCIAMENTO DE USUÁRIOS
   // =============================
 
   async getAllUsers() {

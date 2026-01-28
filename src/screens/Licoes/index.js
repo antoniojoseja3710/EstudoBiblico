@@ -48,6 +48,10 @@ export default function Licoes({ route, navigation }) {
         let points = 0;
         let locked = true;
 
+        if (!userObj && lesson.number <= 2) {
+          locked = false;
+        }
+
         if (userObj) {
           const progress = await repo.getLessonProgress(userObj.id, lesson.id);
 
@@ -199,7 +203,7 @@ export default function Licoes({ route, navigation }) {
                   (!user || item.locked) && { opacity: 0.5 }
                 ]}
                 onPress={() => {
-                  if (!user) {
+                  if (!user && item.number > 2) {
                     Alert.alert(
                       "Login necessário",
                       "Faça login para acessar os temas."
@@ -225,15 +229,15 @@ export default function Licoes({ route, navigation }) {
                 {renderStars(item.stars)}
 
                 {/* Cadeado */}
-                {(item.locked || !user) && (
-                  <View style={styles.lockIcon}>
-                    <FontAwesome
-                      name="lock"
-                      size={14}
-                      color="#1F2D2E"
-                    />
-                  </View>
-                )}
+                {item.locked && (
+  <View style={styles.lockIcon}>
+    <FontAwesome
+      name="lock"
+      size={14}
+      color="#1F2D2E"
+    />
+  </View>
+)}
               </TouchableOpacity>
             );
           }}
@@ -262,7 +266,7 @@ export default function Licoes({ route, navigation }) {
           <TouchableOpacity
             style={[styles.startButton, !selectedLesson && { opacity: 0.7 }]}
             onPress={() => {
-              if (!user) {
+              if (!user && selectedLesson.number > 2) {
                 Alert.alert(
                   "Login necessário",
                   "Faça login para continuar."
