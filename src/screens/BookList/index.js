@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, FlatList, TouchableOpacity} from 'react-native';
+import { View, Text, FlatList, TouchableOpacity } from 'react-native';
 import styles from './style';
 import bibleData from '../../../data/bible.json';
 
@@ -23,7 +23,7 @@ export default function BookList({ navigation }) {
             onPress={() => navigation.navigate('Chapters', { book: item })}
           >
             <Text style={styles.itemText}>{item.nome}</Text>
-            
+
           </TouchableOpacity>
         )}
         contentContainerStyle={{ paddingBottom: 20 }}

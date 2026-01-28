@@ -3,53 +3,59 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f3f1ea',   
+    backgroundColor: '#E3E3E3', 
+    marginTop: 23,  
   },
 
   content: {
-    padding:20,
+    padding: 20,
   },
 
   title: {
-    fontSize: 16,
-    color: '#2f557f',
+    fontSize: 18,
+    color: '#458385',
     marginBottom: 30,
-    textAlign:"center",
+    textAlign: 'center',
     fontFamily: 'Poppins-Bold',
   },
 
+  // Botão principal
   button: {
     width: '100%',
-    backgroundColor: '#2f557f',
+    backgroundColor: '#43DCE0',
     borderRadius: 8,
     marginBottom: 15,
     alignItems: 'center',
     padding: 11,
     paddingTop: 14,
-    
   },
 
   buttonText: {
-    color: '#fff',
-    fontFamily: 'Poppins-Medium',
+    color: '#555',
+    fontFamily: 'Poppins-Bold',
     fontSize: 14,
   },
 
+  // Botão voltar / secundário
   backButton: {
     position: 'absolute',
+    width: 90,
+    height: 50,
     bottom: 60,
     left: 20,
-    backgroundColor: '#556677',
+    backgroundColor: '#778899',
     padding: 11,
     paddingTop: 14,
     paddingHorizontal: 20,
     borderRadius: 8,
+    opacity: 0.95,
   },
 
   backButtonText: {
-    color: '#ddd',
+    color: '#eee',
     fontSize: 14,
     fontFamily: 'Poppins-Medium',
+    textAlign: 'center'
   },
 });
 

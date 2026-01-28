@@ -97,35 +97,35 @@ export default function UsersManagement() {
   };
 
   // ======================
-  // ❌ EXCLUIR
+  // EXCLUIR
   // ======================
   const requestDelete = (userId) => {
-  if (loggedUser.role !== "admin") {
-    Alert.alert(
-      "Acesso negado",
-      "Somente administradores podem excluir usuários."
-    );
-    return;
-  }
+    if (loggedUser.role !== "admin") {
+      Alert.alert(
+        "Acesso negado",
+        "Somente administradores podem excluir usuários."
+      );
+      return;
+    }
 
-  Alert.alert(
-    "Excluir conta",
-    "Essa ação é irreversível. Deseja continuar?",
-    [
-      { text: "Cancelar", style: "cancel" },
-      {
-        text: "Continuar",
-        style: "destructive",
-        onPress: () => {
-          setActionType("delete");
-          setTargetUserId(userId);
-          setAdminPassword("");
-          setModalVisible(true);
+    Alert.alert(
+      "Excluir conta",
+      "Essa ação é irreversível. Deseja continuar?",
+      [
+        { text: "Cancelar", style: "cancel" },
+        {
+          text: "Continuar",
+          style: "destructive",
+          onPress: () => {
+            setActionType("delete");
+            setTargetUserId(userId);
+            setAdminPassword("");
+            setModalVisible(true);
+          },
         },
-      },
-    ]
-  );
-};
+      ]
+    );
+  };
 
   // ======================
   // 🔐 CONFIRMAR ADMIN
@@ -174,7 +174,7 @@ export default function UsersManagement() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Usuários</Text>
+      <Text style={styles.title}>Gerenciar Usuários</Text>
       <FlatList
         data={users}
         keyExtractor={(item) => String(item.id)}
@@ -247,14 +247,14 @@ export default function UsersManagement() {
                       <Text style={styles.editText}>Editar</Text>
                     </TouchableOpacity>
 
-                   {loggedUser?.role === "admin" &&
- loggedUser.id !== item.id && (
-  <TouchableOpacity
-    onPress={() => requestDelete(item.id)}
-  >
-    <Text style={styles.deleteText}>Excluir</Text>
-  </TouchableOpacity>
-)}
+                    {loggedUser?.role === "admin" &&
+                      loggedUser.id !== item.id && (
+                        <TouchableOpacity
+                          onPress={() => requestDelete(item.id)}
+                        >
+                          <Text style={styles.deleteText}>Excluir</Text>
+                        </TouchableOpacity>
+                      )}
                   </View>
                 </>
               )}

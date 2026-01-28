@@ -2,489 +2,387 @@ export const lessonsSeed = [
   {
     category: "Fundamentos do Evangelho",
     guide: "Caminho da Vida",
+    description: "Explore os fundamentos do evangelho e descubra a transformação e esperança no \"Caminho da Vida\" com Cristo.",
     lessons: [
       {
         number: 1,
-        title: "A Bíblia Sagrada",
+        title: "O Guia Infalível",
         introduction:
-          "A Bíblia Sagrada é mais do que um simples livro; é uma coleção de escritos inspirados que têm guiado a vida espiritual de milhões ao longo dos séculos. Composta por 66 livros, a Bíblia está dividida em duas partes principais: o Antigo Testamento e o Novo Testamento. Ela oferece ensinamentos sobre a criação do mundo, a história do povo de Deus, a vida de Jesus Cristo e as instruções para viver uma vida plena e significativa.",
-        conclusion:
-          "A Bíblia é um guia atemporal que nos oferece sabedoria e direção em nossas vidas diárias, convidando-nos não apenas à leitura, mas à transformação por meio de suas mensagens poderosas. Diante do conhecimento adquirido neste estudo, decido, hoje, dedicar tempo para ler e meditar nas Escrituras Sagradas diariamente.",
+          "A Bíblia é frequentemente chamada de \"O Guia Infalível\" para a vida cristã. Ela oferece orientação divina, princípios morais e ensinamentos espirituais que são eternos e aplicáveis a todas as situações da vida. Este estudo explora como a Bíblia serve como nosso guia seguro em um mundo em constante mudança.",
         questions: [
           {
-            question: "Qual é o primeiro livro da Bíblia?",
-            verse: "",
-            option_a: "Êxodo",
-            option_b: "Levítico",
-            option_c: "Gênesis",
-            option_d: "Números",
-            correct_option: "C",
-          },
-          {
-            question: "Qual é o último livro da Bíblia?",
-            verse: "",
-            option_a: "Malaquias",
-            option_b: "Apocalipse",
-            option_c: "Gênesis",
-            option_d: "Daniel",
+            question:
+              "Qual é o papel da Palavra de Deus em nossa vida?",
+            verse: "Salmos 119:105",
+            option_a: "Um livro de regras antigas",
+            option_b: "Uma lâmpada para os pés e luz para o caminho",
+            option_c: "Um manual de história",
+            option_d: "Uma coleção de mitos",
             correct_option: "B",
           },
           {
-            question: "Como Jesus considerava a Bíblia?",
-            verse: "João 17:17",
-            option_a: "Algo sem importância",
-            option_b: "Mito",
-            option_c: "Apenas um livro histórico",
-            option_d: "A verdade",
+            question:
+              "Para que é útil toda a Escritura?",
+            verse: "2 Timóteo 3:16",
+            option_a: "Apenas para leitura ocasional",
+            option_b: "Para ensino, repreensão, correção e instrução em justiça",
+            option_c: "Para entretenimento",
+            option_d: "Para debates teológicos",
+            correct_option: "B",
+          },
+          {
+            question:
+              "O que Provérbios 3:5-6 nos aconselha sobre confiança?",
+            verse: "Provérbios 3:5-6",
+            option_a: "Confiar em si mesmo acima de tudo",
+            option_b: "Confiar nos bens materiais",
+            option_c: "Confiar somente na ciência",
+            option_d: "Confiar no Senhor de todo o coração",
             correct_option: "D",
           },
           {
-            question: "Qual a maneira incorreta de estudar a Bíblia?",
-            verse: "Lucas 24:27",
-            option_a: "Estudar sem pedir a orientação do Espírito Santo",
-            option_b: "Comparar textos que tratam do mesmo assunto",
-            option_c: "Buscar outras passagens que explicam o assunto",
-            option_d: "Estudar pedindo a orientação do Espírito Santo",
+            question:
+              "Como Jesus descreve as Escrituras?",
+            verse: "João 17:17",
+            option_a: "Como uma tradição ultrapassada",
+            option_b: "Como um livro simbólico",
+            option_c: "Como uma alegoria",
+            option_d: "Como a verdade",
+            correct_option: "D",
+          },
+          {
+            question:
+              "Qual é a instrução de Tiago sobre a Palavra?",
+            verse: "Tiago 1:22",
+            option_a: "Ouvir e esquecer rapidamente",
+            option_b: "Ler apenas em ocasiões especiais",
+            option_c: "Ser praticantes da Palavra, não apenas ouvintes",
+            option_d: "Interpretar conforme nossas opiniões",
+            correct_option: "C",
+          },
+          {
+            question:
+              "Como Hebreus descreve a Palavra de Deus?",
+            verse: "Hebreus 4:12",
+            option_a: "Viva e eficaz",
+            option_b: "Morta e irrelevante",
+            option_c: "Fraca e sem poder",
+            option_d: "Antiquada e desatualizada",
             correct_option: "A",
           },
           {
-            question: "Que benefícios recebe o estudante das Escrituras?",
-            verse: "João 5:39; João 8:32",
-            option_a: "Libertação do pecado e Vida Eterna",
-            option_b: "Não recebe benefícios",
-            option_c: "Apenas benefícios materiais",
-            option_d: "Apenas benefícios espirituais",
+            question:
+              "Segundo Romanos 15:4, qual é o propósito das Escrituras?",
+            verse: "Romanos 15:4",
+            option_a: "Para nosso ensino, paciência e consolação",
+            option_b: "Para nossa diversão pessoal",
+            option_c: "Para ser guardada na estante",
+            option_d: "Para ser lida apenas por líderes religiosos",
             correct_option: "A",
-          },
-          {
-            question: "Quem inspirou os profetas ao escreverem a Bíblia?",
-            verse: "2 Pedro 1:21",
-            option_a: "A Natureza",
-            option_b: "A Ciência",
-            option_c: "Deus",
-            option_d: "A Religião",
-            correct_option: "C",
-          },
-          {
-            question: "Quanto do texto bíblico é inspirado por Deus?",
-            verse: "2 Timóteo 3:16",
-            option_a: "Somente o Antigo Testamento",
-            option_b: "Somente o Novo Testamento",
-            option_c: "Toda a Bíblia",
-            option_d: "Somente os Salmos",
-            correct_option: "C",
-          },
-          {
-            question: "Alguém está autorizado a alterar a Bíblia?",
-            verse: "Apocalipse 22:18–19",
-            option_a: "Sim, qualquer um pode alterar",
-            option_b: "Não",
-            option_c: "Talvez",
-            option_d: "Sim, somente a Igreja pode alterar",
-            correct_option: "B",
-          },
-          {
-            question: "Que parte da Bíblia não foi escrita por autores humanos?",
-            verse: "Êxodo 31:16",
-            option_a: "Os Salmos",
-            option_b: "Os 10 Mandamentos",
-            option_c: "O Apocalipse",
-            option_d: "As Leis cerimoniais",
-            correct_option: "B",
-          },
-          {
-            question: "Como são chamados os praticantes dos ensinos bíblicos?",
-            verse: "Apocalipse 1:3",
-            option_a: "Fanáticos",
-            option_b: "Obreiros",
-            option_c: "Bem-aventurados",
-            option_d: "Pastores",
-            correct_option: "C",
           },
         ],
+        conclusion:
+          "Decido firmemente seguir \"O Guia Infalível\" que é a Bíblia, permitindo que seus ensinamentos moldem minha vida diária, fortalecendo minha fé e me guiando no caminho da verdade.",
       },
       {
         number: 2,
         title: "A Origem do Mal",
         introduction:
-          "A origem do mal é um tema que intriga muitas pessoas. A Bíblia nos oferece insights sobre como o mal surgiu no universo perfeito criado por Deus. Este estudo busca explorar as raízes do mal conforme descritas nas Escrituras, ajudando-nos a entender melhor sua natureza e consequências. Vamos examinar as passagens bíblicas que falam sobre a rebelião no céu e suas implicações para a humanidade.",
-        conclusion:
-          "O estudo sobre a origem do mal nos mostra que ele começou com uma rebelião no céu e continua afetando nossa vida na Terra. No entanto, temos esperança através de Jesus Cristo, que veio para destruir as obras do maligno. Diante deste entendimento sobre o mal e sua origem, decido, hoje, colocar minha confiança em Jesus Cristo para vencer o mal em minha vida.",
+          "A origem do mal é uma questão intrigante que desafia a compreensão humana. A Bíblia nos oferece insights sobre como o mal surgiu no universo e seu impacto na humanidade. Este estudo explora as raízes do mal conforme descritas nas Escrituras e o plano de Deus para redimir a criação.",
         questions: [
           {
-            question: "Quem foi o anjo que se rebelou contra Deus?",
+            question:
+              "Quem foi criado como um ser perfeito antes de se rebelar contra Deus?",
+            verse: "Ezequiel 28:15",
+            option_a: "Adão",
+            option_b: "Caim",
+            option_c: "Lúcifer",
+            option_d: "Judas",
+            correct_option: "C",
+          },
+          {
+            question:
+              "Qual era a posição de Lúcifer no céu antes de sua queda?",
             verse: "Isaías 14:12",
-            option_a: "Gabriel",
-            option_b: "Miguel",
-            option_c: "Rafael",
-            option_d: "Lúcifer",
+            option_a: "Um simples anjo",
+            option_b: "Um ser humano",
+            option_c: "Um profeta",
+            option_d: "Um querubim ungido",
             correct_option: "D",
           },
           {
-            question: "Qual era a posição de Lúcifer antes de sua queda?",
-            verse: "Ezequiel 28:14",
-            option_a: "Anjo mensageiro",
-            option_b: "Querubim ungido",
-            option_c: "Serafim",
-            option_d: "Arcanjo",
+            question:
+              "Qual foi o pecado que levou à queda de Lúcifer?",
+            verse: "Isaías 14:13-14",
+            option_a: "Roubo",
+            option_b: "Orgulho",
+            option_c: "Assassinato",
+            option_d: "Mentira",
             correct_option: "B",
           },
           {
-            question: "O que motivou Lúcifer a se rebelar contra Deus?",
-            verse: "Isaías 14:13–14",
-            option_a: "Inveja dos humanos",
-            option_b: "Falta de conhecimento",
-            option_c: "Ambição de ser igual a Deus",
-            option_d: "Medo da destruição",
+            question:
+              "Como o mal entrou na Terra?",
+            verse: "Gênesis 3:1-6",
+            option_a: "Através de uma catástrofe natural",
+            option_b: "Por meio de guerras",
+            option_c: "Pelo engano da serpente no Éden",
+            option_d: "Por desastres naturais",
             correct_option: "C",
           },
           {
-            question: "Qual foi o resultado imediato da rebelião de Lúcifer no céu?",
-            verse: "Apocalipse 12:7–9",
-            option_a: "Ele foi expulso do céu",
-            option_b: "Ele foi promovido",
-            option_c: "Ele foi perdoado",
-            option_d: "Ele se arrependeu",
-            correct_option: "A",
-          },
-          {
-            question: "Como o pecado entrou na Terra?",
-            verse: "Gênesis 3:1–6",
-            option_a: "Pela desobediência de Adão e Eva",
-            option_b: "Pela criação dos animais",
-            option_c: "Pelo dilúvio",
-            option_d: "Pela construção da Torre de Babel",
-            correct_option: "A",
-          },
-          {
-            question: "Quem tentou Eva no Jardim do Éden?",
-            verse: "Gênesis 3:1",
-            option_a: "Um leão",
-            option_b: "Uma serpente",
-            option_c: "Um pássaro",
-            option_d: "Um profeta",
+            question:
+              "Quem foi enganado pela serpente no Jardim do Éden?",
+            verse: "Gênesis 3:13",
+            option_a: "Adão",
+            option_b: "Eva",
+            option_c: "Abel",
+            option_d: "Noé",
             correct_option: "B",
           },
           {
-            question: "Qual foi a primeira consequência do pecado na Terra?",
-            verse: "Gênesis 3:23–24",
-            option_a: "Aumento da sabedoria",
-            option_b: "O dilúvio",
-            option_c: "Expulsão do Jardim",
-            option_d: "Criação das cidades",
+            question:
+              "De acordo com Romanos 5:12, como o pecado afetou toda a humanidade?",
+            verse: "Romanos 5:12",
+            option_a: "O pecado entrou no mundo por um homem, e a morte pelo pecado",
+            option_b: "Trouxe prosperidade universal",
+            option_c: "Tornou todos ricos",
+            option_d: "Fez todos viverem eternamente",
+            correct_option: "A",
+          },
+          {
+            question:
+              "Segundo Apocalipse 12:7-9, onde ocorreu a batalha inicial entre o bem e o mal?",
+            verse: "Apocalipse 12:7-9",
+            option_a: "Na Terra",
+            option_b: "No mar",
+            option_c: "No céu",
+            option_d: "No deserto",
             correct_option: "C",
-          },
-          {
-            question: "Quem é descrito como o pai da mentira?",
-            verse: "João 8:44",
-            option_a: "Caim",
-            option_b: "Faraó",
-            option_c: "Judas",
-            option_d: "Satanás",
-            correct_option: "D",
-          },
-          {
-            question: "O que Jesus veio fazer em relação ao mal?",
-            verse: "1 João 3:8",
-            option_a: "Ignorá-lo",
-            option_b: "Destruí-lo",
-            option_c: "Escondê-lo",
-            option_d: "Negociar com ele",
-            correct_option: "B",
-          },
-          {
-            question: "Como podemos vencer o mal segundo as Escrituras?",
-            verse: "Efésios 6:16",
-            option_a: "Através da fé em Cristo",
-            option_b: "Com nossas próprias forças",
-            option_c: "Evitando ler a Bíblia",
-            option_d: "Fazendo boas obras apenas",
-            correct_option: "A",
           },
         ],
+        conclusion:
+          "Decido confiar no plano redentor de Deus para vencer o mal em minha vida, buscando viver segundo Seus princípios e aguardando com esperança o dia em que todo mal será destruído.",
       },
       {
         number: 3,
         title: "O Plano da Salvação",
         introduction:
-          "O Plano da Salvação é a resposta divina ao problema do pecado e da separação entre Deus e a humanidade. Desde a queda de Adão e Eva, Deus traçou um plano para restaurar o relacionamento quebrado com seus filhos. Este plano culmina na vida, morte e ressurreição de Jesus Cristo, oferecendo redenção a todos os que creem.",
-        conclusion:
-          "O Plano da Salvação revela o amor incomparável de Deus por nós, oferecendo esperança e restauração através de Jesus Cristo, assegurando-nos vida eterna com Ele. Diante dessa maravilhosa revelação, decido, hoje, aceitar o plano de salvação oferecido por Deus através de Jesus Cristo e permitir que Ele transforme minha vida.",
+          "O plano da salvação é o coração da mensagem cristã. Ele revela o amor de Deus pela humanidade e Seu desejo de restaurar nosso relacionamento com Ele através de Jesus Cristo. Este estudo explora os elementos fundamentais do plano divino para salvar a humanidade do pecado e nos conceder a vida eterna.",
         questions: [
           {
-            question: "Qual é a consequência do pecado?",
+            question:
+              "Qual é a condição inicial da humanidade em relação ao pecado?",
+            verse: "Romanos 3:23",
+            option_a: "Todos pecaram e estão destituídos da glória de Deus",
+            option_b: "Todos são justos",
+            option_c: "Apenas alguns pecaram",
+            option_d: "Ninguém pecou",
+            correct_option: "A",
+          },
+          {
+            question:
+              "Qual é a consequência do pecado?",
             verse: "Romanos 6:23",
             option_a: "Vida eterna",
-            option_b: "Morte",
-            option_c: "Riquezas",
-            option_d: "Felicidade",
+            option_b: "Fama",
+            option_c: "Riqueza",
+            option_d: "Morte",
+            correct_option: "D",
+          },
+          {
+            question:
+              "De acordo com João 3:16, o que Deus fez por amor ao mundo?",
+            verse: "João 3:16",
+            option_a: "Enviou Seu Filho unigênito",
+            option_b: "Destruiu o mundo",
+            option_c: "Ignorou o mundo",
+            option_d: "Criou novas leis",
+            correct_option: "A",
+          },
+          {
+            question:
+              "Como podemos ser salvos?",
+            verse: "Efésios 2:8-9",
+            option_a: "Por boas obras",
+            option_b: "Pela graça, mediante a fé",
+            option_c: "Pelo sacrifício de animais",
+            option_d: "Pelo pagamento de dízimos",
             correct_option: "B",
           },
           {
-            question: "Quem é o único mediador entre Deus e os homens?",
+            question:
+              "Quem é o único mediador entre Deus e os homens?",
             verse: "1 Timóteo 2:5",
             option_a: "Moisés",
-            option_b: "Paulo",
+            option_b: "Maria",
             option_c: "Jesus Cristo",
-            option_d: "Maria",
+            option_d: "Paulo",
             correct_option: "C",
           },
           {
-            question: "O que devemos fazer para sermos salvos?",
-            verse: "Atos 16:31",
-            option_a: "Crer no Senhor Jesus",
-            option_b: "Fazer boas obras",
-            option_c: "Guardar os mandamentos",
-            option_d: "Jejuar regularmente",
-            correct_option: "A",
-          },
-          {
-            question: "Como Deus demonstra Seu amor por nós?",
-            verse: "Romanos 5:8",
-            option_a: "Dando-nos prosperidade",
-            option_b: "Dando-nos saúde perfeita",
-            option_c: "Respondendo todas as nossas orações",
-            option_d: "Enviando Seu Filho para morrer por nós",
-            correct_option: "D",
-          },
-          {
-            question: "Qual é o papel da fé na salvação?",
-            verse: "Efésios 2:8–9",
-            option_a: "Fé não tem papel",
-            option_b: "Somos salvos pela fé através da graça",
-            option_c: "Fé é secundária à lei",
-            option_d: "Fé é apenas para os fracos",
-            correct_option: "B",
-          },
-          {
-            question: "Quem pode nos separar do amor de Cristo?",
-            verse: "Romanos 8:38–39",
-            option_a: "Tribulações",
-            option_b: "Perseguições",
-            option_c: "Nada pode nos separar",
-            option_d: "A morte",
-            correct_option: "C",
-          },
-          {
-            question: "Qual é o convite de Jesus?",
-            verse: "Mateus 11:28",
-            option_a: "Venham todos os que estão cansados",
-            option_b: "Fiquem onde estão",
-            option_c: "Vão embora",
-            option_d: "Lutem por si mesmos",
-            correct_option: "A",
-          },
-          {
-            question: "O que significa nascer de novo?",
+            question:
+              "O que Jesus declarou ser necessário para entrar no reino de Deus?",
             verse: "João 3:3",
-            option_a: "Reencarnação",
-            option_b: "Renovação espiritual",
-            option_c: "Crescer fisicamente",
-            option_d: "Tornar-se criança novamente",
+            option_a: "Ser rico",
+            option_b: "Nascer de novo",
+            option_c: "Conhecer toda a Bíblia",
+            option_d: "Realizar milagres",
             correct_option: "B",
           },
           {
-            question: "Como somos justificados diante de Deus?",
-            verse: "Romanos 5:1",
-            option_a: "Pelas obras",
-            option_b: "Pela sabedoria humana",
-            option_c: "Pelo sofrimento",
-            option_d: "Pela fé",
+            question:
+              "Segundo Atos 4:12, em quem encontramos salvação?",
+            verse: "Atos 4:12",
+            option_a: "Em qualquer profeta",
+            option_b: "Em práticas espirituais",
+            option_c: "Em líderes religiosos",
+            option_d: "Em nenhum outro nome além de Jesus",
             correct_option: "D",
-          },
-          {
-            question: "Qual é o dom gratuito de Deus?",
-            verse: "Romanos 6:23",
-            option_a: "Vida eterna",
-            option_b: "Saúde",
-            option_c: "Riqueza",
-            option_d: "Conhecimento",
-            correct_option: "A",
           },
         ],
+        conclusion:
+          "Decido aceitar o plano da salvação oferecido por Deus através de Jesus Cristo, confiando em Sua graça e vivendo pela fé para experimentar a vida eterna prometida.",
       },
       {
         number: 4,
         title: "Fé, Arrependimento e Confissão",
         introduction:
-          "A fé, o arrependimento e a confissão são pilares essenciais para o relacionamento com Deus e a vida cristã. A fé é a confiança em Deus e em Suas promessas; o arrependimento é o reconhecimento sincero dos nossos pecados e a decisão de abandoná-los; e a confissão é admitir nossos erros diante de Deus. Estes elementos trabalham juntos para nos levar a uma vida de santidade e comunhão com o Criador.",
-        conclusion:
-          "A fé, o arrependimento e a confissão são passos fundamentais para uma vida plena em Cristo, levando-nos ao perdão e à paz com Deus, e permitindo-nos viver conforme Sua vontade. Diante disso, decido, hoje, exercer minha fé, arrepender-me sinceramente dos meus pecados e confessá-los diante de Deus para viver uma vida transformada.",
+          "Fé, arrependimento e confissão são elementos fundamentais na jornada cristã. A fé nos conecta a Deus, o arrependimento nos leva a uma mudança de vida, e a confissão nos reconcilia com Ele. Este estudo explora como esses três aspectos interagem e são essenciais para uma vida espiritual saudável.",
         questions: [
           {
-            question: "O que é fé?",
-            verse: "Hebreus 11:1",
-            option_a: "Uma tradição religiosa",
-            option_b: "Certeza daquilo que esperamos",
-            option_c: "Dúvida constante",
-            option_d: "Emoção passageira",
-            correct_option: "B",
+            question:
+              "O que é necessário para agradar a Deus?",
+            verse: "Hebreus 11:6",
+            option_a: "Riqueza",
+            option_b: "Popularidade",
+            option_c: "Conhecimento",
+            option_d: "Fé",
+            correct_option: "D",
           },
           {
-            question: "Quem é chamado de pai da fé?",
-            verse: "Romanos 4:16",
-            option_a: "Moisés",
-            option_b: "Davi",
-            option_c: "Abraão",
-            option_d: "Noé",
-            correct_option: "C",
-          },
-          {
-            question: "O que leva ao arrependimento?",
-            verse: "Romanos 2:4",
-            option_a: "A bondade de Deus",
-            option_b: "O medo do inferno",
-            option_c: "As riquezas terrenas",
-            option_d: "A sabedoria humana",
-            correct_option: "A",
-          },
-          {
-            question: "Qual é o resultado do verdadeiro arrependimento?",
+            question:
+              "Qual é o resultado do verdadeiro arrependimento?",
             verse: "Atos 3:19",
-            option_a: "Prosperidade financeira",
-            option_b: "Perdão dos pecados",
+            option_a: "Perdão dos pecados e tempos de refrigério",
+            option_b: "Prosperidade material",
             option_c: "Reconhecimento social",
-            option_d: "Saúde perfeita",
-            correct_option: "B",
-          },
-          {
-            question: "O que devemos fazer com nossos pecados?",
-            verse: "1 João 1:9",
-            option_a: "Esconder",
-            option_b: "Ignorar",
-            option_c: "Justificar",
-            option_d: "Confessar",
-            correct_option: "D",
-          },
-          {
-            question: "Quem pode perdoar pecados?",
-            verse: "Marcos 2:7",
-            option_a: "Anjos",
-            option_b: "Sacerdotes",
-            option_c: "Somente Deus",
-            option_d: "Profetas",
-            correct_option: "C",
-          },
-          {
-            question: "Qual é o convite de Jesus?",
-            verse: "Mateus 11:28",
-            option_a: "Venham todos os que estão cansados",
-            option_b: "Fiquem onde estão",
-            option_c: "Vão embora",
-            option_d: "Lutem por si mesmos",
+            option_d: "Sucesso imediato",
             correct_option: "A",
           },
           {
-            question: "O que significa confessar Jesus diante dos homens?",
-            verse: "Mateus 10:32",
-            option_a: "Participar de rituais",
-            option_b: "Declarar publicamente nossa fé",
-            option_c: "Fazer boas obras",
-            option_d: "Estudar teologia",
-            correct_option: "B",
+            question:
+              "O que Deus faz quando confessamos nossos pecados?",
+            verse: "1 João 1:9",
+            option_a: "Nos ignora",
+            option_b: "Nos pune",
+            option_c: "É fiel e justo para nos perdoar",
+            option_d: "Nos critica",
+            correct_option: "C",
           },
           {
-            question: "Como somos justificados diante de Deus?",
-            verse: "Romanos 5:1",
-            option_a: "Pelas obras",
-            option_b: "Pela sabedoria humana",
-            option_c: "Pelo sofrimento",
-            option_d: "Pela fé",
+            question:
+              "Como a fé vem ao coração do crente?",
+            verse: "Romanos 10:17",
+            option_a: "Pelo ouvir da Palavra de Deus",
+            option_b: "Pela oração constante",
+            option_c: "Pelo jejum",
+            option_d: "Pela meditação",
+            correct_option: "A",
+          },
+          {
+            question:
+              "O que Jesus proclamou no início de Seu ministério?",
+            verse: "Marcos 1:15",
+            option_a: "Acumulem riquezas",
+            option_b: "Sigam as leis dos fariseus",
+            option_c: "Vivam como quiserem",
+            option_d: "O tempo está cumprido; arrependei-vos e crede no evangelho",
             correct_option: "D",
           },
           {
-            question: "Qual é o dom gratuito de Deus?",
-            verse: "Romanos 6:23",
-            option_a: "Saúde",
-            option_b: "Riqueza",
-            option_c: "Vida eterna",
-            option_d: "Conhecimento",
+            question:
+              "Qual é o papel da confissão segundo Provérbios 28:13?",
+            verse: "Provérbios 28:13",
+            option_a: "Ocultar os pecados traz sucesso",
+            option_b: "Quem confessa e deixa os pecados alcança misericórdia",
+            option_c: "Confessar não faz diferença",
+            option_d: "Apenas líderes religiosos devem confessar",
+            correct_option: "B",
+          },
+          {
+            question:
+              "Qual é a relação entre fé e obras?",
+            verse: "Tiago 2:17",
+            option_a: "Fé sem obras é suficiente",
+            option_b: "Obras são mais importantes que a fé",
+            option_c: "Fé sem obras é morta",
+            option_d: "Apenas obras importam",
             correct_option: "C",
           },
         ],
+        conclusion:
+          "Decido fortalecer minha fé através do estudo da Palavra de Deus, praticar o arrependimento genuíno em minha vida diária e confessar meus pecados para manter um relacionamento sincero com Deus.",
       },
       {
         number: 5,
-        title: "A Volta de Jesus",
+        title: "A Volta de Jesus (Sinais e Evidências)",
         introduction:
-          "A Bíblia nos fornece uma visão clara dos eventos que precederão o fim dos tempos e a maneira como Jesus retornará à Terra. Compreender esses sinais e o modo do retorno de Cristo é essencial para vivermos preparados e cheios de esperança. Este estudo explora os sinais do fim e descreve como será a volta de Jesus, conforme revelado nas Escrituras.",
-        conclusion:
-          "Os sinais do fim são claros indicadores da proximidade da volta de Jesus, que ocorrerá de maneira visível e poderosa. Devemos estar atentos aos acontecimentos ao nosso redor e viver com esperança e expectativa pelo retorno iminente de Cristo. Diante dos sinais bíblicos apresentados e da certeza do retorno visível de Jesus, decido viver em vigilância constante, buscando fortalecer minha relação com Deus e compartilhar a mensagem de esperança com aqueles ao meu redor.",
+          "A volta de Jesus é um evento central na fé cristã, aguardado com esperança por crentes ao redor do mundo. A Bíblia nos oferece sinais e evidências que indicam a proximidade desse grande dia. Este estudo explora esses sinais e como podemos nos preparar para o retorno de Cristo.",
         questions: [
           {
-            question: "Qual é um dos sinais do fim mencionado em Mateus 24:6?",
-            verse: "Mateus 24:6",
-            option_a: "Paz mundial permanente",
-            option_b: "Prosperidade universal",
-            option_c: "Guerras e rumores de guerras",
-            option_d: "Unidade política global",
-            correct_option: "C",
+            question:
+              "Quais são alguns dos sinais da volta de Jesus?",
+            verse: "Mateus 24:6-7",
+            option_a: "Paz mundial",
+            option_b: "Estabilidade política",
+            option_c: "Prosperidade universal",
+            option_d: "Guerras, fomes e terremotos",
+            correct_option: "D",
           },
           {
-            question: "O que Jesus disse sobre falsos profetas?",
+            question:
+              "O que Jesus disse sobre falsos profetas?",
             verse: "Mateus 24:11",
             option_a: "Não haveria falsos profetas",
-            option_b: "Muitos falsos profetas surgirão",
-            option_c: "Falsos profetas seriam facilmente identificados",
+            option_b: "Seriam facilmente identificados",
+            option_c: "Muitos falsos profetas surgirão",
             option_d: "Todos os profetas seriam verdadeiros",
-            correct_option: "B",
-          },
-          {
-            question: "O que acontecerá com o amor das pessoas nos últimos dias?",
-            verse: "Mateus 24:12",
-            option_a: "O amor aumentará",
-            option_b: "O amor será irrelevante",
-            option_c: "O amor permanecerá o mesmo",
-            option_d: "O amor se esfriará",
-            correct_option: "D",
-          },
-          {
-            question: "Qual será o último sinal da volta de Jesus?",
-            verse: "Mateus 24:14",
-            option_a: "O Evangelho pregado em todo o mundo",
-            option_b: "O Evangelho pregado apenas em algumas regiões",
-            option_c: "O Evangelho esquecido por muitos",
-            option_d: "O Evangelho rejeitado universalmente",
-            correct_option: "A",
-          },
-          {
-            question: "Qual é a promessa feita por Jesus?",
-            verse: "João 14:3",
-            option_a: "Que Ele nos dará riquezas",
-            option_b: "Que Ele não voltará mais",
-            option_c: "Que Ele destruirá o mundo",
-            option_d: "Que Ele voltará para nos levar",
-            correct_option: "D",
-          },
-          {
-            question: "Qual será a atitude das pessoas em relação à religião nos últimos dias?",
-            verse: "2 Pedro 3:3–4",
-            option_a: "Aceitação universal",
-            option_b: "Escárnio e dúvida sobre a promessa",
-            option_c: "Respeito crescente",
-            option_d: "Indiferença total",
-            correct_option: "B",
-          },
-          {
-            question: "Como será a volta de Jesus?",
-            verse: "Atos 1:11",
-            option_a: "Invisível",
-            option_b: "Espiritual",
-            option_c: "Da mesma forma que subiu ao céu",
-            option_d: "Apenas em sonhos",
             correct_option: "C",
           },
           {
-            question: "O que acontecerá com os mortos em Cristo na Sua vinda?",
-            verse: "1 Tessalonicenses 4:16",
-            option_a: "Ressuscitarão primeiro",
-            option_b: "Permanecerão mortos",
-            option_c: "Serão esquecidos",
-            option_d: "Irão para outro lugar",
-            correct_option: "A",
+            question:
+              "O que Jesus afirmou sobre o dia e a hora de Sua volta?",
+            verse: "Mateus 24:36",
+            option_a: "Todos sabem",
+            option_b: "Somente os anjos sabem",
+            option_c: "Ninguém sabe, somente o Pai",
+            option_d: "Os profetas sabem",
+            correct_option: "C",
           },
           {
-            question: "O que acontecerá com os vivos fiéis na vinda de Cristo?",
+            question:
+              "Como será a volta de Jesus?",
+            verse: "Atos 1:11",
+            option_a: "Invisível para todos",
+            option_b: "Visível e pessoal, como subiu ao céu",
+            option_c: "Apenas espiritual",
+            option_d: "Em segredo",
+            correct_option: "B",
+          },
+          {
+            question:
+              "O que acontecerá com os mortos em Cristo na vinda de Jesus?",
+            verse: "1 Tessalonicenses 4:16-17",
+            option_a: "Permanecerão mortos",
+            option_b: "Ressuscitarão primeiro",
+            option_c: "Serão esquecidos",
+            option_d: "Voltarão como fantasmas",
+            correct_option: "B",
+          },
+          {
+            question:
+              "O que acontecerá com os vivos fiéis na vinda de Cristo?",
             verse: "1 Coríntios 15:51–52",
             option_a: "Serão transformados",
             option_b: "Permanecerão iguais",
@@ -493,709 +391,561 @@ export const lessonsSeed = [
             correct_option: "A",
           },
           {
-            question: "Como devemos estar preparados para a volta de Jesus?",
-            verse: "Mateus 24:44",
-            option_a: "Despreocupados",
-            option_b: "Sempre prontos",
-            option_c: "Desatentos",
-            option_d: "Indiferentes",
-            correct_option: "B",
+            question:
+              "Qual é a advertência dada por Jesus sobre Sua volta?",
+            verse: "Mateus 24:42",
+            option_a: "Vigiai, pois não sabeis a que hora vem o vosso Senhor",
+            option_b: "Ignorem os sinais",
+            option_c: "Não se preocupem com isso",
+            option_d: "Procurem saber a data exata",
+            correct_option: "A",
           },
         ],
+        conclusion:
+          "Decido viver cada dia em preparação para a volta de Jesus, mantendo minha fé firme e compartilhando essa esperança com os outros.",
       },
       {
         number: 6,
         title: "A Verdade Sobre a Morte",
         introduction:
-          "A morte é uma realidade inevitável para todos os seres humanos. Entretanto, a Bíblia apresenta ensinamentos claros e cheios de esperança sobre o que acontece após a morte. Este estudo busca esclarecer a verdade bíblica, desfazendo ideias equivocadas e revelando a esperança cristã na ressurreição e na vida eterna por meio de Jesus Cristo.",
-        conclusion:
-          "A verdade bíblica sobre a morte nos traz consolo e esperança, mostrando que a morte não é o fim da existência, mas um estado temporário de descanso até a volta de Cristo. Na ressurreição, os fiéis receberão a vida eterna prometida por Deus, livres do sofrimento, da dor e da morte. Diante da esperança apresentada nas Escrituras, decido, hoje, confiar plenamente em Deus e viver com a certeza da ressurreição e da vida eterna em Jesus Cristo.",
+          "A morte é um dos mistérios que mais intriga a humanidade. A Bíblia oferece clareza sobre o estado dos mortos e a esperança da ressurreição. Este estudo explora o que as Escrituras dizem sobre a morte, ajudando-nos a entender este tema à luz da verdade bíblica.",
         questions: [
           {
-            question: "O que acontece com os mortos segundo Eclesiastes 9:5?",
+            question:
+              "O que acontece com os mortos?",
             verse: "Eclesiastes 9:5",
-            option_a: "Eles estão conscientes",
-            option_b: "Eles vivem em outro mundo",
-            option_c: "Eles não sabem nada",
-            option_d: "Eles sabem tudo",
-            correct_option: "C",
+            option_a: "Eles sabem tudo",
+            option_b: "Eles reencarnam",
+            option_c: "Eles estão conscientes no céu",
+            option_d: "Eles não sabem coisa nenhuma",
+            correct_option: "D",
           },
           {
-            question: "Como a Bíblia descreve a morte em João 11:11–14?",
-            verse: "João 11:11–14",
+            question:
+              "Como Jesus se referiu à morte de Lázaro?",
+            verse: "João 11:11-14",
             option_a: "Como um sono",
             option_b: "Como uma viagem",
-            option_c: "Como uma festa",
-            option_d: "Como uma ilusão",
+            option_c: "Como um estado de consciência plena",
+            option_d: "Como um desaparecimento",
             correct_option: "A",
           },
           {
-            question: "Quem tem poder sobre a morte segundo Apocalipse 1:18?",
-            verse: "Apocalipse 1:18",
-            option_a: "Profetas",
-            option_b: "Anjos",
-            option_c: "Moisés",
-            option_d: "Jesus",
-            correct_option: "D",
-          },
-          {
-            question: "Qual é o destino dos justos na ressurreição?",
-            verse: "1 Tessalonicenses 4:16",
-            option_a: "Permanecerão mortos",
-            option_b: "Serão ressuscitados primeiro",
-            option_c: "Serão esquecidos",
-            option_d: "Irão para outro planeta",
+            question:
+              "O que acontece com os pensamentos da pessoa quando ela morre?",
+            verse: "Salmos 146:4",
+            option_a: "Continuam ativos",
+            option_b: "Perecem",
+            option_c: "Tornam-se mais claros",
+            option_d: "Mudam para outra dimensão",
             correct_option: "B",
           },
           {
-            question: "O que Deus prometeu dar aos que creem nEle?",
-            verse: "João 3:16",
+            question:
+              "O que Jesus promete aos que creem Nele?",
+            verse: "João 11:25-26",
             option_a: "Vida eterna",
-            option_b: "Fama",
-            option_c: "Poder",
-            option_d: "Riquezas",
+            option_b: "Reencarnação",
+            option_c: "Imortalidade natural da alma",
+            option_d: "Ficarão como anjos na terra",
             correct_option: "A",
           },
           {
-            question: "Qual é o salário do pecado?",
-            verse: "Romanos 6:23",
-            option_a: "Vida",
-            option_b: "Alegria",
-            option_c: "Prosperidade",
-            option_d: "Morte",
+            question:
+              "Qual é o destino dos justos na ressurreição?",
+            verse: "1 Tessalonicenses 4:16-17",
+            option_a: "Permanecerão na sepultura",
+            option_b: "Serão esquecidos",
+            option_c: "Voltarão como espíritos",
+            option_d: "Serão ressuscitados para encontrar o Senhor nos ares",
             correct_option: "D",
           },
           {
-            question: "O que acontecerá na segunda vinda de Cristo?",
-            verse: "João 5:28–29",
-            option_a: "Nada acontecerá",
-            option_b: "Apenas os vivos serão afetados",
-            option_c: "Haverá ressurreição dos mortos",
-            option_d: "Todos permanecerão mortos",
+            question:
+              "Quem é responsável pelo pecado e suas consequências?",
+            verse: "Ezequiel 18:20",
+            option_a: "Os pais pelos filhos",
+            option_b: "Os filhos pelos pais",
+            option_c: "Cada pessoa por si mesma",
+            option_d: "Toda a comunidade",
             correct_option: "C",
           },
           {
-            question: "Como Paulo descreve nossa transformação na ressurreição?",
-            verse: "1 Coríntios 15:51–52",
-            option_a: "Nos tornaremos anjos",
-            option_b: "Seremos transformados",
-            option_c: "Permaneceremos iguais",
-            option_d: "Desapareceremos",
-            correct_option: "B",
-          },
-          {
-            question: "Qual é o último inimigo a ser destruído?",
-            verse: "1 Coríntios 15:26",
-            option_a: "Morte",
-            option_b: "Pecado",
-            option_c: "Sofrimento",
-            option_d: "Injustiça",
-            correct_option: "A",
-          },
-          {
-            question: "O que Deus enxugará de nossos olhos?",
+            question:
+              "O que Apocalipse 21:4 promete sobre o futuro?",
             verse: "Apocalipse 21:4",
-            option_a: "Sono",
-            option_b: "Felicidade",
-            option_c: "Lágrimas",
-            option_d: "Conhecimento",
-            correct_option: "C",
+            option_a: "Morte continuará existindo",
+            option_b: "Não haverá mais morte, nem pranto, nem dor",
+            option_c: "Apenas dor será eliminada",
+            option_d: "Apenas lágrimas serão enxugadas",
+            correct_option: "B",
           },
         ],
+        conclusion:
+          "Decido confiar na esperança bíblica da ressurreição e viver uma vida de fé em Cristo, aguardando o dia em que Ele fará novas todas as coisas.",
       },
       {
         number: 7,
         title: "O Juízo",
         introduction:
-          "O juízo é uma doutrina central das Escrituras que revela o caráter justo e amoroso de Deus. Ele garante que todas as ações humanas serão avaliadas e que a justiça divina prevalecerá. Para os que confiam em Deus, o juízo é uma mensagem de esperança, pois assegura que o mal não triunfará para sempre.",
-        conclusion:
-          "O juízo revela a perfeita justiça de Deus, garantindo que toda verdade será revelada e todo mal será corrigido. Longe de ser motivo de medo, ele nos chama à responsabilidade pessoal e à confiança em Jesus Cristo, nosso advogado e intercessor diante do Pai.",
+          "O conceito de juízo é central na mensagem bíblica, destacando a justiça de Deus e Sua promessa de restaurar a ordem no universo. O juízo final revela o caráter de Deus e Sua intenção de erradicar o mal. Este estudo explora as Escrituras para entender melhor o significado e a importância do juízo divino.",
         questions: [
           {
-            question: "Quem é o juiz de toda a Terra?",
+            question: "Quem é designado como juiz de toda a Terra?",
             verse: "Gênesis 18:25",
-            option_a: "Abraão",
-            option_b: "Deus",
-            option_c: "Davi",
-            option_d: "Moisés",
-            correct_option: "B"
+            option_a: "Moisés",
+            option_b: "Abraão",
+            option_c: "Deus",
+            option_d: "Paulo",
+            correct_option: "C",
           },
           {
-            question: "O que está determinado para os homens?",
-            verse: "Hebreus 9:27",
-            option_a: "Reencarnar",
-            option_b: "Prosperar",
-            option_c: "Viver eternamente na Terra",
-            option_d: "Morrer uma só vez e enfrentar o juízo",
-            correct_option: "D"
+            question: "O que Deus trará a juízo?",
+            verse: "Eclesiastes 12:14",
+            option_a: "Apenas ações boas",
+            option_b: "Apenas pensamentos",
+            option_c: "Somente pecados graves",
+            option_d: "Toda obra, incluindo tudo que está encoberto",
+            correct_option: "D",
+          },
+          {
+            question: "Qual é o padrão pelo qual seremos julgados?",
+            verse: "Tiago 2:12",
+            option_a: "Lei da liberdade",
+            option_b: "Tradições humanas",
+            option_c: "Costumes culturais",
+            option_d: "Opiniões pessoais",
+            correct_option: "A",
           },
           {
             question: "Quem foi designado por Deus para julgar o mundo?",
             verse: "Atos 17:31",
-            option_a: "Jesus Cristo",
-            option_b: "Paulo",
-            option_c: "Pedro",
-            option_d: "Um anjo",
-            correct_option: "A"
+            option_a: "Um profeta futuro",
+            option_b: "Os apóstolos",
+            option_c: "Os anjos",
+            option_d: "Jesus Cristo",
+            correct_option: "D",
           },
           {
-            question: "Qual será o critério do julgamento?",
-            verse: "Eclesiastes 12:14",
+            question: "Qual é a base do juízo final descrita em Apocalipse 20:12?",
+            verse: "Apocalipse 20:12",
             option_a: "Aparência externa",
-            option_b: "Sabedoria humana",
-            option_c: "Obras boas ou más",
-            option_d: "Riquezas acumuladas",
-            correct_option: "C"
+            option_b: "Fama e influência",
+            option_c: "Riqueza acumulada",
+            option_d: "As obras registradas nos livros",
+            correct_option: "D",
           },
           {
-            question: "Como Daniel descreve a cena do juízo?",
-            verse: "Daniel 7:10",
-            option_a: "Um rio de fogo",
-            option_b: "Uma festa",
-            option_c: "Um banquete",
-            option_d: "Uma tempestade",
-            correct_option: "A"
+            question: "Quem comparecerá perante o tribunal de Deus?",
+            verse: "Romanos 14:10-12",
+            option_a: "Apenas os ímpios",
+            option_b: "Somente os justos",
+            option_c: "Todos nós",
+            option_d: "Anjos caídos",
+            correct_option: "C",
           },
           {
-            question: "O que acontecerá com aqueles cujos nomes não estão no livro da vida?",
-            verse: "Apocalipse 20:15",
-            option_a: "Receberão recompensas",
-            option_b: "Permanecerão na Terra",
-            option_c: "Serão salvos",
-            option_d: "Serão lançados no lago de fogo",
-            correct_option: "D"
-          },
-          {
-            question: "Qual é a promessa para os vencedores?",
+            question: "O que Jesus promete aos que vencem no juízo?",
             verse: "Apocalipse 3:5",
-            option_a: "Governarão na Terra",
-            option_b: "Terão riquezas",
-            option_c: "Serão vestidos de vestes brancas",
-            option_d: "Não enfrentarão dificuldades",
-            correct_option: "C"
+            option_a: "Serão esquecidos",
+            option_b:
+              "Serão vestidos de vestes brancas e não terão seus nomes riscados do Livro da Vida",
+            option_c: "Receberão riquezas terrenas",
+            option_d: "Viverão em paz temporária",
+            correct_option: "B",
           },
-          {
-            question: "Como Paulo descreve o dia do juízo?",
-            verse: "Romanos 2:16",
-            option_a: "Dia comum",
-            option_b: "Dia em que Deus julgará os segredos dos homens",
-            option_c: "Dia sem importância",
-            option_d: "Dia de escuridão",
-            correct_option: "B"
-          },
-          {
-            question: "Qual é o propósito do juízo investigativo?",
-            verse: "Daniel 8:14",
-            option_a: "Purificar o santuário",
-            option_b: "Recompensar os justos",
-            option_c: "Confundir as nações",
-            option_d: "Destruir os ímpios",
-            correct_option: "A"
-          },
-          {
-            question: "Quem intercede por nós no juízo?",
-            verse: "Hebreus 7:25",
-            option_a: "Anjos",
-            option_b: "Profetas",
-            option_c: "Patriarcas",
-            option_d: "Jesus",
-            correct_option: "D"
-          }
-        ]
+        ],
+        conclusion:
+          "Decido viver uma vida em harmonia com os princípios divinos, confiando na justiça e misericórdia de Deus no juízo, e buscando diariamente fortalecer meu relacionamento com Ele.",
       },
       {
         number: 8,
-        title: "A Lei Moral",
+        title: "Leis na Bíblia",
         introduction:
-          "A Lei Moral funciona como um espelho espiritual, revelando nossa condição e nossa necessidade de Cristo. Ela não é um meio de salvação, mas um guia para uma vida transformada pela graça, em harmonia com a vontade de Deus.",
-        conclusion:
-          "Viver em obediência à Lei de Deus não é para salvar-nos, mas como resposta de amor àquele que nos salvou pela graça.",
+          "As leis na Bíblia são fundamentais para entender a vontade de Deus para a humanidade. Elas foram dadas para guiar o comportamento humano, promover justiça e revelar o caráter divino. Este estudo examina algumas das principais leis bíblicas e seu propósito no plano divino.",
         questions: [
           {
-            question: "Onde foram escritos os Dez Mandamentos?",
+            question:
+              "Qual é o resumo dos Dez Mandamentos, conforme Jesus?",
+            verse: "Mateus 22:37-40",
+            option_a: "Não matarás e não roubarás",
+            option_b:
+              "Amar a Deus sobre todas as coisas e ao próximo como a si mesmo",
+            option_c: "Guardar os sábados e festas",
+            option_d: "Oferecer sacrifícios diários",
+            correct_option: "B",
+          },
+          {
+            question:
+              "Onde foram escritas as leis conhecidas como os Dez Mandamentos?",
             verse: "Êxodo 31:18",
-            option_a: "Em pergaminhos",
-            option_b: "Na areia",
-            option_c: "Em papiros",
-            option_d: "Em tábuas de pedra",
-            correct_option: "D"
+            option_a: "Em papiros",
+            option_b: "Em pergaminhos",
+            option_c: "Em tábuas de pedra",
+            option_d: "Na areia",
+            correct_option: "C",
           },
           {
-            question: "Qual é o primeiro mandamento?",
-            verse: "Êxodo 20:3",
-            option_a: "Amarás o teu próximo",
-            option_b: "Guardarás o sábado",
-            option_c: "Não terás outros deuses diante de mim",
-            option_d: "Não matarás",
-            correct_option: "C"
-          },
-          {
-            question: "Qual mandamento fala sobre o dia de descanso?",
-            verse: "Êxodo 20:8–11",
-            option_a: "Quarto",
-            option_b: "Décimo",
-            option_c: "Primeiro",
-            option_d: "Sétimo",
-            correct_option: "A"
-          },
-          {
-            question: "O que Jesus disse sobre a lei?",
-            verse: "Mateus 5:17",
-            option_a: "Que Ele veio ignorar a lei",
-            option_b: "Que Ele veio cumprir a lei",
-            option_c: "Que Ele veio modificar a lei",
-            option_d: "Que Ele veio abolir a lei",
-            correct_option: "B"
-          },
-          {
-            question: "Resumo dos mandamentos segundo Jesus?",
-            verse: "Mateus 22:37–40",
-            option_a: "Amar a Deus e ao próximo",
-            option_b: "Buscar riquezas",
-            option_c: "Fazer sacrifícios diários",
-            option_d: "Obedecer aos líderes religiosos",
-            correct_option: "A"
-          },
-          {
-            question: "Qual é o propósito da lei?",
-            verse: "Romanos 3:20",
-            option_a: "Aumentar riquezas",
-            option_b: "Trazer condenação",
-            option_c: "Justificar os homens",
-            option_d: "Revelar o pecado",
-            correct_option: "D"
-          },
-          {
-            question: "Como Paulo descreve a lei?",
-            verse: "Romanos 7:12",
-            option_a: "Difícil",
-            option_b: "Irrelevante",
-            option_c: "Santa, justa e boa",
-            option_d: "Fraca",
-            correct_option: "C"
-          },
-          {
-            question: "Quem escreveu os Dez Mandamentos?",
-            verse: "Êxodo 31:18",
-            option_a: "Deus",
-            option_b: "Arão",
-            option_c: "Anjos",
-            option_d: "Moisés",
-            correct_option: "A"
-          },
-          {
-            question: "Qual é o papel da fé em relação à lei?",
-            verse: "Romanos 3:31",
-            option_a: "Anula a lei",
-            option_b: "Confirma a lei",
-            option_c: "Ignora completamente",
-            option_d: "Substitui pela tradição",
-            correct_option: "B"
-          },
-          { 
-            question: "Qual mandamento é o primeiro com promessa?",
+            question:
+              "Qual é o primeiro mandamento com promessa?",
             verse: "Efésios 6:2",
-            option_a: "Não furtarás",
-            option_b: "Não adulterarás",
-            option_c: "Honra teu pai e tua mãe",
-            option_d: "Não matarás",
-            correct_option: "C"
-          }
-        ] 
+            option_a: "Honra teu pai e tua mãe",
+            option_b: "Não matarás",
+            option_c: "Não dirás falso testemunho",
+            option_d: "Não cobiçarás",
+            correct_option: "A",
+          },
+          {
+            question:
+              "Qual é a implicação de tropeçar em um só ponto da lei?",
+            verse: "Tiago 2:10",
+            option_a: "Torna-se culpado de todos",
+            option_b: "É perdoável sem consequências",
+            option_c: "É uma falha menor",
+            option_d: "Pode ser ignorado",
+            correct_option: "A",
+          },
+          {
+            question:
+              "Qual foi o propósito da lei cerimonial no Antigo Testamento?",
+            verse: "Hebreus 10:1",
+            option_a: "Substituir os Dez Mandamentos",
+            option_b: "Garantir salvação por obras",
+            option_c: "Ser permanente e imutável",
+            option_d: "Ser uma sombra das coisas futuras",
+            correct_option: "D",
+          },
+          {
+            question:
+              "O que Jesus disse sobre a Lei?",
+            verse: "Mateus 5:17",
+            option_a: "Que veio abolir a Lei",
+            option_b: "Que veio cumprir a Lei",
+            option_c: "Que a Lei não era importante",
+            option_d: "Que a Lei estava errada",
+            correct_option: "B",
+          },
+          {
+            question:
+              "Como Paulo descreve a lei?",
+            verse: "Romanos 7:12",
+            option_a: "Fraca e inútil",
+            option_b: "Desnecessária",
+            option_c: "Santa, justa e boa",
+            option_d: "Apenas histórica",
+            correct_option: "C",
+          },
+        ],
+        conclusion:
+          "Decido estudar mais profundamente as leis bíblicas para compreender melhor a vontade de Deus para minha vida e viver em harmonia com Seus princípios.",
       },
       {
         number: 9,
         title: "O Sábado",
         introduction:
-          "O Sábado é um presente divino que nos oferece descanso físico e renovação espiritual, fortalecendo nosso relacionamento com Deus.",
-        conclusion:
-          "Diante disso, decido aceitar este presente divino e guardar o Sábado como um sinal especial entre mim e Deus.",
+          "O sábado é um dia especial instituído por Deus na criação, destinado ao descanso e à adoração. Para a Igreja Adventista do Sétimo Dia, a observância do sábado é uma expressão de fidelidade a Deus e um lembrete semanal de Sua criação e redenção. Este estudo busca explorar a importância bíblica do sábado através de perguntas baseadas nas Escrituras.",
         questions: [
           {
-            question: "Qual dia Deus abençoou e santificou na criação?",
-            verse: "Gênesis 2:3",
-            option_a: "Sábado",
-            option_b: "Domingo",
-            option_c: "Segunda-feira",
-            option_d: "Sexta-feira",
-            correct_option: "A"
+            question:
+              "Qual é a origem do sábado?",
+            verse: "Gênesis 2:2-3",
+            option_a: "Foi instituído por Moisés",
+            option_b: "Foi criado por Jesus no Novo Testamento",
+            option_c:
+              "Deus descansou no sétimo dia após a criação",
+            option_d: "Foi uma tradição iniciada por Abraão",
+            correct_option: "C",
           },
           {
-            question: "Qual mandamento menciona especificamente a guarda do Sábado?",
-            verse: "Êxodo 20:8–11",
-            option_a: "Décimo Mandamento",
-            option_b: "Primeiro Mandamento",
-            option_c: "Quarto Mandamento",
-            option_d: "Terceiro Mandamento",
-            correct_option: "C"
+            question:
+              "Qual mandamento dos Dez Mandamentos fala sobre o sábado?",
+            verse: "Êxodo 20:8-11",
+            option_a: "Primeiro",
+            option_b: "Quarto",
+            option_c: "Sexto",
+            option_d: "Décimo",
+            correct_option: "B",
           },
           {
-            question: "Quem declarou ser o Senhor do Sábado?",
-            verse: "Mateus 12:8",
-            option_a: "Paulo",
-            option_b: "Jesus Cristo",
-            option_c: "Moisés",
-            option_d: "Abraão",
-            correct_option: "B"
+            question:
+              "O que Isaías diz sobre como devemos guardar o sábado?",
+            verse: "Isaías 58:13-14",
+            option_a: "Fazendo nossas próprias vontades",
+            option_b:
+              "Chamando o sábado de deleitoso e honrando-o",
+            option_c: "Ignorando-o completamente",
+            option_d: "Trabalhando normalmente",
+            correct_option: "B",
           },
           {
-            question: "Segundo Isaías, qual deve ser nossa atitude em relação ao Sábado?",
-            verse: "Isaías 58:13–14",
-            option_a: "Dia de festas seculares",
-            option_b: "Dia de compras e lazer",
-            option_c: "Dia de trabalho normal",
-            option_d: "Dia de deleite e honra ao Senhor",
-            correct_option: "D"
+            question:
+              "Qual é o dia da preparação mencionado na Bíblia?",
+            verse: "Marcos 15:42",
+            option_a: "Segunda-feira",
+            option_b: "Quarta-feira",
+            option_c: "Sexta-feira",
+            option_d: "Domingo",
+            correct_option: "C",
           },
           {
-            question: "Quantos dias os israelitas deviam recolher maná antes do sábado?",
-            verse: "Êxodo 16:26",
-            option_a: "Sete dias",
-            option_b: "Cinco dias",
-            option_c: "Seis dias",
-            option_d: "Quatro dias",
-            correct_option: "C"
+            question:
+              "Quando começa e termina o sábado bíblico?",
+            verse: "Levítico 23:32",
+            option_a:
+              "Da meia-noite de sexta até a meia-noite de sábado",
+            option_b: "Do nascer ao pôr do sol de sábado",
+            option_c:
+              "Do amanhecer de sábado até o amanhecer de domingo",
+            option_d:
+              "Do pôr do sol de sexta até o pôr do sol de sábado",
+            correct_option: "D",
           },
           {
-            question: "O que Jesus costumava fazer no sábado conforme Lucas?",
+            question:
+              "Qual é o propósito do sábado?",
+            verse: "Marcos 2:27",
+            option_a:
+              "O sábado foi feito por causa do homem",
+            option_b:
+              "O homem foi feito por causa do sábado",
+            option_c: "Não tem propósito específico",
+            option_d: "É apenas um dia cultural",
+            correct_option: "A",
+          },
+          {
+            question:
+              "Como Jesus exemplificou a observância do sábado?",
             verse: "Lucas 4:16",
-            option_a: "Pregar nas sinagogas",
-            option_b: "Negociar",
-            option_c: "Viajar para outras cidades",
-            option_d: "Trabalhar como carpinteiro",
-            correct_option: "A"
+            option_a: "Apenas descansando em casa",
+            option_b: "Ignorando-o completamente",
+            option_c:
+              "Trabalhando como em qualquer outro dia",
+            option_d:
+              "Indo à sinagoga para ensinar e adorar",
+            correct_option: "D",
           },
-          {
-            question: "Qual é o sinal entre Deus e Seu povo segundo Ezequiel?",
-            verse: "Ezequiel 20:12",
-            option_a: "Festas anuais",
-            option_b: "Oferendas queimadas",
-            option_c: "O sábado",
-            option_d: "Circuncisão",
-            correct_option: "C"
-          },
-          {
-            question: "Como os discípulos observaram o sábado após a morte de Jesus?",
-            verse: "Lucas 23:56",
-            option_a: "Trabalharam normalmente",
-            option_b: "Fizeram uma festa",
-            option_c: "Ignoraram completamente",
-            option_d: "Descansaram conforme o mandamento",
-            correct_option: "D"
-          },
-          {
-            question: "Qual é o convite de Jesus relacionado ao descanso?",
-            verse: "Mateus 11:28",
-            option_a: "Venham para mim todos os que estão cansados",
-            option_b: "Trabalhem mais para ganhar mais",
-            option_c: "Ignorem as tradições antigas",
-            option_d: "Descansem somente quando necessário",
-            correct_option: "A"
-          },
-          {
-            question: "Que visão João teve sobre aqueles que guardam os mandamentos de Deus nos últimos dias?",
-            verse: "Apocalipse 14:12",
-            option_a: "Um exército rebelde",
-            option_b: "Um remanescente fiel",
-            option_c: "Uma multidão desobediente",
-            option_d: "Um grupo sem fé",
-            correct_option: "B"
-          }
-        ]
+        ],
+        conclusion:
+          "Decido observar o sábado como um dia especial de descanso e adoração, buscando renovar meu relacionamento com Deus e encontrar paz e rejuvenescimento espiritual.",
       },
       {
         number: 10,
         title: "Adoração (Dízimo, Oferta e Saúde)",
-        introduction: "A adoração é uma expressão de amor e reverência a Deus, manifestada de diversas formas, incluindo o uso fiel dos recursos que Ele nos concede e o cuidado com nosso corpo, que é templo do Espírito Santo.",
-        conclusion: "Adorar a Deus envolve nossa totalidade — nossos recursos, nossas ações e nossa saúde. A verdadeira adoração reflete gratidão, fidelidade e amor ao Criador.",
+        introduction:
+          "Adoração é um ato central na vida cristã, refletindo nosso amor e reverência por Deus. Ela se manifesta de várias formas, incluindo a devolução do dízimo, a oferta voluntária e o cuidado com nossa saúde.",
         questions: [
           {
-            question: "Qual porcentagem de nossos rendimentos é designada como dízimo?",
-            verse: "Levítico 27:30",
-            option_a: "5%",
-            option_b: "10%",
-            option_c: "15%",
-            option_d: "20%",
-            correct_option: "B"
-          },
-          {
-            question: "Qual é o propósito principal do dízimo segundo Malaquias?",
+            question: "Qual é o princípio bíblico para a devolução do dízimo?",
             verse: "Malaquias 3:10",
-            option_a: "Financiar festas religiosas",
-            option_b: "Sustentar os sacerdotes e o ministério",
-            option_c: "Construir templos luxuosos",
-            option_d: "Acumular riqueza para o povo de Deus",
-            correct_option: "B"
-          },
-          {
-            question: "Como Deus promete abençoar aqueles que são fiéis no dízimo?",
-            verse: "Malaquias 3:10",
-            option_a: "Abrindo as janelas do céu e derramando bênçãos sem medida",
-            option_b: "Com fama e poder",
-            option_c: "Com terras férteis",
-            option_d: "Com riqueza ilimitada",
+            option_a: "Trazer todos os dízimos à casa do tesouro",
+            option_b: "Dar apenas metade",
+            option_c: "Guardar para si mesmo",
+            option_d: "Dar apenas quando sobrar",
             correct_option: "A"
           },
           {
-            question: "Qual atitude devemos ter ao dar ofertas?",
-            verse: "2 Coríntios 9:7",
-            option_a: "Indiferença",
-            option_b: "Tristeza ou pesar",
-            option_c: "Alegria e generosidade",
-            option_d: "Relutância ou obrigação",
-            correct_option: "C"
-          },
-          {
-            question: "Quem deu tudo o que tinha como oferta, sendo elogiada por Jesus?",
-            verse: "Marcos 12:41–44",
-            option_a: "Um jovem rico",
-            option_b: "Uma viúva pobre",
-            option_c: "Uma mulher rica",
-            option_d: "Um fariseu devoto",
+            question: "Qual é o propósito do dízimo?",
+            verse: "Levítico 27:30",
+            option_a: "Sustentar apenas os pobres",
+            option_b: "Ser santo ao Senhor",
+            option_c: "Pagar impostos ao governo",
+            option_d: "Comprar propriedades",
             correct_option: "B"
           },
           {
-            question: "Qual princípio bíblico reflete o cuidado com nosso corpo?",
-            verse: "1 Coríntios 6:19–20",
-            option_a: "Podemos fazer qualquer coisa com nosso corpo",
-            option_b: "Nosso corpo não importa para Deus",
-            option_c: "O corpo é apenas material sem valor espiritual",
-            option_d: "Devemos tratar nosso corpo como templo do Espírito Santo",
+            question: "O que Jesus observou sobre a oferta da viúva?",
+            verse: "Marcos 12:41-44",
+            option_a: "Que ela deu mais do que todos os outros",
+            option_b: "Que ela deu muito pouco",
+            option_c: "Que deveria ter guardado para si",
+            option_d: "Que sua oferta não era significativa",
+            correct_option: "A"
+          },
+          {
+            question: "Como devemos dar nossas ofertas?",
+            verse: "2 Coríntios 9:7",
+            option_a: "Com tristeza",
+            option_b: "Por obrigação",
+            option_c: "Com alegria e generosidade",
+            option_d: "Para ser visto pelos outros",
+            correct_option: "C"
+          },
+          {
+            question: "Como devemos tratar nosso corpo em relação à saúde?",
+            verse: "1 Coríntios 6:19-20",
+            option_a: "Como algo sem importância",
+            option_b: "Como templo do Espírito Santo",
+            option_c: "Como propriedade pessoal",
+            option_d: "Como algo separado da vida espiritual",
+            correct_option: "B"
+          },
+          {
+            question: "O que Romanos 12:1 nos instrui a fazer com nossos corpos?",
+            verse: "Romanos 12:1",
+            option_a: "Desprezar o corpo",
+            option_b: "Ignorar as necessidades físicas",
+            option_c: "Usar o corpo apenas para prazer pessoal",
+            option_d: "Oferecer nossos corpos como sacrifício vivo, santo e agradável a Deus",
             correct_option: "D"
           },
           {
-            question: "Que tipo de alimentação foi dada por Deus aos seres humanos na criação?",
-            verse: "Gênesis 1:29",
-            option_a: "Frutas, grãos, nozes e sementes",
-            option_b: "Produtos lácteos",
-            option_c: "Alimentos processados",
-            option_d: "Carnes variadas",
-            correct_option: "A"
-          },
-          {
-            question: "Como Daniel e seus amigos demonstraram fidelidade na alimentação?",
-            verse: "Daniel 1:12–16",
-            option_a: "Comeram apenas uma vez por dia",
-            option_b: "Comeram da mesa do rei",
-            option_c: "Recusaram-se a comer alimentos impuros",
-            option_d: "Jejuaram por muitos dias",
-            correct_option: "C"
-          },
-          {
-            question: "Qual é o resultado prometido para aqueles que honram ao Senhor com suas riquezas?",
-            verse: "Provérbios 3:9–10",
-            option_a: "Seus celeiros se encherão fartamente",
-            option_b: "Ganharão poder político",
-            option_c: "Serão famosos entre os homens",
-            option_d: "Terão muitos servos",
-            correct_option: "A"
-          },
-          {
-            question: "Como devemos apresentar nossos corpos segundo Romanos?",
-            verse: "Romanos 12:1",
-            option_a: "Como ferramentas de trabalho",
-            option_b: "Como objetos sem valor",
-            option_c: "Como instrumentos de prazer pessoal",
-            option_d: "Como sacrifício vivo, santo e agradável a Deus",
+            question: "Qual é a promessa associada ao cuidado com a saúde?",
+            verse: "Provérbios 3:7-8",
+            option_a: "Riqueza garantida",
+            option_b: "Vida sem desafios",
+            option_c: "Fama mundial",
+            option_d: "Saúde para o corpo e vigor para os ossos",
             correct_option: "D"
           }
-        ]
+        ],
+        conclusion:
+          "Decido adorar a Deus não apenas por palavras, mas também pela fidelidade no dízimo, ofertas generosas e cuidando do meu corpo como templo do Espírito Santo.",
       },
       {
         number: 11,
         title: "Como Identificar a Igreja Verdadeira",
-        introduction: "A busca pela igreja verdadeira é uma jornada espiritual importante. A Bíblia fornece diretrizes claras sobre as características da igreja que segue fielmente os ensinamentos de Cristo.",
-        conclusion: "A verdadeira igreja é aquela que se fundamenta em Jesus Cristo, guarda os mandamentos de Deus, proclama Sua mensagem ao mundo e vive em amor.",
+        introduction:
+          "A Bíblia apresenta características claras que identificam a igreja verdadeira nos últimos dias, guiando os cristãos na busca por fidelidade à verdade.",
         questions: [
           {
-            question: "Qual é o fundamento da verdadeira igreja segundo Paulo?",
-            verse: "Efésios 2:20",
-            option_a: "Filosofias modernas",
-            option_b: "Profetas e apóstolos, tendo Jesus como pedra angular",
-            option_c: "Rituais antigos",
-            option_d: "Tradições humanas",
-            correct_option: "B"
-          },
-          {
-            question: "Qual característica distingue o povo de Deus nos últimos dias?",
-            verse: "Apocalipse 12:17",
-            option_a: "Guardam os mandamentos de Deus e têm o testemunho de Jesus",
-            option_b: "Seguem líderes populares",
-            option_c: "São ricos e poderosos",
-            option_d: "Fazem grandes obras sociais",
-            correct_option: "A"
-          },
-          {
-            question: "O que Jesus disse ser necessário para entrar no reino dos céus?",
-            verse: "Mateus 7:21",
-            option_a: "Conhecer bem as Escrituras",
-            option_b: "Ser membro de uma grande denominação",
-            option_c: "Fazer a vontade do Pai que está nos céus",
-            option_d: "Fazer milagres em Seu nome",
+            question: "Qual é a base fundamental da igreja verdadeira?",
+            verse: "2 Timóteo 3:16-17",
+            option_a: "Tradições humanas",
+            option_b: "Filosofias modernas",
+            option_c: "Escrituras inspiradas por Deus",
+            option_d: "Experiências pessoais",
             correct_option: "C"
           },
           {
-            question: "Qual é o sinal identificador dos discípulos de Cristo?",
+            question: "Qual é o sinal distintivo dos seguidores de Cristo?",
             verse: "João 13:35",
-            option_a: "Observância estrita das tradições",
-            option_b: "Amor uns pelos outros",
-            option_c: "Prosperidade material",
-            option_d: "Realizar curas milagrosas",
-            correct_option: "B"
-          },
-          {
-            question: "Como Paulo descreve a relação entre Cristo e Sua igreja?",
-            verse: "Efésios 5:25–27",
-            option_a: "Como um chefe e seus empregados",
-            option_b: "Como um rei governa seus súditos",
-            option_c: "Uma relação comercial",
-            option_d: "Como marido ama sua esposa",
-            correct_option: "D"
-          },
-          {
-            question: "Qual mensagem especial é proclamada pela igreja remanescente?",
-            verse: "Apocalipse 14:6–7",
-            option_a: "Mensagem dos três anjos",
-            option_b: "Mensagem política",
-            option_c: "Mensagem filosófica moderna",
-            option_d: "Mensagem de prosperidade financeira",
+            option_a: "Amor mútuo",
+            option_b: "Conhecimento acadêmico",
+            option_c: "Riqueza material",
+            option_d: "Popularidade social",
             correct_option: "A"
           },
           {
-            question: "Que atitude devemos ter em relação às Escrituras?",
-            verse: "Atos 17:11",
-            option_a: "Aceitar sem questionar",
-            option_b: "Examinar diariamente para ver se as coisas são assim",
-            option_c: "Ler apenas ocasionalmente",
-            option_d: "Descartar como irrelevantes hoje",
+            question: "Como a igreja verdadeira deve tratar os mandamentos de Deus?",
+            verse: "Apocalipse 14:12",
+            option_a: "Ignorar os mandamentos",
+            option_b: "Selecionar quais obedecer",
+            option_c: "Guardar todos os mandamentos",
+            option_d: "Adaptar aos tempos modernos",
+            correct_option: "C"
+          },
+          {
+            question: "Qual é a missão principal da igreja verdadeira?",
+            verse: "Mateus 28:19-20",
+            option_a: "Acumular riquezas",
+            option_b: "Fazer discípulos e ensinar todas as nações",
+            option_c: "Construir templos grandiosos",
+            option_d: "Manter tradições culturais",
             correct_option: "B"
           },
           {
-            question: "Qual é o papel da lei na vida dos cristãos segundo Tiago?",
-            verse: "Tiago 2:10–12",
-            option_a: "Apenas um conjunto antiquado de regras",
-            option_b: "Serve como guia moral, mas não precisa ser obedecida",
-            option_c: "É espelho que mostra nosso pecado, devendo ser respeitada",
-            option_d: "Nenhum papel relevante",
-            correct_option: "C"
-          },
-          {
-            question: "Quem é o cabeça da igreja?",
-            verse: "Colossenses 1:18",
-            option_a: "Um conselho de anciãos",
-            option_b: "O pastor local",
+            question: "Quem é o líder supremo da igreja verdadeira?",
+            verse: "Efésios 5:23",
+            option_a: "O pastor local",
+            option_b: "O papa",
             option_c: "Cristo",
-            option_d: "O papa",
+            option_d: "Um profeta moderno",
             correct_option: "C"
           },
           {
-            question: "O que Jesus prometeu sobre Sua igreja?",
-            verse: "Mateus 16:18",
-            option_a: "Que seria rica e influente",
-            option_b: "Que enfrentaria perseguições",
-            option_c: "Que mudaria com o tempo",
-            option_d: "Que as portas do inferno não prevaleceriam contra ela",
+            question: "Qual é o papel do Espírito Santo na igreja?",
+            verse: "João 16:13",
+            option_a: "Confundir os crentes",
+            option_b: "Promover divisões",
+            option_c: "Substituir as Escrituras",
+            option_d: "Guiar em toda a verdade",
             correct_option: "D"
+          },
+          {
+            question: "Como a igreja verdadeira deve se relacionar com o mundo?",
+            verse: "Romanos 12:2",
+            option_a: "Transformar-se pela renovação da mente",
+            option_b: "Isolar-se completamente",
+            option_c: "Conformar-se com o mundo",
+            option_d: "Comprometer-se com práticas mundanas",
+            correct_option: "A"
           }
-        ]
+        ],
+        conclusion:
+          "Decido buscar e permanecer na igreja que se fundamenta nas Escrituras, guarda os mandamentos de Deus e é guiada pelo Espírito Santo.",
       },
       {
         number: 12,
-        title: "Por Que Devo Ser Batizado?",
-        introduction: "O batismo simboliza a morte para o pecado e o nascimento para uma nova vida em Cristo, declarando publicamente a fé e a aceitação da salvação.",
-        conclusion: "O batismo não é apenas um rito simbólico, mas um compromisso público com Deus, representando a aceitação da salvação e a renúncia ao pecado.",
+        title: "Por Que Devo Ser Batizado",
+        introduction:
+          "O batismo é um passo essencial na vida cristã, simbolizando a morte para o pecado e o nascimento para uma nova vida em Cristo.",
         questions: [
           {
-            question: "Qual é a instrução de Jesus sobre o batismo na Grande Comissão?",
-            verse: "Mateus 28:19",
-            option_a: "Batizar apenas crianças",
-            option_b: "Fazer discípulos e batizá-los em nome do Pai, do Filho e do Espírito Santo",
-            option_c: "Apenas ensinar sem batizar",
-            option_d: "Batizar em nome dos profetas",
-            correct_option: "B"
+            question: "Qual é o significado do batismo segundo a Bíblia?",
+            verse: "Romanos 6:3-4",
+            option_a: "Sepultamento e ressurreição com Cristo",
+            option_b: "Um banho simbólico",
+            option_c: "Um ritual cultural",
+            option_d: "Uma tradição sem importância",
+            correct_option: "A"
           },
           {
-            question: "O que o batismo simboliza segundo Romanos?",
-            verse: "Romanos 6:4",
-            option_a: "Um banho simbólico",
-            option_b: "A entrada em uma nova igreja",
-            option_c: "Uma tradição sem significado espiritual",
-            option_d: "O sepultamento e a ressurreição com Cristo",
-            correct_option: "D"
-          },
-          {
-            question: "Quem foi batizado por João Batista como exemplo para nós?",
-            verse: "Mateus 3:13–17",
-            option_a: "Jesus",
-            option_b: "Pedro",
+            question: "Quem deu o exemplo de ser batizado?",
+            verse: "Mateus 3:13-17",
+            option_a: "Moisés",
+            option_b: "João Batista",
             option_c: "Paulo",
-            option_d: "Moisés",
-            correct_option: "A"
-          },
-          {
-            question: "Qual é o pré-requisito para o batismo mencionado em Atos?",
-            verse: "Atos 2:38",
-            option_a: "Conhecimento profundo das Escrituras",
-            option_b: "Ser membro da igreja há muitos anos",
-            option_c: "Arrependimento",
-            option_d: "Perfeição moral",
-            correct_option: "C"
-          },
-          {
-            question: "Que evento envolveu o batismo de um oficial etíope?",
-            verse: "Atos 8:36–38",
-            option_a: "Um encontro político",
-            option_b: "A leitura das Escrituras seguida de explicação",
-            option_c: "Um banquete religioso",
-            option_d: "Uma viagem missionária",
-            correct_option: "B"
-          },
-          {
-            question: "O que Pedro ensina sobre o significado do batismo?",
-            verse: "1 Pedro 3:21",
-            option_a: "É apenas um ritual externo",
-            option_b: "Não tem importância espiritual",
-            option_c: "É um compromisso de boa consciência para com Deus",
-            option_d: "É uma tradição ultrapassada",
-            correct_option: "C"
-          },
-          {
-            question: "Como Paulo descreve nossa união com Cristo por meio do batismo?",
-            verse: "Gálatas 3:27",
-            option_a: "Vestir-se de Cristo",
-            option_b: "Algo opcional",
-            option_c: "Uma cerimônia cultural",
-            option_d: "Um peso desnecessário",
-            correct_option: "A"
-          },
-          {
-            question: "Qual foi a resposta imediata de Paulo após recuperar a visão?",
-            verse: "Atos 9:18",
-            option_a: "Voltou para casa",
-            option_b: "Começou a pregar imediatamente",
-            option_c: "Escreveu cartas às igrejas",
-            option_d: "Foi batizado",
+            option_d: "Jesus",
             correct_option: "D"
           },
           {
-            question: "Segundo Colossenses, qual é o resultado espiritual do batismo?",
-            verse: "Colossenses 2:12",
-            option_a: "Ganhar status social",
-            option_b: "Tornar-se membro de uma organização religiosa",
-            option_c: "Ser enterrado com Cristo e ressuscitar pela fé",
-            option_d: "Permanecer como antes",
+            question: "Qual é a ordem de Jesus sobre o batismo?",
+            verse: "Mateus 28:19-20",
+            option_a: "Batizar apenas crianças",
+            option_b: "Batizar em nome dos profetas",
+            option_c: "Fazer discípulos e batizá-los em nome do Pai, do Filho e do Espírito Santo",
+            option_d: "Batizar somente os ricos",
             correct_option: "C"
           },
           {
-            question: "Qual mandamento Jesus deixou após Sua ressurreição?",
-            verse: "Marcos 16:16",
-            option_a: "Quem fizer boas obras será salvo",
-            option_b: "Quem crer e for batizado será salvo",
-            option_c: "Quem seguir tradições será salvo",
-            option_d: "Quem for perfeito será salvo",
+            question: "O que acontece após o arrependimento?",
+            verse: "Atos 2:38",
+            option_a: "Nada muda",
+            option_b: "Deve-se ser batizado para perdão dos pecados",
+            option_c: "Recebe-se um novo nome",
+            option_d: "É necessário jejuar por 40 dias",
             correct_option: "B"
+          },
+          {
+            question: "O que o batismo simboliza em relação ao pecado?",
+            verse: "Atos 22:16",
+            option_a: "Continuação no pecado",
+            option_b: "Lavagem dos pecados",
+            option_c: "Adiamento do arrependimento",
+            option_d: "Esquecimento temporário dos pecados",
+            correct_option: "B"
+          },
+          {
+            question: "Qual é a importância do batismo na salvação?",
+            verse: "Marcos 16:16",
+            option_a: "Não tem importância alguma",
+            option_b: "É apenas uma cerimônia opcional",
+            option_c: "Deve ser feito apenas em casos extremos",
+            option_d: "Quem crer e for batizado será salvo",
+            correct_option: "D"
+          },
+          {
+            question: "Como o Espírito Santo está relacionado ao batismo?",
+            verse: "João 3:5",
+            option_a: "Nascemos da água e do Espírito para entrar no reino de Deus",
+            option_b: "O Espírito Santo só vem antes do batismo",
+            option_c: "O Espírito Santo não tem relação com o batismo",
+            option_d: "O Espírito Santo substitui a necessidade de batismo",
+            correct_option: "A"
           }
-        ]
+        ],
+        conclusion:
+          "Decido seguir o exemplo de Jesus, sendo batizado como expressão pública da minha fé e compromisso com Deus.",
       }
     ]
   },
@@ -1204,12 +954,13 @@ export const lessonsSeed = [
   {
     category: "Fundamentos do Evangelho",
     guide: "Eu Quero Ser Feliz",
+    description: "Prepare-se para conhecer o caminho da verdadeira alegria, pois a Bíblia é o manual definitivo da felicidade.",
     lessons: [
       {
         number: 1,
         title: "O Manual da Felicidade",
-        introduction: "Temos que concordar em uma coisa: nem sempre dá para ficar sorrindo com tudo o que acontece conosco. Algumas vezes nos entristecemos e descobrimos que a vida nos dá diversos motivos para chorar. Pensando em tudo o que vivemos, dá até vontade de ter um Manual que nos ensine a fazer apenas aquilo que nos aproxima da Felicidade. Esse Manual existe: é a Bíblia.",
-        conclusion: "Creio que a Bíblia é a Palavra de Deus e creio que Ele inspirou homens para escrevê-la. Eu quero ser feliz com a Bíblia, buscando nela orientação e conforto em minha jornada diária.",
+        introduction:
+          "Temos que concordar em uma coisa: nem sempre dá para ficar sorrindo com tudo o que acontece conosco. Algumas vezes nos entristecemos e descobrimos que a vida nos dá diversos motivos para chorar. Pensando em tudo o que vivemos, dá até vontade de ter um Manual que nos ensine a fazer apenas aquilo que nos aproxima da Felicidade. Esse Manual existe: é a Bíblia.",
         questions: [
           {
             question: "Quem inspirou as Sagradas Escrituras?",
@@ -1274,13 +1025,14 @@ export const lessonsSeed = [
             option_d: "Para aqueles que leem, ouvem e guardam as palavras da profecia.",
             correct_option: "D"
           }
-        ]
+        ],
+        conclusion: "Creio que a Bíblia é a Palavra de Deus e creio que Ele inspirou homens para escrevê-la. Eu quero ser feliz com a Bíblia, buscando nela orientação e conforto em minha jornada diária.",
       },
       {
         number: 2,
         title: "Felicidade Existe e Deus Também",
         introduction: "Você já parou para pensar sobre Deus? Alguns falam: 'Não creio em Deus porque não O vejo'. Mas há muitas coisas que cremos sem vê-las, como eletricidade, vento e amor. Este estudo ajuda a compreender que Deus existe e se revela aos que O buscam.",
-        conclusion: "Quero conhecer mais amplamente o amor de Deus e desejo estudar a Bíblia para compreender o plano de Deus para a minha vida.",
+
         questions: [
           {
             question: "Há quanto tempo Deus existe?",
@@ -1345,13 +1097,14 @@ export const lessonsSeed = [
             option_d: "Fazer o que Ele nos manda.",
             correct_option: "D"
           }
-        ]
+        ],
+        conclusion: "Quero conhecer mais amplamente o amor de Deus e desejo estudar a Bíblia para compreender o plano de Deus para a minha vida.",
       },
       {
         number: 3,
         title: "Você pode Falar com Deus",
         introduction: "A oração é um contato direto com Deus, semelhante a um telefonema sem telefone, e permite uma comunicação íntima com nosso Criador. Devemos orar com fé, agradecendo e pedindo conforme Sua vontade.",
-        conclusion: "Creio que Deus ouve e responde as orações e meu desejo é orar com fé diariamente para aumentar meu relacionamento com Deus.",
+
         questions: [
           {
             question: "O que os discípulos pediram a Jesus?",
@@ -1416,13 +1169,14 @@ export const lessonsSeed = [
             option_d: "Somente em momentos difíceis.",
             correct_option: "C"
           }
-        ]
+        ],
+        conclusion: "Creio que Deus ouve e responde as orações e meu desejo é orar com fé diariamente para aumentar meu relacionamento com Deus.",
       },
       {
         number: 4,
         title: "Quando a Maldade Começou",
         introduction: "Muitos acreditam que o diabo não é um ser pensante, mas apenas uma influência negativa. Descobriremos que um dia satanás foi Lúcifer, um anjo de luz, amigo íntimo de Cristo. O egoísmo surgiu no coração de Lúcifer e o mal sujou o universo, chegando até nós hoje.",
-        conclusion: "Creio no Salvador Jesus Cristo. Quero ser perdoado e libertado do poder em minha vida. Meu sincero desejo é agradar a Deus e viver como Ele ordena.",
+
         questions: [
           {
             question: "Onde começou o pecado?",
@@ -1478,13 +1232,14 @@ export const lessonsSeed = [
             option_d: "Nossas boas obras.",
             correct_option: "A"
           }
-        ]
+        ],
+        conclusion: "Creio no Salvador Jesus Cristo. Quero ser perdoado e libertado do poder em minha vida. Meu sincero desejo é agradar a Deus e viver como Ele ordena.",
       },
       {
         number: 5,
         title: "O segredo para ser Feliz para sempre",
         introduction: "A salvação é o plano de Deus para nos libertar das consequências do mal. Jesus Cristo veio buscar e salvar os perdidos, garantindo nossa salvação por Sua morte e ressurreição.",
-        conclusion: "Creio que Jesus morreu por mim e quero aceitá-Lo como meu único Salvador. Entrego-Lhe minha vida.",
+
         questions: [
           {
             question: "Qual é a consequência final do pecado?",
@@ -1549,13 +1304,14 @@ export const lessonsSeed = [
             option_d: "Obedecer todos os mandamentos.",
             correct_option: "B"
           }
-        ]
+        ],
+        conclusion: "Creio que Jesus morreu por mim e quero aceitá-Lo como meu único Salvador. Entrego-Lhe minha vida.",
       },
       {
         number: 6,
         title: "O Reencontro!",
         introduction: "Muitos se perguntam sobre o fim do mundo. A esperança que temos é Jesus, que voltará para eliminar o pecado e o sofrimento e dar vida a todos os que nEle creem.",
-        conclusion: "Quero estar preparado para encontrar-me com Jesus quando Ele voltar. Hoje me proponho a estudar a Bíblia e ser fiel aos ensinos da Palavra de Deus e desta forma permanecer fiel até a volta de Jesus.",
+
         questions: [
           {
             question: "Que maravilhosa promessa fez Jesus?",
@@ -1620,13 +1376,14 @@ export const lessonsSeed = [
             option_d: "Serão transformados em anjos.",
             correct_option: "B"
           }
-        ]
+        ],
+        conclusion: "Quero estar preparado para encontrar-me com Jesus quando Ele voltar. Hoje me proponho a estudar a Bíblia e ser fiel aos ensinos da Palavra de Deus e desta forma permanecer fiel até a volta de Jesus.",
       },
       {
         number: 7,
         title: "1.000 anos para tirar dúvidas",
         introduction: "A Volta gloriosa de Jesus Cristo é a bendita esperança que faz bater mais forte o coração do cristão. Após Sua volta, acontecimentos extraordinários ocorrerão na Terra durante mil anos, chamados de milênio.",
-        conclusion: "Quero estar no Céu durante os mil anos, fazendo parte dos seguidores de Deus e vivendo para Ele.",
+
         questions: [
           {
             question: "Para onde irão os salvos após a volta de Cristo e quanto tempo ali permanecerão?",
@@ -1691,13 +1448,14 @@ export const lessonsSeed = [
             option_d: "Serão banidos para sempre.",
             correct_option: "A"
           }
-        ]
+        ],
+        conclusion: "Quero estar no Céu durante os mil anos, fazendo parte dos seguidores de Deus e vivendo para Ele.",
       },
       {
         number: 8,
         title: "O dia em que a Morte morrerá",
         introduction: "A morte é um mistério que desperta curiosidade. Para compreendê-la, precisamos entender a origem da vida. Deus criou o homem e oferece esperança para aqueles que morrem em Cristo.",
-        conclusion: "Confio nas promessas de Deus e creio que, mesmo que morra, um dia terei vida eterna em Cristo.",
+
         questions: [
           {
             question: "Do que o homem foi criado?",
@@ -1762,13 +1520,14 @@ export const lessonsSeed = [
             option_d: "Nunca enfrentará dificuldades ou morte.",
             correct_option: "B"
           }
-        ]
+        ],
+        conclusion: "Confio nas promessas de Deus e creio que, mesmo que morra, um dia terei vida eterna em Cristo.",
       },
       {
         number: 9,
         title: "O dia que Deus mandou construir uma casa sob medida",
         introduction: "O santuário construído por Moisés foi uma réplica do santuário celestial, para ensinar ao povo o plano da salvação e o ministério de Cristo como nosso Sumo Sacerdote.",
-        conclusion: "Creio que Jesus morreu em meu lugar como o Cordeiro de Deus que tira os meus pecados e quero aceitá-Lo hoje como meu Salvador e Sumo Sacerdote no santuário celestial.",
+
         questions: [
           {
             question: "O que Deus pediu que Moisés fizesse?",
@@ -1833,13 +1592,14 @@ export const lessonsSeed = [
             option_d: "Ele é um juiz severo.",
             correct_option: "B"
           }
-        ]
+        ],
+        conclusion: "Creio que Jesus morreu em meu lugar como o Cordeiro de Deus que tira os meus pecados e quero aceitá-Lo hoje como meu Salvador e Sumo Sacerdote no santuário celestial.",
       },
       {
         number: 10,
         title: "Que é o Juiz mais justo de todos os tempos?",
         introduction: "Quando se fala de acerto de contas, pode ser positivo ou negativo. A Bíblia ensina sobre o juízo final e que todos prestarão contas diante de Deus.",
-        conclusion: "Aceito a Jesus como meu Advogado e desejo respeitar os Seus mandamentos.",
+
         questions: [
           {
             question: "O que julgará Deus?",
@@ -1904,13 +1664,14 @@ export const lessonsSeed = [
             option_d: "Paulo.",
             correct_option: "B"
           }
-        ]
+        ],
+        conclusion: "Aceito a Jesus como meu Advogado e desejo respeitar os Seus mandamentos.",
       },
       {
         number: 11,
         title: "10 Passos para a Felicidade",
         introduction: "Deus criou leis perfeitas que regulam o universo e também a vida do homem. A Bíblia revela 10 princípios eternos da Lei de Deus para uma vida feliz e perfeita.",
-        conclusion: "Aceito os 10 mandamentos da Lei de Deus como padrão divino para a minha vida e procurarei obedecê-los.",
+
         questions: [
           {
             question: "Por quem e como foi escrita a Lei de Deus?",
@@ -1966,13 +1727,14 @@ export const lessonsSeed = [
             option_d: "Apenas líderes religiosos têm essa autoridade.",
             correct_option: "C"
           }
-        ]
+        ],
+        conclusion: "Aceito os 10 mandamentos da Lei de Deus como padrão divino para a minha vida e procurarei obedecê-los.",
       },
       {
         number: 12,
         title: "O dia mais feliz da semana",
         introduction: "O sábado foi separado por Deus para descanso, comunhão e bênçãos. Ele nos lembra que pertencemos a Deus e devemos consagrá-lo toda semana.",
-        conclusion: "Creio que o sábado é o Dia do Senhor e prometo respeitá-lo fielmente, seguindo o exemplo de Jesus.",
+
         questions: [
           {
             question: "Qual o dia de descanso segundo a Lei de Deus?",
@@ -2037,13 +1799,14 @@ export const lessonsSeed = [
             option_d: "Realizar tarefas domésticas pesadas",
             correct_option: "B"
           }
-        ]
+        ],
+        conclusion: "Creio que o sábado é o Dia do Senhor e prometo respeitá-lo fielmente, seguindo o exemplo de Jesus.",
       },
       {
         number: 13,
         title: "Quando tentaram mudar o dia de descanso",
         introduction: "Embora já tenhamos visto que o sábado é o dia bíblico de repouso, muitos cristãos hoje santificam o domingo. Este estudo esclarece a origem dessa mudança e se há base bíblica para ela.",
-        conclusion: "Creio que não existe base bíblica para a observância do domingo e confirmo o sábado como o verdadeiro dia de adoração a Deus em minha vida.",
+
         questions: [
           {
             question: "Quantos e quais são os textos bíblicos que falam do domingo?",
@@ -2107,13 +1870,14 @@ export const lessonsSeed = [
             option_d: "Líderes religiosos",
             correct_option: "B"
           }
-        ]
+        ],
+        conclusion: "Creio que não existe base bíblica para a observância do domingo e confirmo o sábado como o verdadeiro dia de adoração a Deus em minha vida.",
       },
       {
         number: 14,
         title: "Central da Felicidade",
         introduction: "Deus tem uma casa na Terra: a igreja, onde a família cristã cresce em relacionamento com Ele e com os semelhantes. Este estudo mostra como identificar a verdadeira igreja e seu papel.",
-        conclusion: "Creio que Jesus fundou a igreja verdadeira e quero fazer parte da família de Deus aqui na terra.",
+
         questions: [
           {
             question: "Quem é o fundamento cristão?",
@@ -2178,13 +1942,14 @@ export const lessonsSeed = [
             option_d: "Anciãos antigos",
             correct_option: "A"
           }
-        ]
+        ],
+        conclusion: "Creio que Jesus fundou a igreja verdadeira e quero fazer parte da família de Deus aqui na terra.",
       },
       {
         number: 15,
         title: "Quando Deus fala e o homem ouve",
         introduction: "Nas trevas deste mundo, Deus nos deu a Bíblia e manifestou o dom profético para revelar Seu plano. Este estudo mostra como identificar profetas verdadeiros e seguir Suas mensagens.",
-        conclusion: "Creio que Deus manifestou o dom profético para revelar Seus planos e Sua vontade para Seus filhos.",
+
         questions: [
           {
             question: "A quem Deus promete revelar seus segredos?",
@@ -2249,13 +2014,14 @@ export const lessonsSeed = [
             option_d: "Crede no Senhor vosso Deus e nos seus profetas",
             correct_option: "D"
           }
-        ]
+        ],
+        conclusion: "Creio que Deus manifestou o dom profético para revelar Seus planos e Sua vontade para Seus filhos.",
       },
       {
         number: 16,
         title: "O único lugar onde podemos ser felizes pra sempre",
         introduction: "Um mundo perfeito, sem dor, sofrimento ou injustiça. A Bíblia nos promete a Nova Terra, o reino eterno de Jesus, para todos os obedientes a Deus.",
-        conclusion: "Creio que Deus fará novos céus e nova terra e desejo estar pronto para habitá-los. Aceito a Cristo como meu Salvador pessoal.",
+
         questions: [
           {
             question: "O que o Senhor prometeu criar para seus filhos obedientes?",
@@ -2320,13 +2086,14 @@ export const lessonsSeed = [
             option_d: "Participar ativamente em todas as atividades religiosas",
             correct_option: "B"
           }
-        ]
+        ],
+        conclusion: "Creio que Deus fará novos céus e nova terra e desejo estar pronto para habitá-los. Aceito a Cristo como meu Salvador pessoal.",
       },
       {
         number: 17,
         title: "O dia em que sua vida vai mudar para sempre",
         introduction: "A Bíblia apresenta a oportunidade do novo nascimento espiritual, um começo de vida com Deus, livre do pecado.",
-        conclusion: "Desejo ser batizado(a), seguindo o exemplo de Jesus Cristo e aceitá-lo como meu Salvador pessoal.",
+
         questions: [
           {
             question: "Quem mandou batizar?",
@@ -2391,13 +2158,14 @@ export const lessonsSeed = [
             option_d: "Como um evento social importante",
             correct_option: "C"
           }
-        ]
+        ],
+        conclusion: "Desejo ser batizado(a), seguindo o exemplo de Jesus Cristo e aceitá-lo como meu Salvador pessoal.",
       },
       {
         number: 18,
         title: "Atitudes para ser feliz de verdade",
         introduction: "Viver em santidade é entregar diariamente a vontade a Cristo, permitindo que Ele transforme pensamentos, hábitos e caráter.",
-        conclusion: "Creio que meu corpo é o templo do Espírito Santo. Procurarei viver como um verdadeiro cristão, com a ajuda de Deus.",
+
         questions: [
           {
             question: "Que mudança ocorre em nossa vida quando aceitamos a Jesus?",
@@ -2462,13 +2230,14 @@ export const lessonsSeed = [
             option_d: "Fazer tudo para ser reconhecido",
             correct_option: "C"
           }
-        ]
+        ],
+        conclusion: "Creio que meu corpo é o templo do Espírito Santo. Procurarei viver como um verdadeiro cristão, com a ajuda de Deus.",
       },
       {
         number: 19,
         title: "Deus, o sócio majoritário da nossa felicidade",
         introduction: "Seguir a orientação de Deus quanto à maneira correta de administrar nossos bens é o segredo da verdadeira prosperidade. O dízimo e as ofertas são uma bênção para aqueles que os devolvem a Deus.",
-        conclusion: "Quero devolver a Deus o dízimo e as ofertas que Ele pede. Prometo dar com alegria o que pertence ao Senhor.",
+
         questions: [
           {
             question: "A quem pertence todas as coisas?",
@@ -2533,13 +2302,14 @@ export const lessonsSeed = [
             option_d: "Apenas dinheiro",
             correct_option: "C"
           }
-        ]
+        ],
+        conclusion: "Quero devolver a Deus o dízimo e as ofertas que Ele pede. Prometo dar com alegria o que pertence ao Senhor.",
       },
       {
         number: 20,
         title: "A hora de dizer: Sim! Eu quero ser feliz",
         introduction: "A Bíblia nos mostra que o tempo é curto e que devemos decidir pelo caminho da vida agora, aceitando Jesus como Salvador e seguindo Seu caminho.",
-        conclusion: "Decido pelo caminho da vida aceitando o convite de Jesus. Quero ser batizado e receber a vida eterna quando Ele voltar. Por isso, me entrego totalmente ao Senhor.",
+
         questions: [
           {
             question: "Qual é a condição para ser salvo?",
@@ -2604,7 +2374,8 @@ export const lessonsSeed = [
             option_d: "Agora é o tempo aceitável",
             correct_option: "D"
           }
-        ]
+        ],
+        conclusion: "Decido pelo caminho da vida aceitando o convite de Jesus. Quero ser batizado e receber a vida eterna quando Ele voltar. Por isso, me entrego totalmente ao Senhor.",
       }
     ]
   },
@@ -2612,12 +2383,13 @@ export const lessonsSeed = [
   {
     category: "Profecia",
     guide: "O Grande Conflito",
+    description: "Descubra que há uma solução satisfatória para o problema do mal e uma herança para aqueles que espera nas promessas de Deus",
     lessons: [
       {
         number: 1,
         title: "O Livro que Revela Tudo",
         introduction: "A Bíblia é uma fonte de sabedoria e orientação, escrita por aproximadamente 40 autores ao longo de 1.600 anos. Este estudo busca explorar quem nos ajuda a compreender a Palavra de Deus e por que é importante entendê-la.",
-        conclusion: "A Bíblia não é apenas um livro antigo; ela é viva e eficaz para guiar nossas vidas hoje. Compreender suas mensagens nos aproxima de Deus e nos ajuda a viver de acordo com Sua vontade. Diante desse entendimento, decido permitir que o Espírito Santo guie minha compreensão da Palavra de Deus.",
+
         questions: [
           {
             question: "Quem nos ajuda a compreender a Palavra de Deus?",
@@ -2673,13 +2445,14 @@ export const lessonsSeed = [
             option_d: "Aos estudiosos das Escrituras",
             correct_option: "C"
           }
-        ]
+        ],
+        conclusion: "A Bíblia não é apenas um livro antigo; ela é viva e eficaz para guiar nossas vidas hoje. Compreender suas mensagens nos aproxima de Deus e nos ajuda a viver de acordo com Sua vontade. Diante desse entendimento, decido permitir que o Espírito Santo guie minha compreensão da Palavra de Deus.",
       },
       {
         number: 2,
         title: "Símbolos das Profecias",
         introduction: "A Bíblia é um guia atemporal que nos oferece sabedoria e direção. Este estudo busca explorar como Deus tem falado através dos tempos e a importância de compreender Suas mensagens proféticas.",
-        conclusion: "A compreensão das Escrituras é vital para nossa vida espiritual e nos ajuda a discernir entre o bem e o mal no grande conflito cósmico em que vivemos. Diante desse entendimento, decido estudar a Bíblia com um coração aberto, permitindo que ela ilumine minha vida.",
+
         questions: [
           {
             question: "Em todos os tempos, por meio de quem Deus tem falado?",
@@ -2735,13 +2508,14 @@ export const lessonsSeed = [
             option_d: "Ignorar o que não entende",
             correct_option: "C"
           }
-        ]
+        ],
+        conclusion: "A compreensão das Escrituras é vital para nossa vida espiritual e nos ajuda a discernir entre o bem e o mal no grande conflito cósmico em que vivemos. Diante desse entendimento, decido estudar a Bíblia com um coração aberto, permitindo que ela ilumine minha vida.",
       },
       {
         number: 3,
         title: "As Colunas da Verdade",
         introduction: "O pecado trouxe uma separação entre Deus e a humanidade, mas a Bíblia nos oferece a verdade que pode nos libertar. Vamos explorar o que a Escritura diz sobre a condição da terra sem verdade e como podemos ser libertos pelo conhecimento dela.",
-        conclusion: "A ausência da verdade leva à destruição e desolação, mas Deus deseja que conheçamos toda a verdade para sermos libertos do pecado e seus efeitos devastadores. Diante desse entendimento, decido buscar e me firmar na verdade de Deus, permitindo que ela transforme minha vida.",
+
         questions: [
           {
             question: "O que não se encontra na terra?",
@@ -2779,13 +2553,14 @@ export const lessonsSeed = [
             option_d: "Falta de líderes",
             correct_option: "B"
           }
-        ]
+        ],
+        conclusion: "A ausência da verdade leva à destruição e desolação, mas Deus deseja que conheçamos toda a verdade para sermos libertos do pecado e seus efeitos devastadores. Diante desse entendimento, decido buscar e me firmar na verdade de Deus, permitindo que ela transforme minha vida.",
       },
       {
         number: 4,
         title: "A Estratégia do Inimigo",
         introduction: "Assim como Deus tem um plano de salvação, Satanás também tem um plano, mas seu objetivo é a destruição. Vamos explorar a estratégia do inimigo revelada nas profecias de Apocalipse e como podemos reconhecer e evitar suas armadilhas.",
-        conclusion: "A profecia revela que Babilônia, simbolizando confusão religiosa e corrupção espiritual, seduz as nações através de mentiras e enganos misturados com verdade aparente. Diante desse entendimento, decido retirar-me das influências enganosas de Babilônia e seguir a verdade pura de Deus.",
+
         questions: [
           {
             question: "Quantas nações beberam o vinho de Babilônia?",
@@ -2824,12 +2599,13 @@ export const lessonsSeed = [
             correct_option: "B"
           }
         ],
+        conclusion: "A profecia revela que Babilônia, simbolizando confusão religiosa e corrupção espiritual, seduz as nações através de mentiras e enganos misturados com verdade aparente. Diante desse entendimento, decido retirar-me das influências enganosas de Babilônia e seguir a verdade pura de Deus.",
       },
       {
         number: 5,
         title: "Deus e o Conflito",
         introduction: "Satanás sempre desejou ser adorado, e para isso, ele usou estratégias sutis ao longo da história. Vamos estudar como a verdade sobre a adoração foi distorcida e como podemos nos manter fiéis ao único Deus digno de adoração.",
-        conclusion: "A adoração verdadeira é dirigida somente a Deus, o Criador dos céus e da terra, e Ele nos chama a sair do erro e abraçar a verdade que liberta. Diante desse entendimento, decido adorar somente a Deus e confessar meus pecados diretamente a Ele, buscando viver em conformidade com Sua verdade.",
+
         questions: [
           {
             question: "Como o inimigo usou a Igreja Romana para jogar a verdade por terra?",
@@ -2868,12 +2644,13 @@ export const lessonsSeed = [
             correct_option: "B"
           }
         ],
+        conclusion: "A adoração verdadeira é dirigida somente a Deus, o Criador dos céus e da terra, e Ele nos chama a sair do erro e abraçar a verdade que liberta. Diante desse entendimento, decido adorar somente a Deus e confessar meus pecados diretamente a Ele, buscando viver em conformidade com Sua verdade.",
       },
       {
         number: 6,
         title: "Jesus e o Conflito",
         introduction: "Jesus é o único que pagou o preço pelos nossos pecados e se habilita como nosso mediador. Vamos explorar as Escrituras para entender essa verdade fundamental e como ela foi atacada ao longo da história.",
-        conclusion: "Jesus é nosso único mediador, advogado e salvador, intercedendo por nós diante de Deus Pai. Diante desse entendimento, decido aceitar Jesus como meu único mediador, entregando minha vida aos cuidados deste maravilhoso Salvador.",
+
         questions: [
           {
             question: "Quem somente pagou o preço pelos nossos pecados e se habilita assim para ser o mediador entre nós e Deus?",
@@ -2947,13 +2724,14 @@ export const lessonsSeed = [
             option_d: "Abraão",
             correct_option: "C"
           }
-        ]
+        ],
+        conclusion: "Jesus é nosso único mediador, advogado e salvador, intercedendo por nós diante de Deus Pai. Diante desse entendimento, decido aceitar Jesus como meu único mediador, entregando minha vida aos cuidados deste maravilhoso Salvador.",
       },
       {
         number: 7,
         title: "O Espírito Santo e o Conflito",
         introduction: "O Espírito Santo é uma presença constante na Bíblia, desde a criação até a consumação dos tempos. Ele habita em nós e nos guia em toda a verdade. Vamos explorar como o Espírito Santo opera e qual é o seu papel em nossas vidas.",
-        conclusion: "O Espírito Santo é essencial na vida cristã, guiando-nos à verdade e moldando nosso caráter segundo os princípios divinos. Diante desse entendimento, decido ser guiado pelo Espírito Santo para seguir a verdade e descobrir os lindos planos que Deus tem para minha vida.",
+
         questions: [
           {
             question: "O Espírito Santo está presente do início até o final da Bíblia?",
@@ -3010,12 +2788,13 @@ export const lessonsSeed = [
             correct_option: "A"
           }
         ],
+        conclusion: "O Espírito Santo é essencial na vida cristã, guiando-nos à verdade e moldando nosso caráter segundo os princípios divinos. Diante desse entendimento, decido ser guiado pelo Espírito Santo para seguir a verdade e descobrir os lindos planos que Deus tem para minha vida.",
       },
       {
         number: 8,
         title: "A Palavra de Deus e o Conflito",
         introduction: "A Bíblia, composta pelo Antigo e Novo Testamentos, é a revelação da vontade de Deus para a humanidade. Ela foi preservada ao longo dos séculos para ser nossa guia de fé e prática. Vamos explorar como Deus garantiu que Sua Palavra fosse preservada e a importância disso em nossas vidas.",
-        conclusion: "A Bíblia é nossa fonte confiável de verdade e orientação espiritual, preservada por Deus para revelar Seu plano de salvação através de Jesus Cristo. Diante desse entendimento, decido estudar a Bíblia com sinceridade e ouvir Deus falar ao meu coração por meio da Sua Palavra.",
+
         questions: [
           {
             question: "Que provisão Deus fez para que Sua Palavra pudesse ser preservada?",
@@ -3081,12 +2860,13 @@ export const lessonsSeed = [
             correct_option: "C"
           }
         ],
+        conclusion: "A Bíblia é nossa fonte confiável de verdade e orientação espiritual, preservada por Deus para revelar Seu plano de salvação através de Jesus Cristo. Diante desse entendimento, decido estudar a Bíblia com sinceridade e ouvir Deus falar ao meu coração por meio da Sua Palavra.",
       },
       {
         number: 9,
         title: "A Lei e o Conflito",
         introduction: "A lei de Deus, expressa nos Dez Mandamentos, é a revelação de Sua vontade para a humanidade. Ela é eterna e imutável, servindo como padrão de vida e conduta moral. Vamos explorar o papel da lei em nossa vida espiritual e sua relação com a fé.",
-        conclusion: "A obediência à lei de Deus é uma expressão do nosso amor por Ele e uma demonstração da nossa fé genuína em Jesus Cristo como Salvador. Diante desse entendimento, decido seguir os mandamentos de Deus e viver uma vida em conformidade com Sua vontade.",
+
         questions: [
           {
             question: "A quem devemos obedecer?",
@@ -3124,13 +2904,14 @@ export const lessonsSeed = [
             option_d: "Somente enquanto for conveniente",
             correct_option: "B"
           }
-        ]
+        ],
+        conclusion: "A obediência à lei de Deus é uma expressão do nosso amor por Ele e uma demonstração da nossa fé genuína em Jesus Cristo como Salvador. Diante desse entendimento, decido seguir os mandamentos de Deus e viver uma vida em conformidade com Sua vontade.",
       },
       {
         number: 10,
         title: "A Restauração da Verdade",
         introduction: "Jesus nos advertiu sobre a presença de falsos profetas e ensinamentos nos últimos dias. Ele também nos deu diretrizes claras para identificar a verdadeira igreja. Vamos explorar as características que distinguem a verdadeira igreja de Deus.",
-        conclusion: "A verdadeira igreja de Deus guarda Seus mandamentos e tem o testemunho de Jesus Cristo, mantendo-se fiel à Sua Palavra. Diante desse entendimento, decido pertencer à igreja verdadeira de Deus e seguir Seus mandamentos com fidelidade.",
+
         questions: [
           {
             question: "Qual é a primeira verdade que a igreja verdadeira deve ter?",
@@ -3187,12 +2968,13 @@ export const lessonsSeed = [
             correct_option: "B"
           }
         ],
+        conclusion: "A verdadeira igreja de Deus guarda Seus mandamentos e tem o testemunho de Jesus Cristo, mantendo-se fiel à Sua Palavra. Diante desse entendimento, decido pertencer à igreja verdadeira de Deus e seguir Seus mandamentos com fidelidade.",
       },
       {
         number: 11,
         title: "O Selo de Deus",
         introduction: "O selo de Deus é um símbolo de autenticidade e aprovação divina. Ele representa a obediência à vontade de Deus, especialmente na observância do sábado como um sinal entre Deus e Seu povo. Vamos explorar o significado do selo de Deus e a importância de guardar o sábado.",
-        conclusion: "O selo de Deus, representado pelo sábado, é um sinal da aliança entre Deus e Seu povo, demonstrando nossa lealdade ao Criador. Diante desse entendimento, decido receber o selo de Deus guardando fielmente o sábado como um sinal da minha aliança com Ele.",
+
         questions: [
           {
             question: "Até quando os anjos deveriam segurar os ventos?",
@@ -3248,13 +3030,14 @@ export const lessonsSeed = [
             option_d: "Para toda a humanidade",
             correct_option: "D"
           }
-        ]
+        ],
+        conclusion: "O selo de Deus, representado pelo sábado, é um sinal da aliança entre Deus e Seu povo, demonstrando nossa lealdade ao Criador. Diante desse entendimento, decido receber o selo de Deus guardando fielmente o sábado como um sinal da minha aliança com Ele.",
       },
       {
         number: 12,
         title: "O Santuário",
         introduction: "O sistema do santuário no Antigo Testamento era uma representação simbólica do plano de salvação. Ele apontava para Jesus Cristo como o sacrifício perfeito e nosso Sumo Sacerdote. Vamos explorar como esses símbolos se cumprem em Cristo e o que isso significa para nós hoje.",
-        conclusion: "Jesus é nosso Sumo Sacerdote no santuário celestial, intercedendo por nós e oferecendo Seu sacrifício perfeito para nossa salvação. Diante desse entendimento, decido aceitar Jesus como meu Sumo Sacerdote e receber o perdão dos meus pecados através do Seu sacrifício.",
+
         questions: [
           {
             question: "No Antigo Testamento, quando a pessoa pecava, como devia proceder para obter o perdão?",
@@ -3292,13 +3075,14 @@ export const lessonsSeed = [
             option_d: "Afastar-se de nossas fraquezas",
             correct_option: "C"
           }
-        ]
+        ],
+        conclusion: "Jesus é nosso Sumo Sacerdote no santuário celestial, intercedendo por nós e oferecendo Seu sacrifício perfeito para nossa salvação. Diante desse entendimento, decido aceitar Jesus como meu Sumo Sacerdote e receber o perdão dos meus pecados através do Seu sacrifício.",
       },
       {
         number: 13,
         title: "O Juízo Final",
         introduction: "O juízo final é um tema central na Bíblia, onde todos comparecerão diante do tribunal de Deus. Este estudo explora as diferentes fases do juízo e como devemos nos preparar para esse evento solene.",
-        conclusion: "O juízo final é inevitável, mas aqueles que permanecem fiéis em Cristo têm a certeza da vida eterna e da vitória sobre o pecado. Diante desse entendimento, decido me preparar para o juízo final permanecendo fiel em Cristo e vivendo segundo Sua vontade.",
+
         questions: [
           {
             question: "Que diz Jesus ao terminar a obra de purificação (juízo) do santuário celestial?",
@@ -3364,12 +3148,13 @@ export const lessonsSeed = [
             correct_option: "B"
           }
         ],
+        conclusion: "O juízo final é inevitável, mas aqueles que permanecem fiéis em Cristo têm a certeza da vida eterna e da vitória sobre o pecado. Diante desse entendimento, decido me preparar para o juízo final permanecendo fiel em Cristo e vivendo segundo Sua vontade.",
       },
       {
         number: 14,
         title: "Os Livros do Juízo",
         introduction: "A Bíblia menciona livros celestiais onde estão registradas as ações humanas. Esses registros serão usados no juízo final para determinar nosso destino eterno. Vamos explorar o que a Bíblia ensina sobre esses livros e como podemos ter certeza de que nossos nomes estão no Livro da Vida.",
-        conclusion: "Os livros celestiais registram nossas ações e determinam nosso destino eterno, mas aqueles que permanecem fiéis terão seus nomes mantidos no Livro da Vida e receberão a salvação. Diante desse entendimento, decido ter meu nome escrito no Livro da Vida aceitando Jesus como meu Salvador e vivendo segundo Sua vontade.",
+
         questions: [
           {
             question: "Qual o nome do livro mencionado em Apocalipse?",
@@ -3435,6 +3220,7 @@ export const lessonsSeed = [
             correct_option: "A"
           }
         ],
+        conclusion: "Os livros celestiais registram nossas ações e determinam nosso destino eterno, mas aqueles que permanecem fiéis terão seus nomes mantidos no Livro da Vida e receberão a salvação. Diante desse entendimento, decido ter meu nome escrito no Livro da Vida aceitando Jesus como meu Salvador e vivendo segundo Sua vontade.",
       },
       {
         number: 15,
@@ -3484,7 +3270,7 @@ export const lessonsSeed = [
         number: 16,
         title: "O Segredo da Morte",
         introduction: "A morte é um mistério que intriga a humanidade há séculos. A Bíblia nos oferece clareza sobre o que realmente acontece quando uma pessoa morre e nos dá esperança na promessa de ressurreição para aqueles que estão em Cristo.",
-        conclusion: "A Bíblia nos ensina que devemos buscar orientação somente em Deus e Sua Palavra, rejeitando práticas de consulta aos mortos, pois nossa esperança está na ressurreição prometida por Cristo. Diante desse entendimento, decido colocar minha confiança em Deus e Sua promessa de vida eterna, rejeitando práticas enganosas.",
+
         questions: [
           {
             question: "Deus aprova consultar os mortos?",
@@ -3523,12 +3309,13 @@ export const lessonsSeed = [
             correct_option: "B"
           }
         ],
+        conclusion: "A Bíblia nos ensina que devemos buscar orientação somente em Deus e Sua Palavra, rejeitando práticas de consulta aos mortos, pois nossa esperança está na ressurreição prometida por Cristo. Diante desse entendimento, decido colocar minha confiança em Deus e Sua promessa de vida eterna, rejeitando práticas enganosas.",
       },
       {
         number: 17,
         title: "Decisão",
         introduction: "O batismo é um passo essencial na jornada cristã, simbolizando o novo nascimento e o compromisso de seguir a Cristo. Vamos explorar as condições bíblicas para a salvação e como o batismo se encaixa nesse processo.",
-        conclusion: "O batismo é um passo vital para aqueles que desejam seguir a Cristo, simbolizando arrependimento, perdão dos pecados e união com a igreja de Deus. Diante desse entendimento, decido ser batizado seguindo o exemplo de Jesus para começar uma nova vida em Cristo.",
+
         questions: [
           {
             question: "Qual é a condição bíblica para ser salvo?",
@@ -3585,12 +3372,13 @@ export const lessonsSeed = [
             correct_option: "B"
           }
         ],
+        conclusion: "O batismo é um passo vital para aqueles que desejam seguir a Cristo, simbolizando arrependimento, perdão dos pecados e união com a igreja de Deus. Diante desse entendimento, decido ser batizado seguindo o exemplo de Jesus para começar uma nova vida em Cristo.",
       },
       {
         number: 18,
         title: "Fim do Grande Conflito",
         introduction: "A segunda vinda de Cristo é uma das verdades mais gloriosas reveladas na Bíblia. Este evento culminante marcará o fim do grande conflito entre o bem e o mal, trazendo redenção completa aos fiéis. Vamos explorar as promessas e descrições bíblicas sobre este grande acontecimento.",
-        conclusion: "A segunda vinda de Cristo é nossa bendita esperança, prometendo redenção completa e vitória final sobre o pecado e a morte. Diante desse entendimento, decido me preparar para encontrar Jesus em Sua segunda vinda, vivendo fielmente ao Seu lado.",
+
         questions: [
           {
             question: "O que sabia Jó sobre o Seu redentor?",
@@ -3664,22 +3452,24 @@ export const lessonsSeed = [
             option_d: "\"Não venha ainda\"",
             correct_option: "B"
           }
-        ]
+        ],
+        conclusion: "A segunda vinda de Cristo é nossa bendita esperança, prometendo redenção completa e vitória final sobre o pecado e a morte. Diante desse entendimento, decido me preparar para encontrar Jesus em Sua segunda vinda, vivendo fielmente ao Seu lado.",
       }
     ]
   },
-  
+
 
 
   {
     category: "Missão",
     guide: "Ministério e Missão",
+    description: "Descubra como viver e compartilhar sua fé de maneira impactante, fortalecendo seu compromisso com o serviço cristão.",
     lessons: [
       {
         number: 1,
         title: "Um Ministério para Todos",
         introduction: "O conceito de ministério não se limita apenas aos líderes religiosos ou pastores. Na Bíblia, vemos que todos os crentes são chamados a servir e contribuir para o corpo de Cristo. Este estudo explora como cada um de nós pode encontrar seu lugar no ministério, usando nossos dons e talentos para glorificar a Deus e servir aos outros.",
-        conclusion: "O ministério é um chamado universal para todos os crentes. Cada um tem um papel único e importante no corpo de Cristo, contribuindo com seus dons e talentos para a edificação da igreja e o avanço do Reino. Quando cada membro participa ativamente, a igreja se torna mais forte e eficaz em sua missão. Diante desse entendimento sobre o valor do ministério, decido descobrir e usar os dons que Deus me deu para servir aos outros e glorificar Seu nome.",
+
         questions: [
           {
             question: "Qual é o chamado geral para todos os crentes segundo Pedro?",
@@ -3771,13 +3561,14 @@ export const lessonsSeed = [
             option_d: "Frutificação não é necessária no ministério",
             correct_option: "C"
           }
-        ]
+        ],
+        conclusion: "O ministério é um chamado universal para todos os crentes. Cada um tem um papel único e importante no corpo de Cristo, contribuindo com seus dons e talentos para a edificação da igreja e o avanço do Reino. Quando cada membro participa ativamente, a igreja se torna mais forte e eficaz em sua missão. Diante desse entendimento sobre o valor do ministério, decido descobrir e usar os dons que Deus me deu para servir aos outros e glorificar Seu nome.",
       },
       {
         number: 2,
         title: "A Base Bíblica da Missão",
         introduction: "A missão é um componente central da fé cristã, fundamentada nas Escrituras. Desde o Antigo Testamento até o Novo Testamento, vemos Deus chamando Seu povo para ser uma luz para as nações e compartilhar Seu amor e salvação com o mundo. Este estudo explora as bases bíblicas que sustentam a missão cristã, incentivando-nos a participar ativamente desse chamado divino.",
-        conclusion: "A Bíblia claramente nos chama para sermos participantes ativos na missão divina, compartilhando o amor e a mensagem de salvação com todos ao nosso redor. Como seguidores de Cristo, somos chamados para ser luzes no mundo, refletindo Seu caráter e proclamando Sua verdade. Diante do chamado bíblico claro para participar da missão divina, decido me comprometer em ser uma luz no mundo, refletindo o caráter de Cristo e proclamando Sua verdade.",
+
         questions: [
           {
             question: "Qual foi a ordem dada por Deus a Abraão em relação às nações?",
@@ -3869,13 +3660,14 @@ export const lessonsSeed = [
             option_d: "Apenas os apóstolos serão salvos",
             correct_option: "A"
           }
-        ]
+        ],
+        conclusion: "A Bíblia claramente nos chama para sermos participantes ativos na missão divina, compartilhando o amor e a mensagem de salvação com todos ao nosso redor. Como seguidores de Cristo, somos chamados para ser luzes no mundo, refletindo Seu caráter e proclamando Sua verdade. Diante do chamado bíblico claro para participar da missão divina, decido me comprometer em ser uma luz no mundo, refletindo o caráter de Cristo e proclamando Sua verdade.",
       },
       {
         number: 3,
         title: "O Papel de Jesus na Missão",
         introduction: "Jesus Cristo é o centro da missão cristã. Sua vida, ensinamentos e sacrifício proporcionam o modelo perfeito para o trabalho missionário. Ele veio ao mundo para buscar e salvar o perdido, e nos convida a seguir Seus passos, compartilhando as boas novas do evangelho com todos. Este estudo examina como Jesus exemplificou a missão e nos instrui a continuar essa obra.",
-        conclusion: "Jesus nos mostrou através de Sua vida e ministério como devemos viver e servir aos outros. Ele nos chama para sermos Seus representantes no mundo, compartilhando Seu amor e mensagem de salvação com todos. Diante do exemplo perfeito de Jesus em Sua missão, decido, hoje, seguir Seus passos e compartilhar Seu amor com aqueles ao meu redor. 📖🙏",
+
         questions: [
           {
             question: "Qual foi a principal missão de Jesus ao vir à Terra?",
@@ -3967,13 +3759,14 @@ export const lessonsSeed = [
             option_d: "Evitar qualquer forma de sacrifício pessoal",
             correct_option: "C"
           }
-        ]
-      },   
+        ],
+        conclusion: "Jesus nos mostrou através de Sua vida e ministério como devemos viver e servir aos outros. Ele nos chama para sermos Seus representantes no mundo, compartilhando Seu amor e mensagem de salvação com todos. Diante do exemplo perfeito de Jesus em Sua missão, decido, hoje, seguir Seus passos e compartilhar Seu amor com aqueles ao meu redor. 📖🙏",
+      },
       {
         number: 4,
         title: "Missão e o Espírito Santo",
         introduction: "O Espírito Santo desempenha um papel vital na missão cristã. Desde o Pentecostes, Ele tem sido a força motriz por trás do avanço do evangelho no mundo. O Espírito Santo não apenas capacita os crentes para testemunhar, mas também os guia, conforta e transforma. Este estudo examina como o Espírito Santo atua na missão, fortalecendo-nos para cumprir o chamado de Deus.",
-        conclusion: "O Espírito Santo é essencial na missão cristã, guiando, capacitando e transformando vidas para que possamos cumprir nosso chamado divino com eficácia e amor. Ele nos oferece poder, sabedoria e coragem para sermos testemunhas fiéis de Cristo em um mundo que tanto necessita de esperança e salvação. Diante dessa realidade, decido permitir que o Espírito Santo guie minha vida e me capacite a participar ativamente da missão de Deus.",
+
         questions: [
           {
             question: "O que aconteceu com os discípulos quando o Espírito Santo desceu sobre eles no Pentecostes?",
@@ -4065,13 +3858,14 @@ export const lessonsSeed = [
             option_d: "Depender apenas da própria força",
             correct_option: "A"
           }
-        ]
+        ],
+        conclusion: "O Espírito Santo é essencial na missão cristã, guiando, capacitando e transformando vidas para que possamos cumprir nosso chamado divino com eficácia e amor. Ele nos oferece poder, sabedoria e coragem para sermos testemunhas fiéis de Cristo em um mundo que tanto necessita de esperança e salvação. Diante dessa realidade, decido permitir que o Espírito Santo guie minha vida e me capacite a participar ativamente da missão de Deus.",
       },
       {
         number: 5,
         title: "Desafios Contemporâneos da Missão",
         introduction: "A missão cristã enfrenta muitos desafios no mundo contemporâneo. Desde barreiras culturais e linguísticas até perseguições e secularismo crescente, os crentes são chamados a perseverar e encontrar maneiras inovadoras de compartilhar o evangelho. Este estudo examina alguns desses desafios e como a Bíblia nos instrui a enfrentá-los com coragem e sabedoria.",
-        conclusion: "Os desafios contemporâneos da missão são muitos, mas a Bíblia nos oferece orientação e esperança para enfrentá-los. Com coragem, unidade, oração e uma fé inabalável, podemos superar barreiras e compartilhar o amor de Cristo com um mundo necessitado. A missão continua a ser um chamado vital para todos os cristãos, independentemente das dificuldades que possam surgir. Diante dessa realidade, decido enfrentar os desafios contemporâneos da missão com fé e determinação, permitindo que Deus me use para fazer a diferença no mundo.",
+
         questions: [
           {
             question: "Qual é um dos maiores desafios para a missão em países secularizados?",
@@ -4163,13 +3957,14 @@ export const lessonsSeed = [
             option_d: "Deixar passar oportunidades difíceis",
             correct_option: "A"
           }
-        ]
+        ],
+        conclusion: "Os desafios contemporâneos da missão são muitos, mas a Bíblia nos oferece orientação e esperança para enfrentá-los. Com coragem, unidade, oração e uma fé inabalável, podemos superar barreiras e compartilhar o amor de Cristo com um mundo necessitado. A missão continua a ser um chamado vital para todos os cristãos, independentemente das dificuldades que possam surgir. Diante dessa realidade, decido enfrentar os desafios contemporâneos da missão com fé e determinação, permitindo que Deus me use para fazer a diferença no mundo.",
       },
       {
         number: 6,
         title: "Missão Urbana",
         introduction: "A missão urbana se concentra em compartilhar o evangelho nas cidades, que são frequentemente caracterizadas por sua diversidade cultural, desafios sociais e ritmo acelerado. Jesus ministrou em cidades e vilarejos, mostrando a importância de alcançar todos os segmentos da sociedade. Este estudo explora como podemos seguir Seu exemplo e enfrentar os desafios únicos da missão urbana.",
-        conclusion: "A missão urbana apresenta desafios únicos, mas também oportunidades incríveis para impactar vidas com o amor de Cristo. Ao seguirmos o exemplo bíblico, podemos ser agentes de transformação nas cidades, refletindo a luz de Deus em meio à diversidade e complexidade urbanas. As cidades são lugares onde a necessidade do evangelho é grande, e nossa disposição para servir pode fazer uma diferença significativa. Diante dessa realidade, decido me envolver na missão urbana, permitindo que Deus me use para ser uma luz nas cidades e trazer esperança e transformação aos que vivem nelas.",
+
         questions: [
           {
             question: "Qual foi a atitude de Jesus ao ver as multidões nas cidades?",
@@ -4261,13 +4056,14 @@ export const lessonsSeed = [
             option_d: "Compartilhá-los somente com amigos próximos",
             correct_option: "A"
           }
-        ]
+        ],
+        conclusion: "A missão urbana apresenta desafios únicos, mas também oportunidades incríveis para impactar vidas com o amor de Cristo. Ao seguirmos o exemplo bíblico, podemos ser agentes de transformação nas cidades, refletindo a luz de Deus em meio à diversidade e complexidade urbanas. As cidades são lugares onde a necessidade do evangelho é grande, e nossa disposição para servir pode fazer uma diferença significativa. Diante dessa realidade, decido me envolver na missão urbana, permitindo que Deus me use para ser uma luz nas cidades e trazer esperança e transformação aos que vivem nelas.",
       },
       {
         number: 7,
         title: "Missão e Serviço Comunitário",
         introduction: "A missão cristã não se limita apenas à pregação do evangelho, mas inclui também o serviço amoroso às comunidades. Jesus exemplificou isso em Seu ministério, mostrando que atender às necessidades físicas e espirituais das pessoas é uma expressão tangível do amor de Deus. Este estudo explora como o serviço comunitário é uma parte integral da missão cristã, refletindo o caráter de Cristo ao mundo.",
-        conclusion: "O serviço comunitário é uma expressão prática do amor cristão e um testemunho poderoso da fé em ação. Ao servirmos aos outros, refletimos o caráter de Cristo e participamos ativamente da missão divina de restaurar e transformar vidas. Este chamado ao serviço não é apenas para alguns, mas para todos os que seguem a Cristo. Diante dessa realidade, decido me comprometer com o serviço comunitário, permitindo que Deus use minhas mãos e coração para fazer a diferença na vida dos outros.",
+
         questions: [
           {
             question: "Como Jesus descreveu a importância de servir aos outros?",
@@ -4359,13 +4155,14 @@ export const lessonsSeed = [
             option_d: "Deram apenas quando tinham abundância",
             correct_option: "B"
           }
-        ]
+        ],
+        conclusion: "O serviço comunitário é uma expressão prática do amor cristão e um testemunho poderoso da fé em ação. Ao servirmos aos outros, refletimos o caráter de Cristo e participamos ativamente da missão divina de restaurar e transformar vidas. Este chamado ao serviço não é apenas para alguns, mas para todos os que seguem a Cristo. Diante dessa realidade, decido me comprometer com o serviço comunitário, permitindo que Deus use minhas mãos e coração para fazer a diferença na vida dos outros.",
       },
       {
         number: 8,
         title: "O Futuro das Missões",
         introduction: "O futuro das missões cristãs é moldado por tendências globais, avanços tecnológicos e mudanças sociais. Com o mundo em constante transformação, a missão de compartilhar o evangelho continua relevante e urgente. Este estudo explora como podemos nos preparar para os desafios futuros e aproveitar as novas oportunidades para cumprir a Grande Comissão.",
-        conclusion: "O futuro das missões é promissor e desafiador. Com a orientação do Espírito Santo, o uso sábio da tecnologia e um compromisso renovado com a Grande Comissão, podemos impactar o mundo de maneiras novas e significativas. Nossa missão é ser luz em um mundo que está em constante mudança, mantendo nosso foco em Cristo e na proclamação do evangelho. Diante dessa visão, decido me preparar e me comprometer com a missão futura, permitindo que Deus me use para alcançar aqueles que ainda não ouviram Sua mensagem.",
+
         questions: [
           {
             question: "Como Jesus descreveu a extensão da missão no futuro?",
@@ -4457,7 +4254,8 @@ export const lessonsSeed = [
             option_d: "Esquecendo-me das coisas que ficaram para trás e avançando para as que estão adiante, prossigo para o alvo pelo prêmio da soberana vocação de Deus em Cristo Jesus",
             correct_option: "D"
           }
-        ]
+        ],
+        conclusion: "O futuro das missões é promissor e desafiador. Com a orientação do Espírito Santo, o uso sábio da tecnologia e um compromisso renovado com a Grande Comissão, podemos impactar o mundo de maneiras novas e significativas. Nossa missão é ser luz em um mundo que está em constante mudança, mantendo nosso foco em Cristo e na proclamação do evangelho. Diante dessa visão, decido me preparar e me comprometer com a missão futura, permitindo que Deus me use para alcançar aqueles que ainda não ouviram Sua mensagem.",
       }
     ]
   },
@@ -4465,172 +4263,176 @@ export const lessonsSeed = [
 
   {
     category: "Família",
-      guide: "Vivendo Os Frutos do Amor de Deus - SF 2023",
-      lessons: [
-        {
-          number: 1,
-          title: "Vivendo os Frutos do Amor",
-          introduction: "Deus, em Sua infinita bondade, nos concede presentes maravilhosos para nossa felicidade e saúde. Entre eles está o fruto do Espírito Santo, que fortalece nossa vida espiritual. Assim como as frutas são essenciais para a saúde física, o fruto do Espírito é vital para nossa saúde espiritual. Vamos explorar como podemos viver e manifestar esses frutos em nossa vida diária.",
-          conclusion: "Os frutos do Espírito são manifestações do caráter de Cristo em nós, possibilitados pela ação transformadora do Espírito Santo. Diante dessa verdade, decido aceitar Jesus Cristo como Senhor e Salvador da minha vida e permitir que o Espírito Santo atue em mim, capacitando-me a viver uma vida cheia dos Seus frutos.",
-          questions: [
-            {
-              question: "Qual é a condição bíblica para produzir o fruto do Espírito?",
-              verse: "Gálatas 5:16",
-              option_a: "Viver pelo Espírito",
-              option_b: "Seguir tradições religiosas",
-              option_c: "Realizar boas obras",
-              option_d: "Participar de rituais sagrados",
-              correct_option: "A"
-            },
-            {
-              question: "Como o amor de Deus é revelado em nossas vidas?",
-              verse: "João 3:16; Colossenses 3:14",
-              option_a: "Através de riquezas terrenas",
-              option_b: "Pelo sacrifício de Jesus e como elo perfeito",
-              option_c: "Apenas por bênçãos materiais",
-              option_d: "Por meio de milagres diários",
-              correct_option: "B"
-            },
-            {
-              question: "O que Paulo diz sobre a luta entre carne e Espírito?",
-              verse: "Romanos 7:14-20",
-              option_a: "Não há conflito",
-              option_b: "A carne deseja o que é contrário ao Espírito",
-              option_c: "O Espírito não tem influência",
-              option_d: "A carne sempre vence",
-              correct_option: "B"
-            },
-            {
-              question: "Quais são os frutos do Espírito mencionados por Paulo?",
-              verse: "Gálatas 5:22-23",
-              option_a: "Riqueza e fama",
-              option_b: "Sabedoria humana",
-              option_c: "Poder e autoridade",
-              option_d: "Amor, alegria, paz, paciência, bondade, fidelidade, mansidão, domínio próprio",
-              correct_option: "D"
-            },
-            {
-              question: "Como podemos alcançar os frutos do Espírito em nossa vida?",
-              verse: "Colossenses 3:12-14",
-              option_a: "Através de esforço humano",
-              option_b: "Revistindo-se de compaixão, bondade e amor",
-              option_c: "Apenas por meio de educação formal",
-              option_d: "Por meio de práticas religiosas externas",
-              correct_option: "B"
-            }
-          ]
-        },
-        {
-          number: 2,
-          title: "Amor",
-          introduction: "Em Gálatas 5:22-23, o apóstolo Paulo nos apresenta o fruto do Espírito, que inclui o amor como sua primeira faceta. O amor é essencial em nossos relacionamentos e reflete a presença do Espírito Santo em nossas vidas. Hoje, vamos explorar como podemos viver esse amor em nossas interações diárias.",
-          conclusion: "O amor é a base de todos os relacionamentos saudáveis e um testemunho poderoso da presença de Cristo em nossas vidas. Diante dessa verdade, decido aceitar o desafio de cultivar e viver o amor verdadeiro, permitindo que o Espírito Santo transforme meus relacionamentos para refletir o caráter de Cristo.",
-          questions: [
-            {
-              question: "Qual é a primeira faceta do fruto do Espírito mencionada em Gálatas 5:22?",
-              verse: "Gálatas 5:22",
-              option_a: "Alegria",
-              option_b: "Paz",
-              option_c: "Amor",
-              option_d: "Paciência",
-              correct_option: "C"
-            },
-            {
-              question: "Como Paulo descreve o amor em 1 Coríntios 13?",
-              verse: "1 Coríntios 13:4-8",
-              option_a: "Orgulhoso e egoísta",
-              option_b: "Arrogante e vaidoso",
-              option_c: "Rancoroso e impaciente",
-              option_d: "Paciente e bondoso, não invejoso",
-              correct_option: "D"
-            },
-            {
-              question: "Qual é a relação entre amor e liberdade segundo Gálatas 5:13?",
-              verse: "Gálatas 5:13",
-              option_a: "Amor restringe a liberdade",
-              option_b: "Amor serve aos outros através da liberdade",
-              option_c: "Amor ignora a liberdade",
-              option_d: "Amor é independente da liberdade",
-              correct_option: "B"
-            },
-            {
-              question: "O que Apocalipse 12:7-9 nos ensina sobre o conflito entre o bem e o mal?",
-              verse: "Apocalipse 12:7-9",
-              option_a: "Houve uma batalha no céu entre Miguel e seus anjos contra o dragão",
-              option_b: "Não há conflito real",
-              option_c: "O mal sempre vence",
-              option_d: "O bem nunca prevalece",
-              correct_option: "A"
-            },
-            {
-              question: "Como podemos demonstrar amor verdadeiro em nossos relacionamentos?",
-              verse: "João 13:35",
-              option_a: "Sendo indiferentes",
-              option_b: "Amando uns aos outros como Jesus nos amou",
-              option_c: "Ignorando as necessidades dos outros",
-              option_d: "Focando apenas em nós mesmos",
-              correct_option: "B"
-            }
-          ]
-        },
-        {
-          number: 3,
-          title: "Alegria",
-          introduction: "O fruto do Espírito inclui a alegria, uma qualidade que traz luz e vida aos nossos dias. Assim como a banana é um símbolo de energia e felicidade, a alegria que vem do Espírito Santo nos sustenta e transforma. Vamos explorar como podemos cultivar essa alegria em nossa vida diária.",
-          conclusion: "A verdadeira alegria vem de um relacionamento profundo com Deus, sustentado pelo Espírito Santo, e se manifesta em nossas atitudes diárias. Diante dessa realidade, decido permitir que o Espírito Santo encha meu coração com alegria genuína, transformando meu lar e meus relacionamentos com essa luz divina.",
-          questions: [
-            {
-              question: "Qual é o fruto do Espírito mencionado em Gálatas 5:22 que simboliza felicidade?",
-              verse: "Gálatas 5:22",
-              option_a: "Paciência",
-              option_b: "Alegria",
-              option_c: "Mansidão",
-              option_d: "Domínio próprio",
-              correct_option: "B"
-            },
-            {
-              question: "O que Davi declara sobre o Senhor em Salmo 28:7?",
-              verse: "Salmo 28:7",
-              option_a: "Que Deus é sua força e escudo, trazendo-lhe alegria",
-              option_b: "Que Deus é distante",
-              option_c: "Que Deus não ouve suas orações",
-              option_d: "Que Deus é imprevisível",
-              correct_option: "A"
-            },
-            {
-              question: "Como o salmista expressa sua confiança em Deus em Salmo 16:8-9?",
-              verse: "Salmo 16:8-9",
-              option_a: "Com medo constante",
-              option_b: "Com confiança, resultando em alegria",
-              option_c: "Com dúvida e incerteza",
-              option_d: "Com desespero",
-              correct_option: "B"
-            },
-            {
-              question: "Qual é o propósito da alegria de Jesus segundo João 15:11?",
-              verse: "João 15:11",
-              option_a: "Para ser temporária",
-              option_b: "Para ser apenas uma emoção passageira",
-              option_c: "Para ser esquecida rapidamente",
-              option_d: "Para que nossa alegria seja completa",
-              correct_option: "D"
-            },
-            {
-              question: "Como Provérbios 17:22 descreve o efeito de um coração alegre?",
-              verse: "Provérbios 17:22",
-              option_a: "Como algo sem importância",
-              option_b: "Como uma fonte de tristeza",
-              option_c: "Como um bom remédio",
-              option_d: "Como uma distração",
-              correct_option: "C"
-            }
-          ]
-        },
-        {
-          number: 4,
+    guide: "Vivendo Os Frutos do Amor de Deus - Semana da Família 2023",
+    description: "Fortaleça seus laços familiares explorando os princípios divinos de amor e união.",
+    lessons: [
+      {
+        number: 1,
+        title: "Vivendo os Frutos do Amor",
+        introduction: "Deus, em Sua infinita bondade, nos concede presentes maravilhosos para nossa felicidade e saúde. Entre eles está o fruto do Espírito Santo, que fortalece nossa vida espiritual. Assim como as frutas são essenciais para a saúde física, o fruto do Espírito é vital para nossa saúde espiritual. Vamos explorar como podemos viver e manifestar esses frutos em nossa vida diária.",
+
+        questions: [
+          {
+            question: "Qual é a condição bíblica para produzir o fruto do Espírito?",
+            verse: "Gálatas 5:16",
+            option_a: "Viver pelo Espírito",
+            option_b: "Seguir tradições religiosas",
+            option_c: "Realizar boas obras",
+            option_d: "Participar de rituais sagrados",
+            correct_option: "A"
+          },
+          {
+            question: "Como o amor de Deus é revelado em nossas vidas?",
+            verse: "João 3:16; Colossenses 3:14",
+            option_a: "Através de riquezas terrenas",
+            option_b: "Pelo sacrifício de Jesus e como elo perfeito",
+            option_c: "Apenas por bênçãos materiais",
+            option_d: "Por meio de milagres diários",
+            correct_option: "B"
+          },
+          {
+            question: "O que Paulo diz sobre a luta entre carne e Espírito?",
+            verse: "Romanos 7:14-20",
+            option_a: "Não há conflito",
+            option_b: "A carne deseja o que é contrário ao Espírito",
+            option_c: "O Espírito não tem influência",
+            option_d: "A carne sempre vence",
+            correct_option: "B"
+          },
+          {
+            question: "Quais são os frutos do Espírito mencionados por Paulo?",
+            verse: "Gálatas 5:22-23",
+            option_a: "Riqueza e fama",
+            option_b: "Sabedoria humana",
+            option_c: "Poder e autoridade",
+            option_d: "Amor, alegria, paz, paciência, bondade, fidelidade, mansidão, domínio próprio",
+            correct_option: "D"
+          },
+          {
+            question: "Como podemos alcançar os frutos do Espírito em nossa vida?",
+            verse: "Colossenses 3:12-14",
+            option_a: "Através de esforço humano",
+            option_b: "Revistindo-se de compaixão, bondade e amor",
+            option_c: "Apenas por meio de educação formal",
+            option_d: "Por meio de práticas religiosas externas",
+            correct_option: "B"
+          }
+        ],
+        conclusion: "Os frutos do Espírito são manifestações do caráter de Cristo em nós, possibilitados pela ação transformadora do Espírito Santo. Diante dessa verdade, decido aceitar Jesus Cristo como Senhor e Salvador da minha vida e permitir que o Espírito Santo atue em mim, capacitando-me a viver uma vida cheia dos Seus frutos.",
+      },
+      {
+        number: 2,
+        title: "Amor",
+        introduction: "Em Gálatas 5:22-23, o apóstolo Paulo nos apresenta o fruto do Espírito, que inclui o amor como sua primeira faceta. O amor é essencial em nossos relacionamentos e reflete a presença do Espírito Santo em nossas vidas. Hoje, vamos explorar como podemos viver esse amor em nossas interações diárias.",
+
+        questions: [
+          {
+            question: "Qual é a primeira faceta do fruto do Espírito mencionada em Gálatas 5:22?",
+            verse: "Gálatas 5:22",
+            option_a: "Alegria",
+            option_b: "Paz",
+            option_c: "Amor",
+            option_d: "Paciência",
+            correct_option: "C"
+          },
+          {
+            question: "Como Paulo descreve o amor em 1 Coríntios 13?",
+            verse: "1 Coríntios 13:4-8",
+            option_a: "Orgulhoso e egoísta",
+            option_b: "Arrogante e vaidoso",
+            option_c: "Rancoroso e impaciente",
+            option_d: "Paciente e bondoso, não invejoso",
+            correct_option: "D"
+          },
+          {
+            question: "Qual é a relação entre amor e liberdade segundo Gálatas 5:13?",
+            verse: "Gálatas 5:13",
+            option_a: "Amor restringe a liberdade",
+            option_b: "Amor serve aos outros através da liberdade",
+            option_c: "Amor ignora a liberdade",
+            option_d: "Amor é independente da liberdade",
+            correct_option: "B"
+          },
+          {
+            question: "O que Apocalipse 12:7-9 nos ensina sobre o conflito entre o bem e o mal?",
+            verse: "Apocalipse 12:7-9",
+            option_a: "Houve uma batalha no céu entre Miguel e seus anjos contra o dragão",
+            option_b: "Não há conflito real",
+            option_c: "O mal sempre vence",
+            option_d: "O bem nunca prevalece",
+            correct_option: "A"
+          },
+          {
+            question: "Como podemos demonstrar amor verdadeiro em nossos relacionamentos?",
+            verse: "João 13:35",
+            option_a: "Sendo indiferentes",
+            option_b: "Amando uns aos outros como Jesus nos amou",
+            option_c: "Ignorando as necessidades dos outros",
+            option_d: "Focando apenas em nós mesmos",
+            correct_option: "B"
+          }
+        ],
+        conclusion: "O amor é a base de todos os relacionamentos saudáveis e um testemunho poderoso da presença de Cristo em nossas vidas. Diante dessa verdade, decido aceitar o desafio de cultivar e viver o amor verdadeiro, permitindo que o Espírito Santo transforme meus relacionamentos para refletir o caráter de Cristo.",
+      },
+      {
+        number: 3,
+        title: "Alegria",
+        introduction: "O fruto do Espírito inclui a alegria, uma qualidade que traz luz e vida aos nossos dias. Assim como a banana é um símbolo de energia e felicidade, a alegria que vem do Espírito Santo nos sustenta e transforma. Vamos explorar como podemos cultivar essa alegria em nossa vida diária.",
+
+        questions: [
+          {
+            question: "Qual é o fruto do Espírito mencionado em Gálatas 5:22 que simboliza felicidade?",
+            verse: "Gálatas 5:22",
+            option_a: "Paciência",
+            option_b: "Alegria",
+            option_c: "Mansidão",
+            option_d: "Domínio próprio",
+            correct_option: "B"
+          },
+          {
+            question: "O que Davi declara sobre o Senhor em Salmo 28:7?",
+            verse: "Salmo 28:7",
+            option_a: "Que Deus é sua força e escudo, trazendo-lhe alegria",
+            option_b: "Que Deus é distante",
+            option_c: "Que Deus não ouve suas orações",
+            option_d: "Que Deus é imprevisível",
+            correct_option: "A"
+          },
+          {
+            question: "Como o salmista expressa sua confiança em Deus em Salmo 16:8-9?",
+            verse: "Salmo 16:8-9",
+            option_a: "Com medo constante",
+            option_b: "Com confiança, resultando em alegria",
+            option_c: "Com dúvida e incerteza",
+            option_d: "Com desespero",
+            correct_option: "B"
+          },
+          {
+            question: "Qual é o propósito da alegria de Jesus segundo João 15:11?",
+            verse: "João 15:11",
+            option_a: "Para ser temporária",
+            option_b: "Para ser apenas uma emoção passageira",
+            option_c: "Para ser esquecida rapidamente",
+            option_d: "Para que nossa alegria seja completa",
+            correct_option: "D"
+          },
+          {
+            question: "Como Provérbios 17:22 descreve o efeito de um coração alegre?",
+            verse: "Provérbios 17:22",
+            option_a: "Como algo sem importância",
+            option_b: "Como uma fonte de tristeza",
+            option_c: "Como um bom remédio",
+            option_d: "Como uma distração",
+            correct_option: "C"
+          }
+        ],
+        conclusion: "A verdadeira alegria vem de um relacionamento profundo com Deus, sustentado pelo Espírito Santo, e se manifesta em nossas atitudes diárias. Diante dessa realidade, decido permitir que o Espírito Santo encha meu coração com alegria genuína, transformando meu lar e meus relacionamentos com essa luz divina.",
+      },
+      {
+        number: 4,
         title: "Paz",
         introduction: "O fruto do Espírito inclui a paz, um dos presentes mais preciosos que podemos receber de Deus. Em um mundo repleto de conflitos e ansiedade, a verdadeira paz é alcançada através da presença do Espírito Santo em nossas vidas. Vamos explorar como podemos cultivar essa paz em nossos relacionamentos e em nosso coração.",
-        conclusion: "A paz verdadeira vem de uma vida guiada pelo Espírito Santo, onde buscamos ser pacificadores e viver em harmonia com Deus e com os outros. Diante desse chamado, decido aceitar o convite de Deus para ser um pacificador em um mundo tumultuado, buscando a paz que só Ele pode dar através do Espírito Santo.",
+
         questions: [
           {
             question: "O que Romanos 12:18-19 nos instrui sobre viver em paz?",
@@ -4678,12 +4480,13 @@ export const lessonsSeed = [
             correct_option: "B"
           }
         ],
+        conclusion: "A paz verdadeira vem de uma vida guiada pelo Espírito Santo, onde buscamos ser pacificadores e viver em harmonia com Deus e com os outros. Diante desse chamado, decido aceitar o convite de Deus para ser um pacificador em um mundo tumultuado, buscando a paz que só Ele pode dar através do Espírito Santo.",
       },
       {
         number: 5,
         title: "Paciência",
         introduction: "O fruto do Espírito inclui a paciência, uma virtude essencial para mantermos relacionamentos saudáveis e um coração tranquilo. Assim como o abacate, que requer tempo para amadurecer, a paciência precisa ser cultivada e desenvolvida em nossa vida diária. Vamos explorar como podemos nutrir essa qualidade espiritual.",
-        conclusion: "A paciência é um fruto do Espírito que nos ajuda a enfrentar as dificuldades com serenidade e confiança em Deus, fortalecendo nossos relacionamentos e nossa fé. Diante dessa necessidade, decido pedir em oração para que o Espírito de Deus me ajude a desenvolver paciência em todas as circunstâncias, especialmente nas respostas aos membros da minha família e outras pessoas.",
+
         questions: [
           {
             question: "Como Paulo nos instrui a viver em Romanos 12:12?",
@@ -4731,12 +4534,13 @@ export const lessonsSeed = [
             correct_option: "D"
           }
         ],
+        conclusion: "A paciência é um fruto do Espírito que nos ajuda a enfrentar as dificuldades com serenidade e confiança em Deus, fortalecendo nossos relacionamentos e nossa fé. Diante dessa necessidade, decido pedir em oração para que o Espírito de Deus me ajude a desenvolver paciência em todas as circunstâncias, especialmente nas respostas aos membros da minha família e outras pessoas.",
       },
       {
         number: 6,
         title: "Amabilidade e Bondade",
         introduction: "O fruto do Espírito inclui a amabilidade e a bondade, qualidades que refletem o caráter de Cristo em nós. Assim como a laranja é nutritiva e refrescante, esses frutos espirituais nutrem nossos relacionamentos e trazem frescor à nossa vida diária. Vamos explorar como podemos desenvolver essas características em nosso cotidiano.",
-        conclusion: "Amabilidade e bondade são expressões do amor de Deus em nós, manifestadas através de nossas ações diárias para com os outros. Diante dessa verdade, decido pedir ao Espírito Santo para transformar meu coração, cultivando amabilidade e bondade em meus relacionamentos diários.",
+
         questions: [
           {
             question: "Quais são os frutos do Espírito mencionados em Gálatas 5:22-23 que estudamos hoje?",
@@ -4783,13 +4587,14 @@ export const lessonsSeed = [
             option_d: "Usando palavras brandas que desviam o furor",
             correct_option: "D"
           }
-        ]
-    },
-    {    
-      number: 7,
+        ],
+        conclusion: "Amabilidade e bondade são expressões do amor de Deus em nós, manifestadas através de nossas ações diárias para com os outros. Diante dessa verdade, decido pedir ao Espírito Santo para transformar meu coração, cultivando amabilidade e bondade em meus relacionamentos diários.",
+      },
+      {
+        number: 7,
         title: "Fidelidade",
         introduction: "O fruto do Espírito inclui a fidelidade, uma virtude que reflete nosso compromisso e lealdade a Deus e aos outros. Assim como a uva é um símbolo de abundância e celebração, a fidelidade traz riqueza e profundidade aos nossos relacionamentos. Vamos explorar como podemos desenvolver essa qualidade espiritual em nossa vida diária.",
-        conclusion: "A fidelidade é um reflexo do nosso relacionamento com Deus, manifestada através da nossa lealdade e compromisso com Ele e com os outros. Diante dessa verdade, decido ser fiel sempre, buscando crescer diariamente em minha caminhada com Jesus e permitindo que o Espírito Santo guie minhas ações.",
+
         questions: [
           {
             question: "Qual é o fruto do Espírito mencionado em Gálatas 5:22-23 que estudamos hoje?",
@@ -4837,12 +4642,13 @@ export const lessonsSeed = [
             correct_option: "B"
           }
         ],
+        conclusion: "A fidelidade é um reflexo do nosso relacionamento com Deus, manifestada através da nossa lealdade e compromisso com Ele e com os outros. Diante dessa verdade, decido ser fiel sempre, buscando crescer diariamente em minha caminhada com Jesus e permitindo que o Espírito Santo guie minhas ações.",
       },
       {
         number: 8,
         title: "Mansidão e Domínio Próprio",
         introduction: "O fruto do Espírito inclui a mansidão e o domínio próprio, virtudes que nos ajudam a lidar com as adversidades da vida de maneira equilibrada. Assim como a manga é doce e nutritiva, essas qualidades espirituais trazem suavidade e força aos nossos relacionamentos. Vamos explorar como podemos desenvolver essas características em nossa vida diária.",
-        conclusion: "Mansidão e domínio próprio são expressões do caráter de Cristo em nós, manifestadas através de nossas ações diárias para com os outros. Diante dessa verdade, decido pedir ao Espírito Santo para transformar meu coração, cultivando mansidão e domínio próprio em meus relacionamentos diários.",
+
         questions: [
           {
             question: "Quais são os frutos do Espírito mencionados em Gálatas 5:22-23 que estudamos hoje?",
@@ -4889,19 +4695,22 @@ export const lessonsSeed = [
             option_d: "Ele era indiferente",
             correct_option: "B"
           }
-        ]
+        ],
+        conclusion: "Mansidão e domínio próprio são expressões do caráter de Cristo em nós, manifestadas através de nossas ações diárias para com os outros. Diante dessa verdade, decido pedir ao Espírito Santo para transformar meu coração, cultivando mansidão e domínio próprio em meus relacionamentos diários.",
       }
     ]
   },
   {
     category: "Família",
-    guide: "Reconstruindo o Altar da Família - S.F. 2024",
+    guide: "Reconstruindo o Altar da Família - Semana da Família 2024",
+    description: "Restaure e fortaleça sua família reconstruindo o altar familiar com base nos princípios divinos de fé e devoção",
+    
     lessons: [
       {
         number: 1,
         title: "Identificando as Prioridades",
         introduction: "Deus, em Sua infinita sabedoria, projetou o Universo com precisão e intenção. Assim como um arquiteto cria planos detalhados para construir uma casa, Deus estabeleceu um plano divino para a criação e para nossas vidas. Vamos explorar como podemos identificar e seguir as prioridades divinas em nossa vida familiar.",
-        conclusion: "Deus nos deu um plano claro através da Bíblia para guiar nossas vidas com propósito e intenção divina. Diante dessa orientação, decido, hoje, comprometer-me a seguir os planos de Deus, colocando-O como prioridade em minha vida familiar e adorando-O diariamente. 📖🙏",
+
         questions: [
           {
             question: "O que Deus criou no primeiro dia da criação?",
@@ -4948,13 +4757,14 @@ export const lessonsSeed = [
             option_d: "Somente aos domingos",
             correct_option: "A"
           }
-        ]
+        ],
+        conclusion: "Deus nos deu um plano claro através da Bíblia para guiar nossas vidas com propósito e intenção divina. Diante dessa orientação, decido, hoje, comprometer-me a seguir os planos de Deus, colocando-O como prioridade em minha vida familiar e adorando-O diariamente. 📖🙏",
       },
       {
         number: 2,
         title: "Escolhendo o Caminho Certo",
         introduction: "Jesus nos ensina que Ele é 'o caminho, a verdade e a vida' (João 14:6). Em um mundo repleto de distrações e falsos deuses, é crucial mantermos nosso foco em Cristo, que nos guia com segurança e propósito. Vamos explorar como podemos escolher o caminho certo em nossas vidas diárias.",
-        conclusion: "Manter nosso foco em Jesus nos ajuda a evitar os falsos altares e nos guia pelo caminho certo na vida. Diante dessa verdade, decido, hoje, comprometer-me a seguir Jesus como o único caminho verdadeiro, colocando-O no centro de minha vida e adoração familiar. 📖🙏",
+
         questions: [
           {
             question: "Qual ferramenta é usada para garantir que uma construção fique nivelada?",
@@ -5001,13 +4811,14 @@ export const lessonsSeed = [
             option_d: "Livros antigos",
             correct_option: "B"
           }
-        ]
+        ],
+        conclusion: "Manter nosso foco em Jesus nos ajuda a evitar os falsos altares e nos guia pelo caminho certo na vida. Diante dessa verdade, decido, hoje, comprometer-me a seguir Jesus como o único caminho verdadeiro, colocando-O no centro de minha vida e adoração familiar. 📖🙏",
       },
       {
         number: 3,
         title: "Equipamento de Proteção Individual",
         introduction: "Em Efésios 6:11-12, Paulo nos exorta a vestir toda a armadura de Deus para resistir às ciladas do diabo. Assim como usamos luvas para proteger nossas mãos no trabalho, precisamos de proteção espiritual para manter nossa família segura das influências nocivas. Vamos explorar como podemos aplicar essa proteção em nosso dia a dia.",
-        conclusion: "Proteger nossa família espiritualmente requer vigilância constante e um compromisso diário com Deus. Diante dessa responsabilidade, decido, hoje, reafirmar meu compromisso de seguir o caminho de Deus, protegendo minha família com oração, estudo bíblico e cuidado dos sentidos. 📖🙏",
+
         questions: [
           {
             question: "Qual é o propósito das luvas como Equipamento de Proteção Individual (EPI)?",
@@ -5054,13 +4865,14 @@ export const lessonsSeed = [
             option_d: "Cuidar do que vemos, ouvimos e fazemos",
             correct_option: "D"
           }
-        ]
+        ],
+        conclusion: "Proteger nossa família espiritualmente requer vigilância constante e um compromisso diário com Deus. Diante dessa responsabilidade, decido, hoje, reafirmar meu compromisso de seguir o caminho de Deus, protegendo minha família com oração, estudo bíblico e cuidado dos sentidos. 📖🙏",
       },
       {
         number: 4,
         title: "Atitude de Prego Alinhado ou Prego Torto",
         introduction: "O martelo é uma ferramenta essencial na construção, usada para cravar e ajustar pregos. Da mesma forma, nossas palavras e ações podem construir ou destruir relacionamentos. Em 1 Coríntios 13:4, Paulo descreve o amor como paciente e benigno, qualidades essenciais para manter relações saudáveis. Vamos explorar como podemos ser 'pregos alinhados' em nossa vida familiar.",
-        conclusion: "Para construir relações familiares fortes, precisamos permitir que Deus remova os 'pregos tortos' de nossas vidas, substituindo-os por amor genuíno e compreensão. Diante dessa necessidade, decido, hoje, seguir o conselho de amar a Deus com todo o meu coração, permitindo que esse amor se reflita em cada um dos membros da minha família. 📖🙏",
+
         questions: [
           {
             question: "Qual é a principal função do martelo na construção?",
@@ -5107,13 +4919,14 @@ export const lessonsSeed = [
             option_d: "Seguindo-O apenas quando conveniente",
             correct_option: "B"
           }
-        ]
+        ],
+        conclusion: "Para construir relações familiares fortes, precisamos permitir que Deus remova os 'pregos tortos' de nossas vidas, substituindo-os por amor genuíno e compreensão. Diante dessa necessidade, decido, hoje, seguir o conselho de amar a Deus com todo o meu coração, permitindo que esse amor se reflita em cada um dos membros da minha família. 📖🙏",
       },
       {
         number: 5,
         title: "Não é Justo",
         introduction: "A vida pode parecer injusta para crianças e adolescentes devido às regras e decisões dos pais, mas parte da solução está em suas mãos. A chave de fenda simboliza ajustes necessários nas relações familiares, como afrouxar ou apertar atitudes e reações para melhorar a comunicação. Assim como a ferramenta é essencial para unir peças e garantir o funcionamento correto de sistemas, os filhos devem seguir Efésios 6:1, obedecendo aos pais no Senhor. Embora os pais não sejam perfeitos, Deus espera que eles orientem e disciplinem com amor, preparando os filhos para uma vida harmoniosa e justa.",
-        conclusion: "Leva tempo e paciência para permitir autonomia e responsabilidade ao seu filho. Mas lembre-se, um pouco de tempo agora pode trazer grandes benefícios a longo prazo. Hoje, decido ajustar minhas atitudes nas relações familiares, promovendo harmonia e paz em meu lar. Comprometo-me a obedecer aos meus pais no Senhor, entendendo a disciplina como orientação divina. Escolho amar ao Senhor com todo o coração, permitindo que esse amor guie minhas ações e fortaleça meus laços familiares, buscando ser um agente de transformação positiva em minha família. 📖",
+
         questions: [
           {
             question: "Qual é a principal função da chave de fenda?",
@@ -5135,7 +4948,7 @@ export const lessonsSeed = [
           },
           {
             question: "O que significa discipular os filhos segundo o texto?",
-            verse: "Conceito do tema",
+            verse: "Efésios 6:4",
             option_a: "Punir severamente",
             option_b: "Deixar fazer tudo o que quiserem",
             option_c: "Ensinar e orientar nos caminhos de Deus",
@@ -5144,7 +4957,7 @@ export const lessonsSeed = [
           },
           {
             question: "Qual é o papel dos pais na disciplina segundo o texto?",
-            verse: "Conceito do tema",
+            verse: "Efésios 6:4",
             option_a: "Imposição rigorosa sem explicação",
             option_b: "Apenas corrigir quando houver problemas",
             option_c: "Evitar qualquer tipo de correção",
@@ -5160,13 +4973,14 @@ export const lessonsSeed = [
             option_d: "Não se preocupar com amor em casa",
             correct_option: "B"
           }
-        ]
+        ],
+        conclusion: "Leva tempo e paciência para permitir autonomia e responsabilidade ao seu filho. Hoje, decido ajustar minhas atitudes nas relações familiares, promovendo harmonia e paz em meu lar. Comprometo-me a obedecer aos meus pais no Senhor, entendendo a disciplina como orientação divina. Escolho amar ao Senhor com todo o coração, permitindo que esse amor guie minhas ações e fortaleça meus laços familiares. 📖",
       },
       {
         number: 6,
         title: "Um dia Especial",
         introduction: "O sábado é um dia especial instituído por Deus como um tempo de descanso e renovação. Assim como o serrote é usado para fazer cortes precisos, precisamos discernir com precisão as informações sobre o sábado e sua importância em nossa vida espiritual. Vamos explorar como o sábado pode transformar nosso lar em um altar de adoração.",
-        conclusion: "O sábado é um presente divino para renovação espiritual e fortalecimento dos laços familiares, fazendo parte essencial do altar de adoração em nosso lar. Diante dessa bênção, decido, hoje, reforçar o valor do sábado em minha família, aproveitando seus benefícios espirituais e familiares. 📖🙏",
+
         questions: [
           {
             question: "Qual é a função principal do serrote na construção?",
@@ -5213,13 +5027,14 @@ export const lessonsSeed = [
             option_d: "Amar a Deus de todo coração, alma e força",
             correct_option: "D"
           }
-        ]
+        ],
+        conclusion: "O sábado é um presente divino para renovação espiritual e fortalecimento dos laços familiares, fazendo parte essencial do altar de adoração em nosso lar. Diante dessa bênção, decido, hoje, reforçar o valor do sábado em minha família, aproveitando seus benefícios espirituais e familiares. 📖🙏",
       },
       {
         number: 7,
         title: "Jesus, em Breve Voltará",
         introduction: "A trena é uma ferramenta essencial para medir distâncias com precisão. No entanto, quando se trata da volta de Jesus, não podemos medir o tempo exato. Em Marcos 13:32-33, somos lembrados de que ninguém sabe o dia ou a hora da Sua vinda. Vamos explorar como podemos estar sempre prontos para esse grande evento.",
-        conclusion: "Reconstruir nosso altar familiar significa renovar nossa fé na volta de Jesus, vivendo cada dia como se fosse o dia do Seu retorno. Diante dessa expectativa, decido, hoje, comprometer-me a estar sempre preparado para a volta de Jesus, renovando meu compromisso com Deus diariamente em meu lar. 📖🙏",
+
         questions: [
           {
             question: "Qual é a principal função da trena na construção?",
@@ -5266,13 +5081,14 @@ export const lessonsSeed = [
             option_d: "Esperar passivamente",
             correct_option: "C"
           }
-        ]
+        ],
+        conclusion: "Reconstruir nosso altar familiar significa renovar nossa fé na volta de Jesus, vivendo cada dia como se fosse o dia do Seu retorno. Diante dessa expectativa, decido, hoje, comprometer-me a estar sempre preparado para a volta de Jesus, renovando meu compromisso com Deus diariamente em meu lar. 📖🙏",
       },
       {
         number: 8,
         title: "Atitude Proativa",
         introduction: "A vida cristã requer esforço e dedicação, assim como a construção de uma casa requer uma caixa de ferramentas completa. Cada ferramenta representa habilidades necessárias para construir um caráter sólido e cristão. Vamos explorar como podemos ser proativos na reconstrução do altar familiar e no desenvolvimento de um caráter que nos permita viver na nova Terra.",
-        conclusion: "Reconstruir o altar familiar requer uma atitude proativa, utilizando todas as ferramentas espirituais à nossa disposição para moldar nosso caráter e preparar nossa família para a eternidade. Diante dessa responsabilidade, decido, hoje, comprometer-me a ser proativo na construção do meu altar familiar, dedicando-me ao desenvolvimento espiritual e ao fortalecimento dos laços familiares. 📖🙏",
+
         questions: [
           {
             question: "Qual é o papel dos projetos na construção de um bom caráter?",
@@ -5312,27 +5128,29 @@ export const lessonsSeed = [
           },
           {
             question: "Como Deuteronômio 6:5 nos orienta sobre nosso relacionamento com Deus?",
-            verse: "Deuteronômio 6:5",
+            verse: "",
             option_a: "Amar parcialmente",
             option_b: "Ignorar Seus mandamentos",
             option_c: "Amar a Deus de todo coração, alma e força",
             option_d: "Focar apenas em ações externas",
             correct_option: "C"
           }
-        ]
+        ],
+        conclusion: "Reconstruir o altar familiar requer uma atitude proativa, utilizando todas as ferramentas espirituais à nossa disposição para moldar nosso caráter e preparar nossa família para a eternidade. Diante dessa responsabilidade, decido, hoje, comprometer-me a ser proativo na construção do meu altar familiar, dedicando-me ao desenvolvimento espiritual e ao fortalecimento dos laços familiares. 📖🙏",
       }
     ]
   },
 
   {
     category: "Família",
-    guide: "Marcas de Amor - S.F. 2025",
+    guide: "Marcas de Amor - Semana da Família 2025",
+    description: "Aprofunde os vínculos familiares por meio dos ensinamentos divinos de amor e compromisso.",
     lessons: [
       {
         number: 1,
         title: "A Marca do Sangue no Batente da Porta",
         introduction: "A história da décima praga no Egito é um poderoso exemplo de culpa, graça e libertação. A marca do sangue do Cordeiro nos umbrais das portas simboliza a proteção divina e a importância da família. Vamos explorar como essa narrativa bíblica nos ensina sobre a centralidade da graça em nossas vidas.",
-        conclusion: "A marca do sangue nas portas simboliza não apenas proteção, mas também o chamado para vivermos sob a graça de Deus, reconhecendo Sua misericórdia em nossas vidas diárias. Diante desse símbolo poderoso, decido, hoje, reconhecer o sacrifício do Cordeiro em minha vida, permitindo que Sua misericórdia guie meu lar e minhas ações. 📖🙏",
+
         questions: [
           {
             question: "Qual era o propósito do sangue nos umbrais das portas durante a décima praga?",
@@ -5345,7 +5163,7 @@ export const lessonsSeed = [
           },
           {
             question: "O que Gênesis 3:15 promete sobre a descendência da mulher?",
-            verse: "Gênesis 3:15",
+            verse: "",
             option_a: "Que esmagará a cabeça da serpente",
             option_b: "Que será destruída pela serpente",
             option_c: "Que viverá em paz com a serpente",
@@ -5354,7 +5172,7 @@ export const lessonsSeed = [
           },
           {
             question: "Como Êxodo 1:7 descreve o crescimento dos filhos de Israel no Egito?",
-            verse: "Êxodo 1:7",
+            verse: "",
             option_a: "Foram fecundos e se multiplicaram",
             option_b: "Diminuíram em número",
             option_c: "Permaneceram estagnados",
@@ -5372,20 +5190,21 @@ export const lessonsSeed = [
           },
           {
             question: "O que Romanos 3:23 nos ensina sobre todos os seres humanos?",
-            verse: "Romanos 3:23",
+            verse: "",
             option_a: "Que todos são perfeitos",
             option_b: "Que alguns são justos por natureza",
             option_c: "Que todos pecaram e carecem da glória de Deus",
             option_d: "Que ninguém precisa de salvação",
             correct_option: "C"
           }
-        ]
+        ],
+        conclusion: "A marca do sangue nas portas simboliza não apenas proteção, mas também o chamado para vivermos sob a graça de Deus, reconhecendo Sua misericórdia em nossas vidas diárias. Diante desse símbolo poderoso, decido, hoje, reconhecer o sacrifício do Cordeiro em minha vida, permitindo que Sua misericórdia guie meu lar e minhas ações. 📖🙏",
       },
       {
         number: 2,
         title: "A Marca da Lei no Batente da Porta",
         introduction: "O Shemah Israel é um chamado à adoração e identidade, revelando quem é Deus e como devemos viver. Assim como as portas das casas dos israelitas foram marcadas pelo sangue do cordeiro, nossas vidas devem ser marcadas pela lei do Senhor. Vamos explorar como essa marca divina molda nossa identidade e relacionamento com Deus.",
-        conclusion: "A marca da lei de Deus em nossas vidas nos dá identidade e propósito, guiando-nos em amor e obediência. Diante dessa verdade, decido, hoje, buscar ter minha vida marcada pela lei do amor de Deus, refletindo Sua imagem em meu lar e nos meus relacionamentos. 📖🙏",
+
         questions: [
           {
             question: "O que o Shemah Israel declara sobre Deus?",
@@ -5398,7 +5217,7 @@ export const lessonsSeed = [
           },
           {
             question: "Como devemos amar a Deus segundo Deuteronômio 6:5?",
-            verse: "Deuteronômio 6:5",
+            verse: "",
             option_a: "Apenas quando conveniente",
             option_b: "De todo o coração, alma e força",
             option_c: "Com reservas",
@@ -5425,20 +5244,21 @@ export const lessonsSeed = [
           },
           {
             question: "Qual é a essência do amor segundo 1 Coríntios 13:4-7?",
-            verse: "1 Coríntios 13:4-7",
+            verse: "",
             option_a: "Egoísmo e orgulho",
             option_b: "Indiferença e ressentimento",
             option_c: "Ciúmes e vaidade",
             option_d: "Paciência, bondade e verdade",
             correct_option: "D"
           }
-        ]
+        ],
+        conclusion: "A marca da lei de Deus em nossas vidas nos dá identidade e propósito, guiando-nos em amor e obediência. Diante dessa verdade, decido, hoje, buscar ter minha vida marcada pela lei do amor de Deus, refletindo Sua imagem em meu lar e nos meus relacionamentos. 📖🙏",
       },
       {
         number: 3,
         title: "A Marca na Mão",
         introduction: "“Posso ver a sua mão?” Essa foi a pergunta inusitada que a minha esposa me fez logo no primeiro encontro que tivemos. Fui pego de surpresa, mas não escondi a minha mão, ela olhou com atenção, tocou e não disse mais nada. Bem, acredito que a resposta que ela procurava foi encontrada pois já se passaram vinte e três anos. Ela procurava primeiramente coerência. Minhas mãos iriam afirmar ou negar o tipo de atividade que minha boca anunciava. Nem todas as atividades deixam cicatrizes ou calos como os das minhas mãos naquele dia, mas nossas mãos sempre sinalizam o que fazemos.",
-        conclusion: "Podemos concluir que, desde a Criação, a lei de Deus está inseparavelmente ligada a qualquer ação executora feita na Terra. O amor de Deus é uma marca nas nossas mãos. E mãos marcadas marcam. Que as nossas ações reflitam essa marca distintiva, servindo como agentes transformadores no mundo ao nosso redor. Diante dessa realidade, decido, hoje, deixar que o amor e as leis de Deus marquem minhas ações diárias, tornando-me um agente transformador em minha comunidade. 📖🙏",
+
         questions: [
           {
             question: "Qual é o propósito do trabalho de Deus na criação?",
@@ -5485,13 +5305,14 @@ export const lessonsSeed = [
             option_d: "Proteger os filhos das influências externas negativas",
             correct_option: "C"
           }
-        ]
+        ],
+        conclusion: "Podemos concluir que, desde a Criação, a lei de Deus está inseparavelmente ligada a qualquer ação executora feita na Terra. O amor de Deus é uma marca nas nossas mãos. E mãos marcadas marcam. Que as nossas ações reflitam essa marca distintiva, servindo como agentes transformadores no mundo ao nosso redor. Diante dessa realidade, decido, hoje, deixar que o amor e as leis de Deus marquem minhas ações diárias, tornando-me um agente transformador em minha comunidade. 📖🙏",
       },
       {
         number: 4,
         title: "A Marca na Testa",
         introduction: "A realidade é sempre mais complexa do que os instrumentos que utilizamos para compreendê-la. Por exemplo, a riqueza de informações contidas em uma única célula é incomparavelmente maior do que o que podemos saber sobre o microscópio. Da mesma forma, não dá para comparar a grandeza do Universo com o tamanho do telescópio. Isso é verdade para a ciência como também é para a Bíblia. Jesus afirmou isso em João 5:39 ao dizer aos estudantes das Escrituras que ela é uma lente pela qual O compreendemos. Jesus é maior do que a Bíblia.",
-        conclusion: "A cultura dominante nos pressiona a compreender a declaração das Escrituras Sagradas de forma reduzida, limitando o temor do Senhor à fonte de sabedoria e conhecimento religioso. No entanto, a afirmação diz exatamente o contrário: todo e qualquer conhecimento depende e deriva da verdade conhecida por meio da religião de Cristo. Diante dessa compreensão, decido, hoje, permitir que a sabedoria divina molde minha mente e minhas ações, tornando-me um exemplo vivo da graça e amor de Deus em minha comunidade. 📖🙏",
+
         questions: [
           {
             question: "Qual é o princípio fundamental para adquirir sabedoria segundo Provérbios?",
@@ -5538,13 +5359,14 @@ export const lessonsSeed = [
             option_d: "Desenvolvimento de talentos artísticos",
             correct_option: "B"
           }
-        ]
+        ],
+        conclusion: "A cultura dominante nos pressiona a compreender a declaração das Escrituras Sagradas de forma reduzida, limitando o temor do Senhor à fonte de sabedoria e conhecimento religioso. No entanto, a afirmação diz exatamente o contrário: todo e qualquer conhecimento depende e deriva da verdade conhecida por meio da religião de Cristo. Diante dessa compreensão, decido, hoje, permitir que a sabedoria divina molde minha mente e minhas ações, tornando-me um exemplo vivo da graça e amor de Deus em minha comunidade. 📖🙏",
       },
       {
         number: 5,
         title: "A Marca da Aliança",
         introduction: "Em uma sociedade organizada, os contratos estão por toda parte. Neste momento, cada um de nós está vivendo pela vigência de pelo menos um contrato. A Bíblia apresenta em toda a sua extensão o relacionamento entre Deus e a humanidade de forma pactual, e a isso chamamos de aliança. Devemos compreender a amplitude e a suprema importância da aliança de Deus conosco e como ela está diretamente relacionada com a nossa família.",
-        conclusion: "No decorrer da história bíblica, percebemos que os elementos da aliança se repetem, destacando-se na reprodução do povo de Deus. Esta reprodução não se limita ao crescimento biológico, mas se expande para a geração de filhos na fé através do evangelho. O comprometimento visível do pacto sagrado é crucial para distinguir os Seus e ser luz para aqueles que buscam a verdade. Diante dessa responsabilidade, decido, hoje, renovar meu compromisso com Deus e permitir que minha vida seja um sinal visível da aliança divina, refletindo Sua glória ao mundo. 📖🙏",
+
         questions: [
           {
             question: "Qual é o símbolo da aliança de Deus com Abraão?",
@@ -5591,13 +5413,14 @@ export const lessonsSeed = [
             option_d: "Refletir a imagem de Deus no mundo",
             correct_option: "D"
           }
-        ]
+        ],
+        conclusion: "No decorrer da história bíblica, percebemos que os elementos da aliança se repetem, destacando-se na reprodução do povo de Deus. Esta reprodução não se limita ao crescimento biológico, mas se expande para a geração de filhos na fé através do evangelho. O comprometimento visível do pacto sagrado é crucial para distinguir os Seus e ser luz para aqueles que buscam a verdade. Diante dessa responsabilidade, decido, hoje, renovar meu compromisso com Deus e permitir que minha vida seja um sinal visível da aliança divina, refletindo Sua glória ao mundo. 📖🙏",
       },
       {
         number: 6,
         title: "Marcas da Herança",
         introduction: "A fé é um princípio ativo da vida, caracterizado por ser dinâmico e indisfarçável. Ela não é autogerada; pelo contrário, é recebida como herança na adoção do Pai. A crença confiante em Deus é central para a identidade cristã, sustentando todas as áreas da nossa vida: saúde, trabalho, relacionamentos e serviço. Sem ela, perdemos os fundamentos necessários para viver de forma plena e significativa.",
-        conclusion: "A crença confiante em Deus é um elemento constitutivo da nossa identidade cristã. Sem fé, perdemos os fundamentos necessários para viver de maneira saudável, significativa e plena em todas as áreas da vida. Ela nos capacita a viver de acordo com o propósito de Deus em saúde, trabalho, relacionamento e serviço. Diante dessa verdade, decido, hoje, fortalecer minha fé em Deus e permitir que ela seja o alicerce sobre o qual toda a minha vida seja construída. 📖🙏",
+
         questions: [
           {
             question: "Como a fé de Timóteo foi formada segundo Paulo?",
@@ -5610,7 +5433,7 @@ export const lessonsSeed = [
           },
           {
             question: "Qual é a definição de fé em Hebreus 11:1?",
-            verse: "Hebreus 11:1",
+            verse: "",
             option_a: "Um sentimento passageiro",
             option_b: "Uma tradição religiosa",
             option_c: "A certeza do que esperamos e prova das coisas que não vemos",
@@ -5637,20 +5460,21 @@ export const lessonsSeed = [
           },
           {
             question: "De acordo com Efésios 4:32, como a fé afeta nossos relacionamentos?",
-            verse: "Efésios 4:32",
+            verse: "",
             option_a: "Permite-nos amar e perdoar uns aos outros",
             option_b: "Torna-nos mais críticos dos outros",
             option_c: "Nos faz evitar conflitos a todo custo",
             option_d: "Nos encoraja a manter distância emocional",
             correct_option: "A"
           }
-        ]
+        ],
+        conclusion: "A crença confiante em Deus é um elemento constitutivo da nossa identidade cristã. Sem fé, perdemos os fundamentos necessários para viver de maneira saudável, significativa e plena em todas as áreas da vida. Ela nos capacita a viver de acordo com o propósito de Deus em saúde, trabalho, relacionamento e serviço. Diante dessa verdade, decido, hoje, fortalecer minha fé em Deus e permitir que ela seja o alicerce sobre o qual toda a minha vida seja construída. 📖🙏",
       },
       {
         number: 7,
         title: "As Marcas do Desenvolvimento",
         introduction: "Devido à nossa natureza pecaminosa, vivemos em constante luta contra o pecado. No processo educacional de Deus ao nos santificar, é essencial compreender os indicadores de desenvolvimento espiritual. Assim como uma planta precisa de cuidados para crescer, nossa vida espiritual também requer atenção e suporte. A família desempenha um papel crucial nesse desenvolvimento.",
-        conclusion: "A paternidade e maternidade são fundamentais na compreensão do caráter de Deus e no desenvolvimento espiritual dos membros da família. Ao buscar o alinhamento com a vontade divina, cada membro é encorajado a crescer em maturidade espiritual, contribuindo para um ambiente familiar saudável e centrado em Cristo. Diante dessa responsabilidade, decido, hoje, permitir que Deus alinhe minha vontade à dEle, permitindo que Sua presença guie meu crescimento espiritual e o de minha família. 📖🙏",
+
         questions: [
           {
             question: "Qual é a primeira fase do desenvolvimento espiritual?",
@@ -5697,13 +5521,13 @@ export const lessonsSeed = [
             option_d: "Rejeitando qualquer forma de liderança",
             correct_option: "B"
           }
-        ]
+        ],
+        conclusion: "A paternidade e maternidade são fundamentais na compreensão do caráter de Deus e no desenvolvimento espiritual dos membros da família. Ao buscar o alinhamento com a vontade divina, cada membro é encorajado a crescer em maturidade espiritual, contribuindo para um ambiente familiar saudável e centrado em Cristo. Diante dessa responsabilidade, decido, hoje, permitir que Deus alinhe minha vontade à dEle, permitindo que Sua presença guie meu crescimento espiritual e o de minha família. 📖🙏",
       },
       {
         number: 8,
         title: "As Marcas de Deus",
         introduction: "Ao percorrer as páginas da Bíblia, encontramos diversas formas de como Deus expressa Seu relacionamento conosco. Ele nos chama de filhos, servos e ovelhas, sendo Ele nosso Pai, Senhor e Pastor. Em Jesus Cristo, Deus se revela em todas essas formas, destacando a relação de pertencimento e cuidado que Ele tem por nós.",
-        conclusion: "As marcas da redenção em Jesus são um lembrete poderoso do amor e sacrifício que Ele fez por nós. Elas nos convidam a viver como testemunhas do Seu amor, justiça e glória na Terra, confiando na graça que nos permite aproximar-nos de Deus com confiança. Diante desse chamado, decido, hoje, permitir que as marcas da redenção em Cristo transformem minha vida, levando-me a viver como uma verdadeira testemunha do Seu amor. 📖🙏",
         questions: [
           {
             question: "Qual é o significado das marcas de Jesus segundo a lição?",
@@ -5750,7 +5574,8 @@ export const lessonsSeed = [
             option_d: "Revelar o amor, justiça e glória do Cordeiro",
             correct_option: "D"
           }
-        ]
+        ],
+        conclusion: "As marcas da redenção em Jesus são um lembrete poderoso do amor e sacrifício que Ele fez por nós. Elas nos convidam a viver como testemunhas do Seu amor, justiça e glória na Terra, confiando na graça que nos permite aproximar-nos de Deus com confiança. Diante desse chamado, decido, hoje, permitir que as marcas da redenção em Cristo transformem minha vida, levando-me a viver como uma verdadeira testemunha do Seu amor. 📖🙏",
       }
     ]
   }

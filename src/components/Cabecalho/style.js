@@ -37,7 +37,7 @@ export default StyleSheet.create({
     fontFamily: "Playfair-Display",
     textAlign:'center',
 
-    color: "#ffa92d", // dourado
+    color: "#FFD700",
     textShadowColor: "rgba(0,0,0,0.5)",
     textShadowOffset: { width: 1, height: 1 },
     textShadowRadius: 3,
@@ -107,7 +107,6 @@ export default StyleSheet.create({
   loginTopText: {
     fontSize: 14,
     fontFamily: 'Playfair_144pt-Bold',
-    fontWeight: "600",
-    color: "#4A6C6F",
+    color: "#456C84",
   },
 });

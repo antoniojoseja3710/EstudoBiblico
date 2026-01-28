@@ -20,7 +20,7 @@ export default function GuiasDeEstudos({ navigation, route }) {
   const [loading, setLoading] = useState(true);
   const [user, setUser] = useState(null);
 
-  // 🔒 Proteção contra acesso sem parâmetros
+  // Proteção contra acesso sem parâmetros
   useEffect(() => {
     if (!categoryId) {
       console.warn('Guia não encontrado:', categoryId);
@@ -29,7 +29,7 @@ export default function GuiasDeEstudos({ navigation, route }) {
     }
   }, [categoryId]);
 
-  // 🔹 Carregar guias da categoria
+  // Carregar guias da categoria
   useEffect(() => {
     const loadGuides = async () => {
       try {
@@ -51,7 +51,7 @@ export default function GuiasDeEstudos({ navigation, route }) {
     }
   }, [categoryId]);
 
-  // 🔹 Atualiza usuário quando a tela entra em foco
+  // Atualiza usuário quando a tela entra em foco
   useFocusEffect(
     useCallback(() => {
       const fetchUser = async () => {
@@ -86,53 +86,65 @@ export default function GuiasDeEstudos({ navigation, route }) {
   }
 
   return (
-    <ScrollView contentContainerStyle={styles.container}>
-      {/* CABEÇALHO */}
-      <Cabecalho
-        user={user}
-        navigation={navigation}
-        onLogout={handleLogout}
-      />
-      <View style={styles.content}>
-          <Text style={styles.guideText}>
+  <View style={styles.container}>
+    <Cabecalho
+      user={user}
+      navigation={navigation}
+      onLogout={handleLogout}
+    />
+
+    <View style={styles.content}>
+      <Text style={styles.guideText}>
         Guias de Estudos sobre
       </Text>
+
       <Text style={styles.title}>
         {categoryName?.toUpperCase()}
       </Text>
 
-      {guides.map((guide) => (
-        <TouchableOpacity
-          key={guide.id}
-          style={styles.button}
-          onPress={() =>
-  navigation.navigate('Licoes', {
-    guideId: guide.id,
-    guideTitle: guide.title,
-    categoryId: categoryId, // 👈 ENVIA JUNTO
-  })
-}
-        >
-          <Text style={styles.buttonText}>
-            {guide.title.toUpperCase()}
-          </Text>
-        </TouchableOpacity>
-      ))}
-
-      {!guides.length && (
-        <Text style={styles.emptyText}>
-          Nenhum guia cadastrado nesta categoria.
-        </Text>
-      )}
-
-      
-      </View>
-      <TouchableOpacity
-        style={styles.backButton}
-        onPress={() => navigation.goBack()}
+      <ScrollView
+        style={styles.listContainer}
+        contentContainerStyle={styles.listContent}
+        showsVerticalScrollIndicator={false}
       >
-        <Text style={styles.backButtonText}>Voltar</Text>
-      </TouchableOpacity>
-    </ScrollView>
-  );
+        {guides.map((guide) => (
+          <TouchableOpacity
+            key={guide.id}
+            style={styles.button}
+            onPress={() =>
+              navigation.navigate('Licoes', {
+                guideId: guide.id,
+                guideTitle: guide.title,
+                categoryId,
+              })
+            }
+          >
+            <Text style={styles.buttonText}>
+              {guide.title.toUpperCase()}
+            </Text>
+
+            {!!guide.description && (
+              <Text style={styles.buttonTextDescription}>
+                {guide.description}
+              </Text>
+            )}
+          </TouchableOpacity>
+        ))}
+
+        {!guides.length && (
+          <Text style={styles.emptyText}>
+            Nenhum guia cadastrado nesta categoria.
+          </Text>
+        )}
+      </ScrollView>
+    </View>
+
+    <TouchableOpacity
+      style={styles.backButton}
+      onPress={() => navigation.goBack()}
+    >
+      <Text style={styles.backButtonText}>Voltar</Text>
+    </TouchableOpacity>
+  </View>
+);
 }

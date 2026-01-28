@@ -6,18 +6,18 @@ export default class EBRepository {
   db = null;
 
   async init() {
-  if (this.db) return; // 🔒 evita reinicializar
+    if (this.db) return; // 🔒 evita reinicializar
 
-  this.db = await getDatabase();
+    this.db = await getDatabase();
 
-  await this.db.execAsync(`
+    await this.db.execAsync(`
     CREATE TABLE IF NOT EXISTS categories (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       name TEXT NOT NULL UNIQUE
     );
   `);
 
-  await this.db.execAsync(`
+    await this.db.execAsync(`
     CREATE TABLE IF NOT EXISTS study_guides (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       category_id INTEGER NOT NULL,
@@ -27,7 +27,7 @@ export default class EBRepository {
     );
   `);
 
-  await this.db.execAsync(`
+    await this.db.execAsync(`
     CREATE TABLE IF NOT EXISTS lessons (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       guide_id INTEGER NOT NULL,
@@ -39,7 +39,7 @@ export default class EBRepository {
     );
   `);
 
-  await this.db.execAsync(`
+    await this.db.execAsync(`
     CREATE TABLE IF NOT EXISTS questions (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       lesson_id INTEGER NOT NULL,
@@ -54,7 +54,7 @@ export default class EBRepository {
     );
   `);
 
-  await this.db.execAsync(`
+    await this.db.execAsync(`
     CREATE TABLE IF NOT EXISTS users (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       first_name TEXT NOT NULL,
@@ -66,7 +66,7 @@ export default class EBRepository {
     );
   `);
 
-  await this.db.execAsync(`
+    await this.db.execAsync(`
     CREATE TABLE IF NOT EXISTS progress (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       user_id INTEGER NOT NULL,
@@ -79,18 +79,18 @@ export default class EBRepository {
     );
   `);
 
-  // 🔒 VERIFICA SE JÁ EXISTE CATEGORIA
-  const seeded = await this.db.getAllAsync(
-    "SELECT id FROM categories LIMIT 1"
-  );
+    // 🔒 VERIFICA SE JÁ EXISTE CATEGORIA
+    const seeded = await this.db.getAllAsync(
+      "SELECT id FROM categories LIMIT 1"
+    );
 
-  if (!seeded.length) {
-    await this.seedCategories();
-    await this.seedLessons();
+    if (!seeded.length) {
+      await this.seedCategories();
+      await this.seedLessons();
+    }
   }
-}
 
-  
+
 
   // =============================
   // 🔐 SEGURANÇA
@@ -260,42 +260,53 @@ export default class EBRepository {
   // =============================
   // 🔹 PROGRESSO
   // =============================
-  async saveProgress(userId, lessonId, correct, total) {
-    const grade = (correct / total) * 10;
-    const stars = grade >= 10 ? 5 : grade >= 8 ? 4 : grade >= 7 ? 3 : grade >= 5 ? 2 : grade > 0 ? 1 : 0;
-    const approved = grade >= 7 ? 1 : 0;
+  async saveProgress(userId, lessonId, points) {
+  const grade = Number(points);
 
-    const existing = await this.db.getAllAsync(
-      "SELECT stars FROM progress WHERE user_id=? AND lesson_id=?",
-      [userId, lessonId]
-    );
+  const stars =
+    grade === 10 ? 5 :
+    grade >= 8 ? 4 :
+    grade >= 7 ? 3 :
+    grade >= 5 ? 2 :
+    grade > 0 ? 1 : 0;
 
-    if (!existing.length) {
-      await this.db.runAsync(
-        `INSERT INTO progress (user_id, lesson_id, stars, grade, approved)
-         VALUES (?, ?, ?, ?, ?)`,
-        [userId, lessonId, stars, grade, approved]
-      );
-    } else if (stars > existing[0].stars) {
-      await this.db.runAsync(
-        `UPDATE progress
-         SET stars=?, grade=?, approved=?, updated_at=CURRENT_TIMESTAMP
-         WHERE user_id=? AND lesson_id=?`,
-        [stars, grade, approved, userId, lessonId]
-      );
-    }
+  const approved = grade >= 7 ? 1 : 0;
 
-    return { stars, grade, approved };
-  }
-  async getLessonProgress(userId, lessonId) {
-  const result = await this.db.getFirstAsync(
-    `SELECT stars, approved FROM progress 
-     WHERE user_id = ? AND lesson_id = ?`,
+  const existing = await this.db.getAllAsync(
+    "SELECT stars FROM progress WHERE user_id=? AND lesson_id=?",
     [userId, lessonId]
   );
 
-  return result || null;
+  if (!existing.length) {
+    // Primeiro registro
+    await this.db.runAsync(
+      `INSERT INTO progress (user_id, lesson_id, grade, stars, approved)
+       VALUES (?, ?, ?, ?, ?)`,
+      [userId, lessonId, grade, stars, approved]
+    );
+  } else {
+    // Atualiza SEMPRE a nota
+    const finalStars = Math.max(stars, existing[0].stars);
+
+    await this.db.runAsync(
+      `UPDATE progress
+       SET grade=?, stars=?, approved=?, updated_at=CURRENT_TIMESTAMP
+       WHERE user_id=? AND lesson_id=?`,
+      [grade, finalStars, approved, userId, lessonId]
+    );
+  }
+
+  return { stars, grade, approved };
 }
+  async getLessonProgress(userId, lessonId) {
+    const result = await this.db.getFirstAsync(
+      `SELECT stars, grade, approved FROM progress 
+     WHERE user_id = ? AND lesson_id = ?`,
+      [userId, lessonId]
+    );
+
+    return result || null;
+  }
   async canAccessLesson(userId, lesson) {
     if (lesson.number === 1) return true;
 
@@ -323,85 +334,85 @@ export default class EBRepository {
       await this.db.runAsync(
         "INSERT OR IGNORE INTO categories (name) VALUES (?)",
         [name]
-        
+
       );
     }
-    
+
   }
 
   async seedLessons() {
-  for (const cat of lessonsSeed) {
-    // 1️⃣ Buscar categoria
-    const categoryRows = await this.db.getAllAsync(
-      "SELECT id FROM categories WHERE name=?",
-      [cat.category]
-    );
+    for (const cat of lessonsSeed) {
+      // 1️⃣ Buscar categoria
+      const categoryRows = await this.db.getAllAsync(
+        "SELECT id FROM categories WHERE name=?",
+        [cat.category]
+      );
 
-    if (!categoryRows.length) continue;
+      if (!categoryRows.length) continue;
 
-    const categoryId = categoryRows[0].id;
+      const categoryId = categoryRows[0].id;
 
-    // 2️⃣ Criar ou obter guia
-    await this.db.runAsync(
-      `
+      // 2️⃣ Criar ou obter guia
+      await this.db.runAsync(
+        `
       INSERT OR IGNORE INTO study_guides (category_id, title, description)
       VALUES (?, ?, ?)
       `,
-      [categoryId, cat.guide, cat.description || ""]
-    );
+        [categoryId, cat.guide, cat.description || ""]
+      );
 
-    const guideRows = await this.db.getAllAsync(
-      `
+      const guideRows = await this.db.getAllAsync(
+        `
       SELECT id FROM study_guides
       WHERE title=? AND category_id=?
       `,
-      [cat.guide, categoryId]
-    );
+        [cat.guide, categoryId]
+      );
 
-    if (!guideRows.length) {
-      console.warn("Guia não encontrado:", cat.guide);
-      continue;
-    }
+      if (!guideRows.length) {
+        console.warn("Guia não encontrado:", cat.guide);
+        continue;
+      }
 
-    const guideId = guideRows[0].id;
+      const guideId = guideRows[0].id;
 
-    // 3️⃣ Criar lições
-    for (const lesson of cat.lessons) {
-      const resultLesson = await this.db.runAsync(
-        `
+      // 3️⃣ Criar lições
+      for (const lesson of cat.lessons) {
+        const resultLesson = await this.db.runAsync(
+          `
         INSERT OR IGNORE INTO lessons
         (guide_id, number, title, introduction, conclusion)
         VALUES (?, ?, ?, ?, ?)
         `,
-        [
-          guideId,
-          lesson.number,
-          lesson.title,
-          lesson.introduction || "",
-          lesson.conclusion || "",
-        ]
-      );
+          [
+            guideId,
+            lesson.number,
+            lesson.title,
+            lesson.introduction || "",
+            lesson.conclusion || "",
+          ]
+        );
 
-      // 4️⃣ Buscar ID da lição
-      const lessonRows = await this.db.getAllAsync(
-        `
+        // 4️⃣ Buscar ID da lição
+        const lessonRows = await this.db.getAllAsync(
+          `
         SELECT id FROM lessons
         WHERE guide_id=? AND number=?
         `,
-        [guideId, lesson.number]
-      );
+          [guideId, lesson.number]
+        );
 
-      if (!lessonRows.length) {
-        console.warn("Lição não encontrada:", lesson.title);
-        continue;
-      }
+        if (!lessonRows.length) {
+          console.warn("Lição não encontrada:", lesson.title);
+          continue;
+        }
 
-      const lessonId = lessonRows[0].id;
+        const lessonId = lessonRows[0].id;
 
-      // 5️⃣ Inserir perguntas COM lesson_id
-      for (const q of lesson.questions) {
-        await this.db.runAsync(
-          `
+        // 5️⃣ Inserir perguntas COM lesson_id
+        for (const q of lesson.questions) {
+          await this.db.runAsync(
+            `
           INSERT OR IGNORE INTO questions
           (
             lesson_id,
@@ -415,97 +426,97 @@ export default class EBRepository {
           )
           VALUES (?, ?, ?, ?, ?, ?, ?, ?)
           `,
-          [
-            lessonId,
-            q.question,
-            q.verse,
-            q.option_a,
-            q.option_b,
-            q.option_c,
-            q.option_d,
-            q.correct_option,
-          ]
-        );
-      }  
+            [
+              lessonId,
+              q.question,
+              q.verse,
+              q.option_a,
+              q.option_b,
+              q.option_c,
+              q.option_d,
+              q.correct_option,
+            ]
+          );
+        }
+      }
     }
   }
-}
-// =============================
-// 👥 GERENCIAMENTO DE USUÁRIOS
-// =============================
+  // =============================
+  // 👥 GERENCIAMENTO DE USUÁRIOS
+  // =============================
 
-async getAllUsers() {
-  return this.db.getAllAsync(`
+  async getAllUsers() {
+    return this.db.getAllAsync(`
     SELECT id, first_name, last_name, email, role
     FROM users
     ORDER BY first_name
   `);
-}
+  }
 
-async validateAdminPassword(adminId, password) {
-  const hash = await this.hashPassword(password);
+  async validateAdminPassword(adminId, password) {
+    const hash = await this.hashPassword(password);
 
-  const data = await this.db.getAllAsync(
-    `SELECT id FROM users
+    const data = await this.db.getAllAsync(
+      `SELECT id FROM users
      WHERE id=? AND password=? AND role='admin'`,
-    [adminId, hash]
-  );
+      [adminId, hash]
+    );
 
-  if (!data.length) {
-    throw new Error("Senha de administrador inválida");
+    if (!data.length) {
+      throw new Error("Senha de administrador inválida");
+    }
+
+    return true;
   }
 
-  return true;
-}
+  async updateUserSecure(targetUserId, adminId, adminPassword, data) {
+    await this.validateAdminPassword(adminId, adminPassword);
 
-async updateUserSecure(targetUserId, adminId, adminPassword, data) {
-  await this.validateAdminPassword(adminId, adminPassword);
+    const fields = [];
+    const values = [];
 
-  const fields = [];
-  const values = [];
+    if (data.firstName) {
+      fields.push("first_name=?");
+      values.push(data.firstName);
+    }
 
-  if (data.firstName) {
-    fields.push("first_name=?");
-    values.push(data.firstName);
+    if (data.lastName) {
+      fields.push("last_name=?");
+      values.push(data.lastName);
+    }
+
+    if (data.email) {
+      fields.push("email=?");
+      values.push(data.email);
+    }
+
+    if (data.password) {
+      const hash = await this.hashPassword(data.password);
+      fields.push("password=?");
+      values.push(hash);
+    }
+
+    if (!fields.length) return;
+
+    values.push(targetUserId);
+
+    await this.db.runAsync(
+      `UPDATE users SET ${fields.join(", ")} WHERE id=?`,
+      values
+    );
   }
 
-  if (data.lastName) {
-    fields.push("last_name=?");
-    values.push(data.lastName);
+  async deleteUserSecure(targetUserId, adminId, adminPassword) {
+    await this.validateAdminPassword(adminId, adminPassword);
+
+    await this.db.runAsync(
+      "DELETE FROM progress WHERE user_id=?",
+      [targetUserId]
+    );
+
+    await this.db.runAsync(
+      "DELETE FROM users WHERE id=?",
+      [targetUserId]
+    );
   }
-
-  if (data.email) {
-    fields.push("email=?");
-    values.push(data.email);
-  }
-
-  if (data.password) {
-    const hash = await this.hashPassword(data.password);
-    fields.push("password=?");
-    values.push(hash);
-  }
-
-  if (!fields.length) return;
-
-  values.push(targetUserId);
-
-  await this.db.runAsync(
-    `UPDATE users SET ${fields.join(", ")} WHERE id=?`,
-    values
-  );
-}
-
-async deleteUserSecure(targetUserId, adminId, adminPassword) {
-  await this.validateAdminPassword(adminId, adminPassword);
-
-  await this.db.runAsync(
-    "DELETE FROM progress WHERE user_id=?",
-    [targetUserId]
-  );
-
-  await this.db.runAsync(
-    "DELETE FROM users WHERE id=?",
-    [targetUserId]
-  );
-}
 }

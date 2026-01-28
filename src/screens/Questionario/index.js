@@ -1,9 +1,9 @@
+import { SafeAreaView } from "react-native-safe-area-context";
 import React, { useEffect, useState } from "react";
 import {
   View,
   Text,
   TouchableOpacity,
-  SafeAreaView,
   ActivityIndicator,
 } from "react-native";
 import styles from "./style";
@@ -106,21 +106,21 @@ export default function Questionario({ navigation, route }) {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.content}>
-       <View style={styles.progressContainer}>
-  <View
-    style={[
-      styles.progressBar,
-      { width: `${((currentIndex + 1) / questions.length) * 100}%` },
-    ]}
-  />
-</View>  
+        <View style={styles.progressContainer}>
+          <View
+            style={[
+              styles.progressBar,
+              { width: `${((currentIndex + 1) / questions.length) * 100}%` },
+            ]}
+          />
+        </View>
         <Text style={styles.questionText}>
-          {currentIndex + 1} - {currentQuestion.question}? {currentQuestion.verse}
+          {currentIndex + 1} - {currentQuestion.question} {currentQuestion.verse}
         </Text>
-        <View style={styles.boxButton}>
+        <View style={styles.openBoxButton}>
           {/* 📖 Bíblia */}
           <TouchableOpacity
-            style={styles.button}
+            style={styles.openButton}
             onPress={() =>
               navigation.navigate("Books", {
                 lesson,
@@ -128,10 +128,10 @@ export default function Questionario({ navigation, route }) {
               })
             }
           >
-            <Text style={styles.buttonText}>Abrir a Bíblia</Text>
+            <Text style={styles.openButtonText}>Abrir a Bíblia</Text>
           </TouchableOpacity>
         </View>
-        
+
 
         <View style={styles.optionsContainer}>
           {["A", "B", "C", "D"].map((letter) => {
@@ -151,7 +151,12 @@ export default function Questionario({ navigation, route }) {
                 onPress={() => selectAnswer(currentQuestion.id, letter)}
                 disabled={disabled}
               >
-                <Text style={styles.optionText}>
+                <Text
+                  style={styles.optionText}
+                  numberOfLines={3}
+                  adjustsFontSizeToFit
+
+                >
                   {currentQuestion[optionMap[letter]]}
                 </Text>
               </TouchableOpacity>
@@ -159,65 +164,64 @@ export default function Questionario({ navigation, route }) {
           })}
         </View>
 
-        <View style={styles.footer}>
-          {feedback[currentQuestion.id] && (
-            <Text
-              style={[
-                styles.feedbackText,
-                {
-                  color:
-                    feedback[currentQuestion.id] === "Acertou"
-                      ? "#4d7549"
-                      : "#D93025",
-                },
-              ]}
-            >
-              {feedback[currentQuestion.id] === "Acertou"
-                ? "RESPOSTA CORRETA"
-                : "RESPOSTA INCORRETA"}
-            </Text>
-          )}
-
-          
-
-          {/* ▶️ Próximo */}
-          <TouchableOpacity
+        {feedback[currentQuestion.id] && (
+          <Text
             style={[
-              styles.nextButton,
-              !answered && { opacity: 0.4 }, // 👁️ visual desabilitado
+              styles.feedbackText,
+              {
+                color:
+                  feedback[currentQuestion.id] === "Acertou"
+                    ? "#4d7549"
+                    : "#F0002F",
+              },
             ]}
-            disabled={!answered}
-            onPress={() => {
-              if (currentIndex + 1 < questions.length) {
-                setCurrentIndex(currentIndex + 1);
-                setDisabled(false);
-                setAnswered(false); // 🔁 reseta para próxima pergunta
-              } else {
-                const score = calculateScore();
-                const points = Math.round(
-                  (score.correct / score.total) * 10
-                );
-
-                if (points < 7) {
-                  navigation.navigate("Resultado", {
-                    lesson,
-                    lessonId: lesson.id,
-                    score,
-                    apelAccepted: false,
-                  });
-                } else {
-                  navigation.navigate("Conclusao", {
-                    lesson,
-                    lessonId: lesson.id,
-                    score,
-                  });
-                }
-              }
-            }}
           >
-            <Text style={styles.nextButtonText}>Próximo</Text>
-          </TouchableOpacity>
-        </View>
+            {feedback[currentQuestion.id] === "Acertou"
+              ? "RESPOSTA CORRETA"
+              : "RESPOSTA INCORRETA"}
+          </Text>
+
+        )}
+
+      </View>
+      <View style={styles.footer}>
+        {/* ▶️ Próximo */}
+        <TouchableOpacity
+          style={[
+            styles.nextButton,
+            !answered && { opacity: 0.4 }, // 👁️ visual desabilitado
+          ]}
+          disabled={!answered}
+          onPress={() => {
+            if (currentIndex + 1 < questions.length) {
+              setCurrentIndex(currentIndex + 1);
+              setDisabled(false);
+              setAnswered(false); // 🔁 reseta para próxima pergunta
+            } else {
+              const score = calculateScore();
+              const points = Math.round(
+                (score.correct / score.total) * 10
+              );
+
+              if (points < 5) {
+                navigation.navigate("Resultado", {
+                  lesson,
+                  lessonId: lesson.id,
+                  score,
+                  apelAccepted: false,
+                });
+              } else {
+                navigation.navigate("Conclusao", {
+                  lesson,
+                  lessonId: lesson.id,
+                  score,
+                });
+              }
+            }
+          }}
+        >
+          <Text style={styles.nextButtonText}>Próximo</Text>
+        </TouchableOpacity>
       </View>
     </SafeAreaView>
   );

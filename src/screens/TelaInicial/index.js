@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -8,12 +8,12 @@ import Cabecalho from '../../components/Cabecalho';
 import styles from './style';
 import versiculos from '../../../data/versesReflection.json';
 
+import { StatusBar } from 'expo-status-bar';
+
 export default function TelaInicial({ navigation }) {
 
-  
-
-
   const [user, setUser] = useState(null);
+  const [lessons, setLessons] = useState([]);
 
   const versiculoSorteado =
     versiculos[Math.floor(Math.random() * versiculos.length)];
@@ -29,6 +29,7 @@ export default function TelaInicial({ navigation }) {
     }, [])
   );
 
+
   const handleLogout = async () => {
     await AsyncStorage.removeItem('user');
     setUser(null);
@@ -39,7 +40,7 @@ export default function TelaInicial({ navigation }) {
     });
   };
 
-  
+
 
   return (
     <View style={styles.container}>
@@ -48,25 +49,25 @@ export default function TelaInicial({ navigation }) {
         navigation={navigation}
         onLogout={handleLogout}
       />
-
+      <StatusBar style="light" backgroundColor="#000" />
       <View style={styles.content}>
         <Text style={styles.subtitle}>Versículo do Dia</Text>
 
         <Text style={styles.texto}>{versiculoSorteado.texto}</Text>
         <View style={styles.boxReference}>
           <Text style={styles.reference}>
-              {versiculoSorteado.livro} {versiculoSorteado.capitulo}:{versiculoSorteado.versiculo}
+            {versiculoSorteado.livro} {versiculoSorteado.capitulo}:{versiculoSorteado.versiculo}
           </Text>
         </View>
         <View style={styles.boxReflexao}>
           <Text style={styles.tema}>
-             {versiculoSorteado.tema}
+            {versiculoSorteado.tema}
           </Text>
           <Text style={styles.frase}>
-               {versiculoSorteado.frase} {''} {versiculoSorteado.reflexao} {''} {versiculoSorteado.pergunta}
+            {versiculoSorteado.frase} {''} {versiculoSorteado.reflexao} {''} {versiculoSorteado.pergunta}
           </Text>
         </View>
-        
+
 
         <TouchableOpacity
           style={styles.button}
@@ -91,7 +92,7 @@ export default function TelaInicial({ navigation }) {
             <Ionicons name="people-sharp" size={18} color="#fff" />
             <Text style={styles.adminButtonText}>Gerenciar Usuários</Text>
           </TouchableOpacity>
-        )}        
+        )}
       </View>
     </View>
   );

@@ -74,9 +74,7 @@ export default function Categorias({ navigation }) {
         <ActivityIndicator size="large" color="#0B4F6C" />
       </View>
     );
-  }
-
-  
+  }  
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
@@ -105,7 +103,6 @@ export default function Categorias({ navigation }) {
           </Text>
         </TouchableOpacity>
       ))}
-
       
       </View>
       <TouchableOpacity

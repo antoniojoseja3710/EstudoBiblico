@@ -1,37 +1,48 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
+  /*CONTAINER */
   container: {
     flex: 1,
-    backgroundColor: '#f3f1ea',
+    backgroundColor: '#E3E3E3',
     paddingHorizontal: 20,
-    paddingTop: 20,
+    paddingTop: 24,
+    marginTop: 23,
   },
+
+  /*TÍTULO */
   title: {
-    fontSize: 28,
+    fontSize: 26,
     fontFamily: 'Poppins-Bold',
-    color: '#2f557f',
-    marginBottom: 20,
+    color: '#458385',
+    marginBottom: 22,
     textAlign: 'center',
   },
+
+  /*ITEM / CARD */
   item: {
-    padding: 15,
-    marginBottom: 12,
-    borderRadius: 12,
-    backgroundColor: '#2f557f',
-    borderWidth: 1,
-    borderColor: '#3e8391',
+    paddingVertical: 16,
+    paddingHorizontal: 18,
+    marginBottom: 14,
+    borderRadius: 14,
+    backgroundColor: '#FFFFFF',
+    borderLeftWidth: 5,
+    borderLeftColor: '#43DCE0',
+
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.2,
+    shadowOpacity: 0.12,
     shadowRadius: 4,
     elevation: 3,
   },
+
+  /*TEXTO DO ITEM */
   itemText: {
-    fontSize: 18,
+    fontSize: 16,
     fontFamily: 'Poppins-Medium',
-    color: '#ffa92d',
+    color: '#73716A',
+    lineHeight: 22,
   },
 });
 
-export default styles
+export default styles;

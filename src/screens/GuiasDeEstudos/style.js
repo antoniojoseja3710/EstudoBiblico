@@ -3,60 +3,87 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f3f1ea',   
+    backgroundColor: '#E3E3E3',
+    marginTop: 23,
   },
 
   content: {
-    padding:20,
-    alignItems:"center"
+    flex: 1,
+    padding: 20,
+    alignItems: "center",
   },
 
   guideText: {
     fontSize: 16,
     fontFamily: 'Poppins-Medium',
-    color: '#2f557f',
-    marginBottom: 10,
+    color: '#458385',
+    marginBottom: 2,
   },
 
   title: {
-    fontSize: 22,
-    fontFamily: 'Poppins-Medium',
-    color: '#2f557f',
-    marginBottom: 30,
+    fontSize: 18,
+    fontFamily: 'Poppins-Bold',
+    color: '#458385',
+    textAlign: 'center',
+    marginBottom: 10,
   },
-  
+
+  // Botão principal
   button: {
     width: '100%',
-    backgroundColor: '#2f557f',
-    paddingVertical: 15,
+    backgroundColor: '#43DCE0',
+    paddingVertical: 14,
+    paddingHorizontal: 20,
     borderRadius: 8,
     marginBottom: 15,
     alignItems: 'center',
   },
 
   buttonText: {
-    color: '#fff',
-    fontFamily: 'Poppins-Medium',
+    color: '#555',
+    fontFamily: 'Poppins-Bold',
     fontSize: 14,
+    textAlign: 'center',
     paddingTop: 3,
   },
 
+  buttonTextDescription: {
+    color: '#73716A',
+    fontFamily: 'Poppins-Medium',
+    fontSize: 12,
+    textAlign: 'center',
+    paddingTop: 3,
+  },
+
+  // Botão secundário
   backButton: {
     position: 'absolute',
+    width: 90,
+    height: 50,
     bottom: 60,
     left: 20,
-    backgroundColor: '#556677',
+    backgroundColor: '#778899',
     padding: 11,
     paddingTop: 14,
     paddingHorizontal: 20,
     borderRadius: 8,
+    opacity: 0.95,
   },
 
   backButtonText: {
-    color: '#FFFFFF',
-    fontSize: 16,
+    color: '#eee',
+    fontSize: 14,
     fontFamily: 'Poppins-Medium',
-    textAlign: 'center',
+    textAlign: 'center'
+  },
+
+  listContainer: {
+    flex: 1,
+    width: '100%',
+  },
+
+  listContent: {
+    paddingBottom: 120,
   },
 });
 

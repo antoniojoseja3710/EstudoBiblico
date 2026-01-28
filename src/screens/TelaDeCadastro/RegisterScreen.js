@@ -21,6 +21,8 @@ export default function RegisterScreen({ navigation }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  const caminhoEmailRegex = /^[a-zA-Z0-9._%+-]+@caminho\.com$/;
+
   useEffect(() => {
     const init = async () => {
       const repository = new EBRepository();
@@ -33,6 +35,17 @@ export default function RegisterScreen({ navigation }) {
   const handleRegister = async () => {
     if (!firstName || !lastName || !email || !password) {
       Alert.alert("Atenção", "Preencha todos os campos");
+      return;
+    }
+
+    // 🔒 VALIDA EMAIL @caminho.com
+    const caminhoEmailRegex = /^[a-zA-Z0-9._%+-]+@caminho\.com$/;
+
+    if (!caminhoEmailRegex.test(email)) {
+      Alert.alert(
+        "Email inválido",
+        "Use apenas emails no formato usuario@caminho.com"
+      );
       return;
     }
 
@@ -104,6 +117,9 @@ export default function RegisterScreen({ navigation }) {
         value={email}
         onChangeText={setEmail}
       />
+      <Text style={styles.helperText}>
+        Apenas emails no domínio @caminho.com são aceitos
+      </Text>
 
       <TextInput
         style={styles.input}

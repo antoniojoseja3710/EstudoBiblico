@@ -8,7 +8,7 @@ export default function ChapterList({ route, navigation }) {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>{book.nome}</Text>
+      <Text style={styles.title}>Capítulo</Text>
 
       <FlatList
         data={book.capitulos}

@@ -1,15 +1,15 @@
 import React, { useState, useEffect, useCallback } from "react";
-import { 
-  View, 
-  Text, 
-  TouchableOpacity, 
-  FlatList, 
-  ActivityIndicator, 
-  Alert 
+import {
+  View,
+  Text,
+  TouchableOpacity,
+  FlatList,
+  ActivityIndicator,
+  Alert
 } from "react-native";
 import { useFocusEffect } from "@react-navigation/native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { FontAwesome } from "@expo/vector-icons"; 
+import { FontAwesome } from "@expo/vector-icons";
 import EBRepository from "../../database/EBRepository";
 import styles from "./style";
 import Cabecalho from "../../components/Cabecalho";
@@ -22,11 +22,17 @@ export default function Licoes({ route, navigation }) {
 
   const { guideId, guideTitle } = route.params || {};
 
+  const [totalPoints, setTotalPoints] = useState(0);
+  const [averagePoints, setAveragePoints] = useState(0);
+
+
+
   // ===============================
   // CARREGA LIÇÕES
   // ===============================
   const loadLessons = useCallback(async (userObj) => {
     setLoading(true);
+
     try {
       const repo = new EBRepository();
       await repo.init();
@@ -34,18 +40,49 @@ export default function Licoes({ route, navigation }) {
       const data = (await repo.getLessonsByGuide(guideId)) || [];
       const finalLessons = [];
 
+      let pointsSum = 0;
+      let lessonsWithProgress = 0;
+
       for (const lesson of data) {
         let stars = 0;
+        let points = 0;
         let locked = true;
 
         if (userObj) {
           const progress = await repo.getLessonProgress(userObj.id, lesson.id);
-          stars = progress ? progress.stars : 0;
+
+          stars = progress?.stars || 0;
+          
+          points = Number(progress?.grade) || 0; // conversão
+
+          console.log("Nota: "+points)
+          console.log("Estrelas: "+stars)
+          
           locked = !(await repo.canAccessLesson(userObj.id, lesson));
+
+
+          if (points > 0) {
+            pointsSum += points;
+            lessonsWithProgress++;
+          }
         }
 
-        finalLessons.push({ ...lesson, stars, locked });
+        finalLessons.push({
+          ...lesson,
+          stars,
+          points,
+          locked
+        });
       }
+
+
+      // SET STATE UMA ÚNICA VEZ
+      setTotalPoints(pointsSum.toFixed(0));
+      setAveragePoints(
+        lessonsWithProgress > 0
+          ? (pointsSum / lessonsWithProgress).toFixed(1)
+          : 0
+      );
 
       setLessons(finalLessons);
     } catch (error) {
@@ -72,11 +109,11 @@ export default function Licoes({ route, navigation }) {
 
 
   useEffect(() => {
-  if (!guideId) {
-    console.warn("Guia não encontrado:", guideId);
-    navigation.goBack();
-  }
-}, [guideId])
+    if (!guideId) {
+      console.warn("Guia não encontrado:", guideId);
+      navigation.goBack();
+    }
+  }, [guideId])
 
   // ===============================
   // LOGOUT
@@ -128,10 +165,16 @@ export default function Licoes({ route, navigation }) {
         navigation={navigation}
         onLogout={handleLogout}
       />
-      <View>
-        
+      <View style={styles.summaryBox}>
+        <Text style={styles.summaryText}>
+          🏆 Pontuação geral: {totalPoints} pts
+        </Text>
+
+        <Text style={styles.summaryText}>
+          📊 Média geral: {averagePoints}
+        </Text>
       </View>
-      
+
       <View style={styles.mainContent}>
         <Text style={styles.licoesText}>
           Lições
@@ -175,8 +218,22 @@ export default function Licoes({ route, navigation }) {
                   setSelectedLesson(item);
                 }}
               >
+                {/* Número da lição */}
                 <Text style={styles.lessonNumberText}>{item.number}</Text>
+
+                {/* Estrelas */}
                 {renderStars(item.stars)}
+
+                {/* Cadeado */}
+                {(item.locked || !user) && (
+                  <View style={styles.lockIcon}>
+                    <FontAwesome
+                      name="lock"
+                      size={14}
+                      color="#1F2D2E"
+                    />
+                  </View>
+                )}
               </TouchableOpacity>
             );
           }}

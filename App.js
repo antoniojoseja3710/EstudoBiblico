@@ -46,23 +46,26 @@ export default function App() {
     
     <NavigationContainer>
       
-      <Stack.Navigator initialRouteName="TelaInicial">
-        <Stack.Screen name="TelaInicial" component={TelaInicial} />
-        <Stack.Screen name="Register" component={RegisterScreen} />
-        <Stack.Screen name="Login" component={LoginScreen} />  
+      <Stack.Navigator initialRouteName="TelaInicial" 
+   
+      
+      >
+        <Stack.Screen name="TelaInicial" component={TelaInicial}  options={{ headerShown: false }}/>
+        <Stack.Screen name="Register" component={RegisterScreen} options={{ headerShown: false }}/>
+        <Stack.Screen name="Login" component={LoginScreen} options={{ headerShown: false }}/>  
 
-        <Stack.Screen name="Categorias" component={Categorias} />
-        <Stack.Screen name="GuiasDeEstudos" component={GuiasDeEstudos} />
-        <Stack.Screen name="Licoes" component={Licoes} />
-        <Stack.Screen name="Introducao" component={Introducao} />
-        <Stack.Screen name="Questionario" component={Questionario} />
-        <Stack.Screen name="Conclusao" component={Conclusao} />
-        <Stack.Screen name="Resultado" component={Resultado} />
-        <Stack.Screen name="UsersManagement" component={UsersManagement} />
+        <Stack.Screen name="Categorias" component={Categorias} options={{ headerShown: false }}/>
+        <Stack.Screen name="GuiasDeEstudos" component={GuiasDeEstudos} options={{ headerShown: false }}/>
+        <Stack.Screen name="Licoes" component={Licoes} options={{ headerShown: false }}/>
+        <Stack.Screen name="Introducao" component={Introducao} options={{ headerShown: false }}/>
+        <Stack.Screen name="Questionario" component={Questionario} options={{ headerShown: false }}/>
+        <Stack.Screen name="Conclusao" component={Conclusao} options={{ headerShown: false }}/>
+        <Stack.Screen name="Resultado" component={Resultado} options={{ headerShown: false }}/>
+        <Stack.Screen name="UsersManagement" component={UsersManagement} options={{ headerShown: false }}/>
 
-        <Stack.Screen name="Books" component={BookList} options={{ title: 'Bíblia' }} />
-        <Stack.Screen name="Chapters" component={ChapterList} options={{ title: 'Capítulos' }} />
-        <Stack.Screen name="Verses" component={Verse} options={{ title: 'Versículos' }} />
+        <Stack.Screen name="Books" component={BookList} options={{ headerShown: false }}/>
+        <Stack.Screen name="Chapters" component={ChapterList} options={{ headerShown: false }} />
+        <Stack.Screen name="Verses" component={Verse} options={{ headerShown: false }} />
         
       </Stack.Navigator>
     </NavigationContainer>

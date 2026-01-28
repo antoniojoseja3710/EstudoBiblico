@@ -22,6 +22,8 @@ export default function LoginScreen({ navigation }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  const caminhoEmailRegex = /^[a-zA-Z0-9._%+-]+@caminho\.com$/;
+
   useEffect(() => {
     const init = async () => {
       const repository = new EBRepository();
@@ -34,6 +36,17 @@ export default function LoginScreen({ navigation }) {
   const handleLogin = async () => {
     if (!email || !password) {
       Alert.alert("Atenção", "Informe email e senha");
+      return;
+    }
+
+    // 🔒 VALIDA DOMÍNIO DO EMAIL
+    const caminhoEmailRegex = /^[a-zA-Z0-9._%+-]+@caminho\.com$/;
+
+    if (!caminhoEmailRegex.test(email)) {
+      Alert.alert(
+        "Email inválido",
+        "Use apenas emails no formato usuario@caminho.com"
+      );
       return;
     }
 
@@ -52,10 +65,8 @@ export default function LoginScreen({ navigation }) {
         return;
       }
 
-      // ✅ SALVA O USUÁRIO LOGADO
       await AsyncStorage.setItem('user', JSON.stringify(user));
 
-      // ✅ RESET DE NAVEGAÇÃO (evita voltar para login)
       navigation.reset({
         index: 0,
         routes: [{ name: 'TelaInicial' }],
@@ -80,7 +91,7 @@ export default function LoginScreen({ navigation }) {
   const handleGuestLogin = () => {
     navigation.replace("TelaInicial");
   };
-  
+
 
   return (
     <KeyboardAvoidingView
@@ -97,6 +108,9 @@ export default function LoginScreen({ navigation }) {
         value={email}
         onChangeText={setEmail}
       />
+      <Text style={styles.helperText}>
+        Apenas emails @caminho.com são aceitos
+      </Text>
 
       <TextInput
         style={styles.input}

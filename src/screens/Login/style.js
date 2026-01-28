@@ -1,70 +1,95 @@
 import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
+  /* CONTAINER */
   container: {
     flex: 1,
     padding: 24,
     justifyContent: "flex-start",
-    backgroundColor: "#f3f1ea",
+    backgroundColor: "#E3E3E3",
+    marginTop: 23,
   },
 
+  /* TÍTULO */
   title: {
     fontSize: 26,
-    fontFamily: 'Poppins-Medium',
+    fontFamily: "Poppins-Bold",
     textAlign: "center",
-    marginTop: 60,
-    marginBottom: 30,
-    color: "#2f557f"
+    marginTop: 56,
+    marginBottom: 32,
+    color: "#458385",
   },
 
+  /* INPUT */
   input: {
-    backgroundColor: "#FFF",
-    borderRadius: 8,
-    padding: 14,
-    marginBottom: 8,
-    borderWidth: 1,
-    borderColor: "#DDD",
-    fontFamily: 'Poppins-Medium',
+    backgroundColor: "#FFFFFF",
+    borderRadius: 12,
+    paddingVertical: 14,
+    paddingHorizontal: 16,
+    marginBottom: 6,
+    borderWidth: 1.5,
+    borderColor: "#458385",
+    fontFamily: "Poppins-Medium",
+    fontSize: 15,
+    color: "#73716A",
   },
 
+  helperText: {
+    fontSize: 12,
+    color: "#73716A",
+    paddingLeft: 8,
+    marginBottom: 20,
+  },
+
+  /* 🔹 BOTÃO PRINCIPAL (CTA) */
   button: {
-    backgroundColor: "#2f557f",
-    padding: 15,
-    borderRadius: 8,
+    backgroundColor: "#458385",
+    paddingVertical: 16,
+    borderRadius: 12,
     alignItems: "center",
-    marginTop: 10,
+    marginTop: 16,
+    shadowColor: "#FFD700",
+    shadowOffset: { width: 0, height: 6 },
+    shadowOpacity: 0.35,
+    shadowRadius: 8,
+    elevation: 6,
   },
 
   buttonText: {
-    color: "#FFF",
+    color: "#fff",
     fontSize: 16,
-    fontFamily: 'Poppins-Medium',
+    fontFamily: "Poppins-Bold",
+    letterSpacing: 0.6,
   },
 
+  /* LINKS */
   link: {
-    marginTop: 20,
-    fontFamily: 'Poppins-Medium',
+    marginTop: 26,
+    fontFamily: "Poppins-Medium",
     textAlign: "center",
-    color: "#555",
+    color: "#73716A",
+    fontSize: 14,
   },
 
   linkBold: {
-    fontFamily: 'Poppins-Medium',
-    color: "#2f557f",
+    fontFamily: "Poppins-Bold",
+    color: "#43DCE0",
   },
 
+  guestText: {
+    marginTop: 20,
+    textAlign: "center",
+    color: "#458385",
+    fontSize: 14,
+    fontFamily: "Poppins-Medium",
+    textDecorationLine: "underline",
+  },
+
+  /* LOADING */
   loading: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
+    backgroundColor: "#E3E3E3",
   },
-
-  guestText: {
-  marginTop: 20,
-  textAlign: "center",
-  color: "#F5B642",
-  fontSize: 15,
-  fontFamily: 'Poppins-Medium',
-  textDecorationLine: "underline",
-}
 });

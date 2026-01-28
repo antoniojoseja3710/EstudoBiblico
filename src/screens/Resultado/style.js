@@ -3,99 +3,103 @@ import { StyleSheet, Dimensions } from "react-native";
 const { width } = Dimensions.get("window");
 
 export default StyleSheet.create({
-  /* 🧱 CONTAINER GERAL */
+  /* CONTAINER */
   container: {
     flex: 1,
-    backgroundColor: "#F7F4EE",
+    backgroundColor: "#E3E3E3",
     justifyContent: "center",
+    paddingVertical: 20,
+    marginTop: 23,
   },
 
-  /* 🎴 CARD PRINCIPAL */
+  /* CARD PRINCIPAL */
   card: {
-    backgroundColor: "#2F557F",
-    marginHorizontal: 24,
-    borderRadius: 16,
-    paddingVertical: 26,
-    paddingHorizontal: 20,
+    backgroundColor: "#458385",
+    marginHorizontal: 22,
+    borderRadius: 18,
+    paddingVertical: 28,
+    paddingHorizontal: 22,
     alignItems: "center",
     shadowColor: "#000",
-    shadowOffset: { width: 0, height: 4 },
+    shadowOffset: { width: 0, height: 6 },
     shadowOpacity: 0.25,
-    shadowRadius: 6,
-    elevation: 6,
+    shadowRadius: 8,
+    elevation: 7,
   },
 
-  /* 🏷️ TÍTULOS */
+  /* TÍTULO PRINCIPAL */
   title: {
-    fontSize: 32,
-    fontFamily: 'Playfair_144pt-Bold',
-    color: "#F2B544",
-    marginBottom: 16,
+    fontSize: 30,
+    fontFamily: "Playfair_144pt-Bold",
+    color: "#FFD700",
+    marginBottom: 14,
   },
 
-  context:{
-    textAlign: 'left',
+  /* CONTEXTO */
+  context: {
     width: "100%",
-    marginBottom: 4,
+    marginBottom: 6,
   },
 
   contextText: {
-    fontSize: 10,
-    fontFamily: 'Poppins-Medium',
-    color: "#aaa",
+    fontSize: 11,
+    fontFamily: "Poppins-Medium",
+    color: "#E3E3E3",
     textTransform: "uppercase",
     letterSpacing: 1,
+  },
 
-  }, 
   lessonTitle: {
-  fontSize: 16,
-  fontFamily: 'Poppins-Bold',
-  color: "#FFFFFF",
-  marginBottom: 4, 
-},
+    fontSize: 16,
+    fontFamily: "Poppins-Bold",
+    color: "#FFFFFF",
+    marginBottom: 6,
+  },
 
-  /* ⭐ ESTRELAS */
+  /* ESTRELAS */
   starsContainer: {
     flexDirection: "row",
-  justifyContent: "center",
-  marginVertical: 12,
+    justifyContent: "center",
+    marginVertical: 14,
   },
 
-  /* 🔢 NOTA */
+  /* SCORE */
   scoreCircle: {
-  width: 110,
-  height: 110,
-  borderRadius: 55,
-  backgroundColor: "#F2B544",
-  alignItems: "center",
-  justifyContent: "center",
-  marginVertical: 20,
-  padding:20,
-  shadowColor: "#000",
-  shadowOpacity: 0.3,
-  shadowRadius: 6,
-  elevation: 6,
-},
-  score: {
-    fontSize: 48,
-    fontFamily: 'Poppins-Bold',
-    color: "#2F557F",
+    width: 112,
+    height: 112,
+    borderRadius: 56,
+    backgroundColor: "#FFD700",
+    alignItems: "center",
+    justifyContent: "center",
+    marginVertical: 18,
+    shadowColor: "#000",
+    shadowOpacity: 0.3,
+    shadowRadius: 6,
+    elevation: 6,
+    paddingTop: 10,
   },
 
-  /* 📝 TEXTO RESULTADO */
+  score: {
+    fontSize: 46,
+    fontFamily: "Poppins-Bold",
+    color: "#458385",
+  },
+
+  /* TEXTO RESULTADO */
   resultText: {
     fontSize: 14,
-    fontFamily: 'Poppins-Medium',
-    color: "#fff",
+    fontFamily: "Poppins-Medium",
+    color: "#FFFFFF",
     textAlign: "justify",
-    marginTop: 10,
+    marginTop: 12,
     lineHeight: 22,
   },
 
-  /* 🔘 ÁREA DE BOTÕES */
+  /* BOTÕES */
   buttons: {
-    marginTop: 26,
-    paddingHorizontal: 24,
+    marginTop: 28,
+    width: "100%",
+    paddingHorizontal: 10,
   },
 
   row: {
@@ -103,44 +107,45 @@ export default StyleSheet.create({
     justifyContent: "space-between",
   },
 
-  /* 🔹 BOTÕES SECUNDÁRIOS */
+  /* BOTÕES SECUNDÁRIOS */
   secondaryButton: {
-    backgroundColor: "#3e8391",
-    paddingVertical: 12,
-    paddingTop: 14,
-    width: (width - 64) / 2,
-    borderRadius: 8,
+    backgroundColor: "#43DCE0",
+    paddingVertical: 13,
+    width: (width - 80) / 2,
+    borderRadius: 10,
     alignItems: "center",
+    margin: 14,
   },
 
   secondaryButtonText: {
-    color: "#333",
+    color: "#458385",
     fontSize: 14,
-    fontFamily: 'Poppins-Bold',
+    fontFamily: "Poppins-Bold",
   },
 
-  /* 🟢 BOTÃO PRINCIPAL */
+  /* BOTÃO PRINCIPAL */
   primaryButton: {
-    backgroundColor: "#4F6F52",
-    padding: 11,
-    paddingTop: 14,
-    borderRadius: 8,
+    backgroundColor: "#E3E3E3",
+    paddingVertical: 14,
+    borderRadius: 10,
     alignItems: "center",
-    marginTop: 14,
+    marginTop: 16,
   },
 
   primaryText: {
-    color: "#FFFFFF",
+    color: "#458385",
     fontSize: 15,
-    fontFamily: 'Poppins-Medium',
+    fontFamily: "Poppins-Bold",
   },
- 
-acceptMessage: {
-  marginTop: 18,
-  fontSize: 15,
-  textAlign: "center",
-  color: "#fff",
-  fontWeight: "600",
-  paddingHorizontal: 10,
-},
+
+  /* MENSAGEM DE ACEITAÇÃO */
+  feedbackText: {
+    marginTop: 20,
+    fontSize: 15,
+    textAlign: "center",
+    color: "#FFD700",
+    fontFamily: "Poppins-Medium",
+    paddingHorizontal: 14,
+  },
+    
 });
