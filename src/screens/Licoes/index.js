@@ -206,7 +206,7 @@ export default function Licoes({ route, navigation }) {
                   if (!user && item.number > 2) {
                     Alert.alert(
                       "Login necessário",
-                      "Faça login para acessar os temas."
+                      "Faça login para acessar todos os temas e registrar progresso."
                     );
                     return;
                   }
@@ -250,7 +250,7 @@ export default function Licoes({ route, navigation }) {
               ? `${selectedLesson.number} - ${selectedLesson.title}`
               : user
                 ? "Selecione o Tema"
-                : "Faça login para acessar os temas"}
+                : "Faça login para acessar todos os temas e registrar progresso"}
           </Text>
         </View>
 

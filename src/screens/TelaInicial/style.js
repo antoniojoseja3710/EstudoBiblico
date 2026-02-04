@@ -4,8 +4,8 @@ export default StyleSheet.create({
   /* CONTAINER */
   container: {
     flex: 1,
-    backgroundColor: '#E3E3E3',
-    marginTop: 23,    
+    backgroundColor: '#E3E3E3', 
+    marginTop: 0,
   },
 
   /* CONTEÚDO */

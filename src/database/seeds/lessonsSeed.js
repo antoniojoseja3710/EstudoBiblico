@@ -1,7 +1,7 @@
 export const lessonsSeed = [
   {
     category: "Fundamentos do Evangelho",
-    guide: "Caminho da Vida",
+    guide: "O Caminho da Vida",
     description: "Explore os fundamentos do evangelho e descubra a transformação e esperança no \"Caminho da Vida\" com Cristo.",
     lessons: [
       {
@@ -1001,10 +1001,10 @@ export const lessonsSeed = [
           {
             question: "Que bênção especial recebem os que estudam a Santa Bíblia?",
             verse: "Romanos 15:4",
-            option_a: "Perseverança e bom ânimo.",
+            option_a: "Esperança.",
             option_b: "Riquezas materiais.",
             option_c: "Saúde perfeita.",
-            option_d: "Sabedoria infinita.",
+            option_d: "Inteligência.",
             correct_option: "A"
           },
           {

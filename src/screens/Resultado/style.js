@@ -9,7 +9,6 @@ export default StyleSheet.create({
     backgroundColor: "#E3E3E3",
     justifyContent: "center",
     paddingVertical: 20,
-    marginTop: 23,
   },
 
   /* CARD PRINCIPAL */

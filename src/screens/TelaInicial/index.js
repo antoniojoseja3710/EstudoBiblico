@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
+import { SafeAreaView } from "react-native-safe-area-context";
 import { Ionicons } from '@expo/vector-icons';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useFocusEffect } from '@react-navigation/native';
@@ -8,15 +9,17 @@ import Cabecalho from '../../components/Cabecalho';
 import styles from './style';
 import versiculos from '../../../data/versesReflection.json';
 
-import { StatusBar } from 'expo-status-bar';
+import { StatusBar } from 'react-native';
 
 export default function TelaInicial({ navigation }) {
 
   const [user, setUser] = useState(null);
-  const [lessons, setLessons] = useState([]);
 
   const versiculoSorteado =
     versiculos[Math.floor(Math.random() * versiculos.length)];
+
+
+
 
   // 🔹 CARREGA USUÁRIO LOGADO
   useFocusEffect(
@@ -43,13 +46,18 @@ export default function TelaInicial({ navigation }) {
 
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <Cabecalho
         user={user}
         navigation={navigation}
         onLogout={handleLogout}
       />
-      <StatusBar style="light" backgroundColor="#000" />
+      <StatusBar
+        animated={true}
+        backgroundColor="#000"
+        barStyle="light-content"
+      />
+
       <View style={styles.content}>
         <Text style={styles.subtitle}>Versículo do Dia</Text>
 
@@ -94,6 +102,6 @@ export default function TelaInicial({ navigation }) {
           </TouchableOpacity>
         )}
       </View>
-    </View>
+    </SafeAreaView>
   );
 }

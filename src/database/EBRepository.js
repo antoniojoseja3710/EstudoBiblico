@@ -119,6 +119,8 @@ export default class EBRepository {
     return result.lastInsertRowid;
   }
 
+
+
   async login(email, password) {
     const hash = await this.hashPassword(password);
     const data = await this.db.getAllAsync(
@@ -130,19 +132,100 @@ export default class EBRepository {
   }
 
   // =============================
+  // GERENCIAMENTO DE USUÁRIOS
+  // =============================
+
+  async getAllUsers() {
+    return this.db.getAllAsync(`
+    SELECT id, first_name, last_name, email, role
+    FROM users
+    ORDER BY first_name
+  `);
+  }
+
+  async validateAdminPassword(adminId, password) {
+    const hash = await this.hashPassword(password);
+
+    const data = await this.db.getAllAsync(
+      `SELECT id FROM users
+     WHERE id=? AND password=? AND role='admin'`,
+      [adminId, hash]
+    );
+
+    if (!data.length) {
+      throw new Error("Senha de administrador inválida");
+    }
+
+    return true;
+  }
+
+  async updateUserSecure(targetUserId, adminId, adminPassword, data) {
+    await this.validateAdminPassword(adminId, adminPassword);
+
+    const fields = [];
+    const values = [];
+
+    if (data.firstName) {
+      fields.push("first_name=?");
+      values.push(data.firstName);
+    }
+
+    if (data.lastName) {
+      fields.push("last_name=?");
+      values.push(data.lastName);
+    }
+
+    if (data.email) {
+      fields.push("email=?");
+      values.push(data.email);
+    }
+
+    if (data.password) {
+      const hash = await this.hashPassword(data.password);
+      fields.push("password=?");
+      values.push(hash);
+    }
+
+    if (!fields.length) return;
+
+    values.push(targetUserId);
+
+    await this.db.runAsync(
+      `UPDATE users SET ${fields.join(", ")} WHERE id=?`,
+      values
+    );
+  }
+
+  async deleteUserSecure(targetUserId, adminId, adminPassword) {
+    await this.validateAdminPassword(adminId, adminPassword);
+
+    await this.db.runAsync(
+      "DELETE FROM progress WHERE user_id=?",
+      [targetUserId]
+    );
+
+    await this.db.runAsync(
+      "DELETE FROM users WHERE id=?",
+      [targetUserId]
+    );
+  }
+
+  // =============================
   // CATEGORIAS
   // =============================
   async getCategories() {
     return this.db.getAllAsync("SELECT * FROM categories ORDER BY name");
   }
 
-  async getCategoryById(id) {
+   async getCategoryById(id) {
     const data = await this.db.getAllAsync(
       "SELECT * FROM categories WHERE id=?",
       [id]
     );
     return data[0] || null;
   }
+
+  /* 
 
   async createCategory({ name }) {
     await this.db.runAsync(
@@ -163,10 +246,27 @@ export default class EBRepository {
     for (const g of guides) await this.deleteStudyGuide(g.id);
     await this.db.runAsync("DELETE FROM categories WHERE id=?", [id]);
   }
-
+*/
   // =============================
   // GUIAS DE ESTUDO
   // =============================
+  
+  async getGuidesByCategory(categoryId) {
+    return this.db.getAllAsync(
+      `SELECT * FROM study_guides WHERE category_id=? ORDER BY title`,
+      [categoryId]
+    );
+  }
+
+   async getGuideById(id) {
+    const data = await this.db.getAllAsync(
+      "SELECT * FROM study_guides WHERE id=?",
+      [id]
+    );
+    return data[0] || null;
+  }
+/*
+
   async createStudyGuide({ category_id, title, description }) {
     await this.db.runAsync(
       `INSERT INTO study_guides (category_id, title, description)
@@ -175,39 +275,18 @@ export default class EBRepository {
     );
   }
 
-  async getGuidesByCategory(categoryId) {
-    return this.db.getAllAsync(
-      `SELECT * FROM study_guides WHERE category_id=? ORDER BY title`,
-      [categoryId]
-    );
-  }
-
-  async getGuideById(id) {
-    const data = await this.db.getAllAsync(
-      "SELECT * FROM study_guides WHERE id=?",
-      [id]
-    );
-    return data[0] || null;
-  }
-
   async deleteStudyGuide(id) {
     const lessons = await this.getLessonsByGuide(id);
     for (const l of lessons) await this.deleteLesson(l.id);
     await this.db.runAsync("DELETE FROM study_guides WHERE id=?", [id]);
   }
 
+  */
+
   // =============================
   // 🔹 LIÇÕES
   // =============================
-  async createLesson({ guide_id, number, title, introduction, conclusion }) {
-    const result = await this.db.runAsync(
-      `INSERT INTO lessons (guide_id, number, title, introduction, conclusion)
-       VALUES (?, ?, ?, ?, ?)`,
-      [guide_id, number, title, introduction || "", conclusion || ""]
-    );
-    return result.lastInsertRowid;
-  }
-
+  
   async getLessonsByGuide(guideId) {
     return this.db.getAllAsync(
       `SELECT * FROM lessons WHERE guide_id=? ORDER BY number`,
@@ -222,12 +301,24 @@ export default class EBRepository {
     );
     return data[0] || null;
   }
+  /*
+
+  async createLesson({ guide_id, number, title, introduction, conclusion }) {
+    const result = await this.db.runAsync(
+      `INSERT INTO lessons (guide_id, number, title, introduction, conclusion)
+       VALUES (?, ?, ?, ?, ?)`,
+      [guide_id, number, title, introduction || "", conclusion || ""]
+    );
+    return result.lastInsertRowid;
+  }
 
   async deleteLesson(id) {
     await this.db.runAsync("DELETE FROM questions WHERE lesson_id=?", [id]);
     await this.db.runAsync("DELETE FROM progress WHERE lesson_id=?", [id]);
     await this.db.runAsync("DELETE FROM lessons WHERE id=?", [id]);
   }
+*/
+
 
   // =============================
   // 🔹 QUESTÕES
@@ -441,82 +532,5 @@ export default class EBRepository {
       }
     }
   }
-  // =============================
-  // GERENCIAMENTO DE USUÁRIOS
-  // =============================
-
-  async getAllUsers() {
-    return this.db.getAllAsync(`
-    SELECT id, first_name, last_name, email, role
-    FROM users
-    ORDER BY first_name
-  `);
-  }
-
-  async validateAdminPassword(adminId, password) {
-    const hash = await this.hashPassword(password);
-
-    const data = await this.db.getAllAsync(
-      `SELECT id FROM users
-     WHERE id=? AND password=? AND role='admin'`,
-      [adminId, hash]
-    );
-
-    if (!data.length) {
-      throw new Error("Senha de administrador inválida");
-    }
-
-    return true;
-  }
-
-  async updateUserSecure(targetUserId, adminId, adminPassword, data) {
-    await this.validateAdminPassword(adminId, adminPassword);
-
-    const fields = [];
-    const values = [];
-
-    if (data.firstName) {
-      fields.push("first_name=?");
-      values.push(data.firstName);
-    }
-
-    if (data.lastName) {
-      fields.push("last_name=?");
-      values.push(data.lastName);
-    }
-
-    if (data.email) {
-      fields.push("email=?");
-      values.push(data.email);
-    }
-
-    if (data.password) {
-      const hash = await this.hashPassword(data.password);
-      fields.push("password=?");
-      values.push(hash);
-    }
-
-    if (!fields.length) return;
-
-    values.push(targetUserId);
-
-    await this.db.runAsync(
-      `UPDATE users SET ${fields.join(", ")} WHERE id=?`,
-      values
-    );
-  }
-
-  async deleteUserSecure(targetUserId, adminId, adminPassword) {
-    await this.validateAdminPassword(adminId, adminPassword);
-
-    await this.db.runAsync(
-      "DELETE FROM progress WHERE user_id=?",
-      [targetUserId]
-    );
-
-    await this.db.runAsync(
-      "DELETE FROM users WHERE id=?",
-      [targetUserId]
-    );
-  }
+  
 }

@@ -7,7 +7,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingVertical: 30,
     justifyContent: 'space-between',
-    marginTop: 23,
   },
 
   content: {
