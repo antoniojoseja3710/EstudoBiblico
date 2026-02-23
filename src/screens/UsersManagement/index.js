@@ -28,36 +28,52 @@ export default function UsersManagement() {
     password: "",
   });
 
-  // 🔐 Modal
   const [modalVisible, setModalVisible] = useState(false);
   const [adminPassword, setAdminPassword] = useState("");
-  const [actionType, setActionType] = useState(null); // "edit" | "delete"
+  const [actionType, setActionType] = useState(null);
   const [targetUserId, setTargetUserId] = useState(null);
 
+  // ======================
+  // INIT
+  // ======================
   useEffect(() => {
     const init = async () => {
       const repository = new EBRepository();
       await repository.init();
       setRepo(repository);
 
-      const data = await repository.getAllUsers();
-      setUsers(data);
-
+      // 🔹 carrega usuário primeiro
       const storedUser = await AsyncStorage.getItem("user");
-      setLoggedUser(storedUser ? JSON.parse(storedUser) : null);
+      const user = storedUser ? JSON.parse(storedUser) : null;
+
+      if (!user) {
+        Alert.alert("Erro", "Usuário não autenticado");
+        setLoading(false);
+        return;
+      }
+
+      setLoggedUser(user);
+
+      // 🔹 agora pode buscar usuários com segurança
+      const data = await repository.getAllUsers(user.id);
+      setUsers(data);
 
       setLoading(false);
     };
+
     init();
   }, []);
 
+  // ======================
+  // RELOAD
+  // ======================
   const reloadUsers = async () => {
-    const data = await repo.getAllUsers();
+    const data = await repo.getAllUsers(loggedUser.id);
     setUsers(data);
   };
 
   // ======================
-  // ✏️ EDITAR
+  // EDITAR
   // ======================
   const startEdit = (user) => {
     setEditingUserId(user.id);
@@ -128,7 +144,7 @@ export default function UsersManagement() {
   };
 
   // ======================
-  // 🔐 CONFIRMAR ADMIN
+  // CONFIRMAR ADMIN
   // ======================
   const confirmAdminAction = async () => {
     if (!adminPassword) {
@@ -175,6 +191,7 @@ export default function UsersManagement() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Gerenciar Usuários</Text>
+
       <FlatList
         data={users}
         keyExtractor={(item) => String(item.id)}
@@ -189,18 +206,14 @@ export default function UsersManagement() {
                     style={styles.input}
                     placeholder="Nome"
                     value={form.firstName}
-                    onChangeText={(v) =>
-                      setForm({ ...form, firstName: v })
-                    }
+                    onChangeText={(v) => setForm({ ...form, firstName: v })}
                   />
 
                   <TextInput
                     style={styles.input}
                     placeholder="Sobrenome"
                     value={form.lastName}
-                    onChangeText={(v) =>
-                      setForm({ ...form, lastName: v })
-                    }
+                    onChangeText={(v) => setForm({ ...form, lastName: v })}
                   />
 
                   <TextInput
@@ -208,9 +221,7 @@ export default function UsersManagement() {
                     placeholder="Email"
                     autoCapitalize="none"
                     value={form.email}
-                    onChangeText={(v) =>
-                      setForm({ ...form, email: v })
-                    }
+                    onChangeText={(v) => setForm({ ...form, email: v })}
                   />
 
                   <TextInput
@@ -218,9 +229,7 @@ export default function UsersManagement() {
                     placeholder="Nova senha (opcional)"
                     secureTextEntry
                     value={form.password}
-                    onChangeText={(v) =>
-                      setForm({ ...form, password: v })
-                    }
+                    onChangeText={(v) => setForm({ ...form, password: v })}
                   />
 
                   <View style={styles.cardActions}>
@@ -228,9 +237,7 @@ export default function UsersManagement() {
                       <Text style={styles.cancelText}>Cancelar</Text>
                     </TouchableOpacity>
 
-                    <TouchableOpacity
-                      onPress={() => requestSaveEdit(item.id)}
-                    >
+                    <TouchableOpacity onPress={() => requestSaveEdit(item.id)}>
                       <Text style={styles.saveText}>Salvar</Text>
                     </TouchableOpacity>
                   </View>
@@ -240,8 +247,10 @@ export default function UsersManagement() {
                   <Text style={styles.userName}>
                     {item.first_name} {item.last_name}
                   </Text>
+
                   <Text style={styles.userEmail}>{item.email}</Text>
 
+                  {/* 🔥 BOTÕES ADMIN RESTAURADOS */}
                   <View style={styles.cardActions}>
                     <TouchableOpacity onPress={() => startEdit(item)}>
                       <Text style={styles.editText}>Editar</Text>
@@ -249,9 +258,7 @@ export default function UsersManagement() {
 
                     {loggedUser?.role === "admin" &&
                       loggedUser.id !== item.id && (
-                        <TouchableOpacity
-                          onPress={() => requestDelete(item.id)}
-                        >
+                        <TouchableOpacity onPress={() => requestDelete(item.id)}>
                           <Text style={styles.deleteText}>Excluir</Text>
                         </TouchableOpacity>
                       )}
@@ -263,7 +270,7 @@ export default function UsersManagement() {
         }}
       />
 
-      {/* 🔐 MODAL ADMIN */}
+      {/* MODAL ADMIN */}
       <Modal visible={modalVisible} transparent animationType="fade">
         <View style={styles.modalOverlay}>
           <View style={styles.modalBox}>
@@ -280,9 +287,7 @@ export default function UsersManagement() {
             />
 
             <View style={styles.cardActions}>
-              <TouchableOpacity
-                onPress={() => setModalVisible(false)}
-              >
+              <TouchableOpacity onPress={() => setModalVisible(false)}>
                 <Text style={styles.cancelText}>Cancelar</Text>
               </TouchableOpacity>
 

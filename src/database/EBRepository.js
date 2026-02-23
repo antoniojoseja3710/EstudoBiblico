@@ -6,7 +6,7 @@ export default class EBRepository {
   db = null;
 
   async init() {
-    if (this.db) return; // 🔒 evita reinicializar
+    if (this.db) return; // evita reinicializar
 
     this.db = await getDatabase();
 
@@ -95,6 +95,7 @@ export default class EBRepository {
   // =============================
   // SEGURANÇA
   // =============================
+
   async hashPassword(password) {
     return Crypto.digestStringAsync(
       Crypto.CryptoDigestAlgorithm.SHA256,
@@ -102,12 +103,36 @@ export default class EBRepository {
     );
   }
 
+  // ⭐ NOVO
+  async verificaRoleAdmin(userId) {
+    const data = await this.db.getAllAsync(
+      "SELECT role FROM users WHERE id=?",
+      [userId]
+    );
+
+    return data.length > 0 && data[0].role === "admin";
+  }
+
+  // ⭐ NOVO (helper profissional)
+  async assertAdmin(userId) {
+    const isAdmin = await this.verificaRoleAdmin(userId);
+
+    if (!isAdmin) {
+      throw new Error("Acesso negado");
+    }
+  }
+
   // =============================
   // USUÁRIOS
   // =============================
+
   async registerUser({ firstName, lastName, email, password }) {
     const hash = await this.hashPassword(password);
-    const count = await this.db.getAllAsync("SELECT COUNT(*) as total FROM users");
+
+    const count = await this.db.getAllAsync(
+      "SELECT COUNT(*) as total FROM users"
+    );
+
     const role = count[0].total === 0 ? "admin" : "user";
 
     const result = await this.db.runAsync(
@@ -119,15 +144,15 @@ export default class EBRepository {
     return result.lastInsertRowid;
   }
 
-
-
   async login(email, password) {
     const hash = await this.hashPassword(password);
+
     const data = await this.db.getAllAsync(
       `SELECT id, first_name, last_name, email, role
        FROM users WHERE email=? AND password=?`,
       [email, hash]
     );
+
     return data.length ? data[0] : null;
   }
 
@@ -135,20 +160,24 @@ export default class EBRepository {
   // GERENCIAMENTO DE USUÁRIOS
   // =============================
 
-  async getAllUsers() {
+  async getAllUsers(requestUserId) {
+    await this.assertAdmin(requestUserId);
+
     return this.db.getAllAsync(`
-    SELECT id, first_name, last_name, email, role
-    FROM users
-    ORDER BY first_name
-  `);
+      SELECT id, first_name, last_name, email, role
+      FROM users
+      ORDER BY first_name
+    `);
   }
 
   async validateAdminPassword(adminId, password) {
+    await this.assertAdmin(adminId);
+
     const hash = await this.hashPassword(password);
 
     const data = await this.db.getAllAsync(
       `SELECT id FROM users
-     WHERE id=? AND password=? AND role='admin'`,
+       WHERE id=? AND password=? AND role='admin'`,
       [adminId, hash]
     );
 
@@ -210,6 +239,8 @@ export default class EBRepository {
     );
   }
 
+
+
   // =============================
   // CATEGORIAS
   // =============================
@@ -217,7 +248,7 @@ export default class EBRepository {
     return this.db.getAllAsync("SELECT * FROM categories ORDER BY name");
   }
 
-   async getCategoryById(id) {
+  async getCategoryById(id) {
     const data = await this.db.getAllAsync(
       "SELECT * FROM categories WHERE id=?",
       [id]
@@ -250,7 +281,7 @@ export default class EBRepository {
   // =============================
   // GUIAS DE ESTUDO
   // =============================
-  
+
   async getGuidesByCategory(categoryId) {
     return this.db.getAllAsync(
       `SELECT * FROM study_guides WHERE category_id=? ORDER BY title`,
@@ -258,35 +289,35 @@ export default class EBRepository {
     );
   }
 
-   async getGuideById(id) {
+  async getGuideById(id) {
     const data = await this.db.getAllAsync(
       "SELECT * FROM study_guides WHERE id=?",
       [id]
     );
     return data[0] || null;
   }
-/*
-
-  async createStudyGuide({ category_id, title, description }) {
-    await this.db.runAsync(
-      `INSERT INTO study_guides (category_id, title, description)
-       VALUES (?, ?, ?)`,
-      [category_id, title, description || ""]
-    );
-  }
-
-  async deleteStudyGuide(id) {
-    const lessons = await this.getLessonsByGuide(id);
-    for (const l of lessons) await this.deleteLesson(l.id);
-    await this.db.runAsync("DELETE FROM study_guides WHERE id=?", [id]);
-  }
-
-  */
+  /*
+  
+    async createStudyGuide({ category_id, title, description }) {
+      await this.db.runAsync(
+        `INSERT INTO study_guides (category_id, title, description)
+         VALUES (?, ?, ?)`,
+        [category_id, title, description || ""]
+      );
+    }
+  
+    async deleteStudyGuide(id) {
+      const lessons = await this.getLessonsByGuide(id);
+      for (const l of lessons) await this.deleteLesson(l.id);
+      await this.db.runAsync("DELETE FROM study_guides WHERE id=?", [id]);
+    }
+  
+    */
 
   // =============================
   // 🔹 LIÇÕES
   // =============================
-  
+
   async getLessonsByGuide(guideId) {
     return this.db.getAllAsync(
       `SELECT * FROM lessons WHERE guide_id=? ORDER BY number`,
@@ -352,43 +383,43 @@ export default class EBRepository {
   // PROGRESSO
   // =============================
   async saveProgress(userId, lessonId, points) {
-  const grade = Number(points);
+    const grade = Number(points);
 
-  const stars =
-    grade === 10 ? 5 :
-    grade >= 8 ? 4 :
-    grade >= 7 ? 3 :
-    grade >= 5 ? 2 :
-    grade > 0 ? 1 : 0;
+    const stars =
+      grade === 10 ? 5 :
+        grade >= 8 ? 4 :
+          grade >= 7 ? 3 :
+            grade >= 5 ? 2 :
+              grade > 0 ? 1 : 0;
 
-  const approved = grade >= 7 ? 1 : 0;
+    const approved = grade >= 7 ? 1 : 0;
 
-  const existing = await this.db.getAllAsync(
-    "SELECT stars FROM progress WHERE user_id=? AND lesson_id=?",
-    [userId, lessonId]
-  );
-
-  if (!existing.length) {
-    // Primeiro registro
-    await this.db.runAsync(
-      `INSERT INTO progress (user_id, lesson_id, grade, stars, approved)
-       VALUES (?, ?, ?, ?, ?)`,
-      [userId, lessonId, grade, stars, approved]
+    const existing = await this.db.getAllAsync(
+      "SELECT stars FROM progress WHERE user_id=? AND lesson_id=?",
+      [userId, lessonId]
     );
-  } else {
-    // Atualiza SEMPRE a nota
-    const finalStars = Math.max(stars, existing[0].stars);
 
-    await this.db.runAsync(
-      `UPDATE progress
+    if (!existing.length) {
+      // Primeiro registro
+      await this.db.runAsync(
+        `INSERT INTO progress (user_id, lesson_id, grade, stars, approved)
+       VALUES (?, ?, ?, ?, ?)`,
+        [userId, lessonId, grade, stars, approved]
+      );
+    } else {
+      // Atualiza SEMPRE a nota
+      const finalStars = Math.max(stars, existing[0].stars);
+
+      await this.db.runAsync(
+        `UPDATE progress
        SET grade=?, stars=?, approved=?, updated_at=CURRENT_TIMESTAMP
        WHERE user_id=? AND lesson_id=?`,
-      [grade, finalStars, approved, userId, lessonId]
-    );
-  }
+        [grade, finalStars, approved, userId, lessonId]
+      );
+    }
 
-  return { stars, grade, approved };
-}
+    return { stars, grade, approved };
+  }
   async getLessonProgress(userId, lessonId) {
     const result = await this.db.getFirstAsync(
       `SELECT stars, grade, approved FROM progress 
@@ -433,7 +464,7 @@ export default class EBRepository {
 
   async seedLessons() {
     for (const cat of lessonsSeed) {
-      // 1️⃣ Buscar categoria
+      // Buscar categoria
       const categoryRows = await this.db.getAllAsync(
         "SELECT id FROM categories WHERE name=?",
         [cat.category]
@@ -443,7 +474,7 @@ export default class EBRepository {
 
       const categoryId = categoryRows[0].id;
 
-      // 2️⃣ Criar ou obter guia
+      // Criar ou obter guia
       await this.db.runAsync(
         `
       INSERT OR IGNORE INTO study_guides (category_id, title, description)
@@ -467,7 +498,7 @@ export default class EBRepository {
 
       const guideId = guideRows[0].id;
 
-      // 3️⃣ Criar lições
+      // Criar lições
       for (const lesson of cat.lessons) {
         const resultLesson = await this.db.runAsync(
           `
@@ -484,7 +515,7 @@ export default class EBRepository {
           ]
         );
 
-        // 4️⃣ Buscar ID da lição
+        // Buscar ID da lição
         const lessonRows = await this.db.getAllAsync(
           `
         SELECT id FROM lessons
@@ -500,7 +531,7 @@ export default class EBRepository {
 
         const lessonId = lessonRows[0].id;
 
-        // 5️⃣ Inserir perguntas COM lesson_id
+        // Inserir perguntas COM lesson_id
         for (const q of lesson.questions) {
           await this.db.runAsync(
             `
@@ -532,5 +563,5 @@ export default class EBRepository {
       }
     }
   }
-  
+
 }

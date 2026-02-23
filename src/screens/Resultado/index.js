@@ -172,7 +172,7 @@ export default function Resultado({ navigation, route }) {
   // Feedback visual
   const getFeedback = () => {
     if (!apelAccepted) return null;
-    const icons = ["✨", "📖", "🤍"];
+    const icons = ["📖Amém por sua decisão!", "✨Parabéns por sua decisão!", "🤍Deus seja louvado, por você escolher ser fiel a Ele!"];
     return icons[Math.floor(Math.random() * icons.length)];
   };
 

@@ -2,7 +2,8 @@ export const lessonsSeed = [
   {
     category: "Fundamentos do Evangelho",
     guide: "O Caminho da Vida",
-    description: "Explore os fundamentos do evangelho e descubra a transformação e esperança no \"Caminho da Vida\" com Cristo.",
+    description:
+      "Explore os fundamentos do evangelho e descubra a transformação e esperança no \"Caminho da Vida\" com Cristo.",
     lessons: [
       {
         number: 1,
@@ -11,8 +12,7 @@ export const lessonsSeed = [
           "A Bíblia é frequentemente chamada de \"O Guia Infalível\" para a vida cristã. Ela oferece orientação divina, princípios morais e ensinamentos espirituais que são eternos e aplicáveis a todas as situações da vida. Este estudo explora como a Bíblia serve como nosso guia seguro em um mundo em constante mudança.",
         questions: [
           {
-            question:
-              "Qual é o papel da Palavra de Deus em nossa vida?",
+            question: "Qual é o papel da Palavra de Deus em nossa vida?",
             verse: "Salmos 119:105",
             option_a: "Um livro de regras antigas",
             option_b: "Uma lâmpada para os pés e luz para o caminho",
@@ -21,18 +21,16 @@ export const lessonsSeed = [
             correct_option: "B",
           },
           {
-            question:
-              "Para que é útil toda a Escritura?",
+            question: "Para que é útil toda a Escritura?",
             verse: "2 Timóteo 3:16",
             option_a: "Apenas para leitura ocasional",
-            option_b: "Para ensino, repreensão, correção e instrução em justiça",
+            option_b: "Para ensino, repreensão, correção e instrução na justiça",
             option_c: "Para entretenimento",
             option_d: "Para debates teológicos",
             correct_option: "B",
           },
           {
-            question:
-              "O que Provérbios 3:5-6 nos aconselha sobre confiança?",
+            question: "O que Provérbios 3:5-6 nos aconselha sobre confiança?",
             verse: "Provérbios 3:5-6",
             option_a: "Confiar em si mesmo acima de tudo",
             option_b: "Confiar nos bens materiais",
@@ -41,8 +39,7 @@ export const lessonsSeed = [
             correct_option: "D",
           },
           {
-            question:
-              "Como Jesus descreve as Escrituras?",
+            question: "Como Jesus descreve as Escrituras?",
             verse: "João 17:17",
             option_a: "Como uma tradição ultrapassada",
             option_b: "Como um livro simbólico",
@@ -51,8 +48,7 @@ export const lessonsSeed = [
             correct_option: "D",
           },
           {
-            question:
-              "Qual é a instrução de Tiago sobre a Palavra?",
+            question: "Qual é a instrução de Tiago sobre a Palavra?",
             verse: "Tiago 1:22",
             option_a: "Ouvir e esquecer rapidamente",
             option_b: "Ler apenas em ocasiões especiais",
@@ -61,8 +57,7 @@ export const lessonsSeed = [
             correct_option: "C",
           },
           {
-            question:
-              "Como Hebreus descreve a Palavra de Deus?",
+            question: "Como Hebreus descreve a Palavra de Deus?",
             verse: "Hebreus 4:12",
             option_a: "Viva e eficaz",
             option_b: "Morta e irrelevante",
@@ -71,8 +66,7 @@ export const lessonsSeed = [
             correct_option: "A",
           },
           {
-            question:
-              "Segundo Romanos 15:4, qual é o propósito das Escrituras?",
+            question: "Segundo Romanos 15:4, qual é o propósito das Escrituras?",
             verse: "Romanos 15:4",
             option_a: "Para nosso ensino, paciência e consolação",
             option_b: "Para nossa diversão pessoal",
@@ -84,6 +78,7 @@ export const lessonsSeed = [
         conclusion:
           "Decido firmemente seguir \"O Guia Infalível\" que é a Bíblia, permitindo que seus ensinamentos moldem minha vida diária, fortalecendo minha fé e me guiando no caminho da verdade.",
       },
+
       {
         number: 2,
         title: "A Origem do Mal",
@@ -101,8 +96,7 @@ export const lessonsSeed = [
             correct_option: "C",
           },
           {
-            question:
-              "Qual era a posição de Lúcifer no céu antes de sua queda?",
+            question: "Qual era a posição de Lúcifer no céu antes de sua queda?",
             verse: "Isaías 14:12",
             option_a: "Um simples anjo",
             option_b: "Um ser humano",
@@ -111,8 +105,7 @@ export const lessonsSeed = [
             correct_option: "D",
           },
           {
-            question:
-              "Qual foi o pecado que levou à queda de Lúcifer?",
+            question: "Qual foi o pecado que levou à queda de Lúcifer?",
             verse: "Isaías 14:13-14",
             option_a: "Roubo",
             option_b: "Orgulho",
@@ -121,8 +114,7 @@ export const lessonsSeed = [
             correct_option: "B",
           },
           {
-            question:
-              "Como o mal entrou na Terra?",
+            question: "Como o mal entrou na Terra?",
             verse: "Gênesis 3:1-6",
             option_a: "Através de uma catástrofe natural",
             option_b: "Por meio de guerras",
@@ -131,8 +123,7 @@ export const lessonsSeed = [
             correct_option: "C",
           },
           {
-            question:
-              "Quem foi enganado pela serpente no Jardim do Éden?",
+            question: "Quem foi enganado pela serpente no Jardim do Éden?",
             verse: "Gênesis 3:13",
             option_a: "Adão",
             option_b: "Eva",
@@ -144,7 +135,8 @@ export const lessonsSeed = [
             question:
               "De acordo com Romanos 5:12, como o pecado afetou toda a humanidade?",
             verse: "Romanos 5:12",
-            option_a: "O pecado entrou no mundo por um homem, e a morte pelo pecado",
+            option_a:
+              "O pecado entrou no mundo por um homem, e por causa do pecado veio a morte, a qual passou a todos os homens, pois todos pecaram",
             option_b: "Trouxe prosperidade universal",
             option_c: "Tornou todos ricos",
             option_d: "Fez todos viverem eternamente",
@@ -164,6 +156,7 @@ export const lessonsSeed = [
         conclusion:
           "Decido confiar no plano redentor de Deus para vencer o mal em minha vida, buscando viver segundo Seus princípios e aguardando com esperança o dia em que todo mal será destruído.",
       },
+
       {
         number: 3,
         title: "O Plano da Salvação",
@@ -181,8 +174,7 @@ export const lessonsSeed = [
             correct_option: "A",
           },
           {
-            question:
-              "Qual é a consequência do pecado?",
+            question: "Qual é a consequência do pecado?",
             verse: "Romanos 6:23",
             option_a: "Vida eterna",
             option_b: "Fama",
@@ -191,8 +183,7 @@ export const lessonsSeed = [
             correct_option: "D",
           },
           {
-            question:
-              "De acordo com João 3:16, o que Deus fez por amor ao mundo?",
+            question: "O que Deus fez por amor ao mundo?",
             verse: "João 3:16",
             option_a: "Enviou Seu Filho unigênito",
             option_b: "Destruiu o mundo",
@@ -201,8 +192,7 @@ export const lessonsSeed = [
             correct_option: "A",
           },
           {
-            question:
-              "Como podemos ser salvos?",
+            question: "Como podemos ser salvos?",
             verse: "Efésios 2:8-9",
             option_a: "Por boas obras",
             option_b: "Pela graça, mediante a fé",
@@ -231,8 +221,7 @@ export const lessonsSeed = [
             correct_option: "B",
           },
           {
-            question:
-              "Segundo Atos 4:12, em quem encontramos salvação?",
+            question: "Em quem encontramos salvação?",
             verse: "Atos 4:12",
             option_a: "Em qualquer profeta",
             option_b: "Em práticas espirituais",
@@ -244,6 +233,7 @@ export const lessonsSeed = [
         conclusion:
           "Decido aceitar o plano da salvação oferecido por Deus através de Jesus Cristo, confiando em Sua graça e vivendo pela fé para experimentar a vida eterna prometida.",
       },
+
       {
         number: 4,
         title: "Fé, Arrependimento e Confissão",
@@ -251,8 +241,7 @@ export const lessonsSeed = [
           "Fé, arrependimento e confissão são elementos fundamentais na jornada cristã. A fé nos conecta a Deus, o arrependimento nos leva a uma mudança de vida, e a confissão nos reconcilia com Ele. Este estudo explora como esses três aspectos interagem e são essenciais para uma vida espiritual saudável.",
         questions: [
           {
-            question:
-              "O que é necessário para agradar a Deus?",
+            question: "O que é necessário para agradar a Deus?",
             verse: "Hebreus 11:6",
             option_a: "Riqueza",
             option_b: "Popularidade",
@@ -281,10 +270,9 @@ export const lessonsSeed = [
             correct_option: "C",
           },
           {
-            question:
-              "Como a fé vem ao coração do crente?",
+            question: "Como a fé vem ao coração do crente?",
             verse: "Romanos 10:17",
-            option_a: "Pelo ouvir da Palavra de Deus",
+            option_a: "Quando ouvimos a Palavra de Deus",
             option_b: "Pela oração constante",
             option_c: "Pelo jejum",
             option_d: "Pela meditação",
@@ -301,8 +289,7 @@ export const lessonsSeed = [
             correct_option: "D",
           },
           {
-            question:
-              "Qual é o papel da confissão segundo Provérbios 28:13?",
+            question: "Qual é o papel da confissão?",
             verse: "Provérbios 28:13",
             option_a: "Ocultar os pecados traz sucesso",
             option_b: "Quem confessa e deixa os pecados alcança misericórdia",
@@ -324,6 +311,7 @@ export const lessonsSeed = [
         conclusion:
           "Decido fortalecer minha fé através do estudo da Palavra de Deus, praticar o arrependimento genuíno em minha vida diária e confessar meus pecados para manter um relacionamento sincero com Deus.",
       },
+
       {
         number: 5,
         title: "A Volta de Jesus (Sinais e Evidências)",
@@ -337,7 +325,7 @@ export const lessonsSeed = [
             option_a: "Paz mundial",
             option_b: "Estabilidade política",
             option_c: "Prosperidade universal",
-            option_d: "Guerras, fomes e terremotos",
+            option_d: "Guerras e rumores de guerras, fomes e terremotos",
             correct_option: "D",
           },
           {
@@ -345,7 +333,7 @@ export const lessonsSeed = [
               "O que Jesus disse sobre falsos profetas?",
             verse: "Mateus 24:11",
             option_a: "Não haveria falsos profetas",
-            option_b: "Seriam facilmente identificados",
+            option_b: "Falsos profetas seriam facilmente identificados",
             option_c: "Muitos falsos profetas surgirão",
             option_d: "Todos os profetas seriam verdadeiros",
             correct_option: "C",
@@ -361,11 +349,10 @@ export const lessonsSeed = [
             correct_option: "C",
           },
           {
-            question:
-              "Como será a volta de Jesus?",
+            question: "Como será a volta de Jesus?",
             verse: "Atos 1:11",
             option_a: "Invisível para todos",
-            option_b: "Visível e pessoal, como subiu ao céu",
+            option_b: "Da mesma forma que subiu ao céu, visível e pessoal",
             option_c: "Apenas espiritual",
             option_d: "Em segredo",
             correct_option: "B",
@@ -383,7 +370,7 @@ export const lessonsSeed = [
           {
             question:
               "O que acontecerá com os vivos fiéis na vinda de Cristo?",
-            verse: "1 Coríntios 15:51–52",
+            verse: "1 Coríntios 15:51-52",
             option_a: "Serão transformados",
             option_b: "Permanecerão iguais",
             option_c: "Fugirão",
@@ -404,6 +391,7 @@ export const lessonsSeed = [
         conclusion:
           "Decido viver cada dia em preparação para a volta de Jesus, mantendo minha fé firme e compartilhando essa esperança com os outros.",
       },
+
       {
         number: 6,
         title: "A Verdade Sobre a Morte",
@@ -411,8 +399,7 @@ export const lessonsSeed = [
           "A morte é um dos mistérios que mais intriga a humanidade. A Bíblia oferece clareza sobre o estado dos mortos e a esperança da ressurreição. Este estudo explora o que as Escrituras dizem sobre a morte, ajudando-nos a entender este tema à luz da verdade bíblica.",
         questions: [
           {
-            question:
-              "O que acontece com os mortos?",
+            question: "O que acontece com os mortos?",
             verse: "Eclesiastes 9:5",
             option_a: "Eles sabem tudo",
             option_b: "Eles reencarnam",
@@ -472,10 +459,10 @@ export const lessonsSeed = [
           },
           {
             question:
-              "O que Apocalipse 21:4 promete sobre o futuro?",
+              "O que é prometido sobre o futuro sem morte?",
             verse: "Apocalipse 21:4",
-            option_a: "Morte continuará existindo",
-            option_b: "Não haverá mais morte, nem pranto, nem dor",
+            option_a: "A morte continuará existindo",
+            option_b: "Não haverá mais morte, nem pranto e nem dor",
             option_c: "Apenas dor será eliminada",
             option_d: "Apenas lágrimas serão enxugadas",
             correct_option: "B",
@@ -484,6 +471,7 @@ export const lessonsSeed = [
         conclusion:
           "Decido confiar na esperança bíblica da ressurreição e viver uma vida de fé em Cristo, aguardando o dia em que Ele fará novas todas as coisas.",
       },
+
       {
         number: 7,
         title: "O Juízo",
@@ -505,7 +493,7 @@ export const lessonsSeed = [
             option_a: "Apenas ações boas",
             option_b: "Apenas pensamentos",
             option_c: "Somente pecados graves",
-            option_d: "Toda obra, incluindo tudo que está encoberto",
+            option_d: "Toda obra, até mesmo as que estão escondidas",
             correct_option: "D",
           },
           {
@@ -527,7 +515,7 @@ export const lessonsSeed = [
             correct_option: "D",
           },
           {
-            question: "Qual é a base do juízo final descrita em Apocalipse 20:12?",
+            question: "Qual é a base do juízo final?",
             verse: "Apocalipse 20:12",
             option_a: "Aparência externa",
             option_b: "Fama e influência",
@@ -558,6 +546,7 @@ export const lessonsSeed = [
         conclusion:
           "Decido viver uma vida em harmonia com os princípios divinos, confiando na justiça e misericórdia de Deus no juízo, e buscando diariamente fortalecer meu relacionamento com Ele.",
       },
+
       {
         number: 8,
         title: "Leis na Bíblia",
@@ -586,10 +575,10 @@ export const lessonsSeed = [
             correct_option: "C",
           },
           {
-            question:
-              "Qual é o primeiro mandamento com promessa?",
+            question: "Qual é o primeiro mandamento com promessa?",
             verse: "Efésios 6:2",
-            option_a: "Honra teu pai e tua mãe",
+            option_a:
+              "Honra teu pai e tua mãe, para que se prolonguem os seus dias na terra",
             option_b: "Não matarás",
             option_c: "Não dirás falso testemunho",
             option_d: "Não cobiçarás",
@@ -616,8 +605,7 @@ export const lessonsSeed = [
             correct_option: "D",
           },
           {
-            question:
-              "O que Jesus disse sobre a Lei?",
+            question: "O que Jesus disse sobre a Lei?",
             verse: "Mateus 5:17",
             option_a: "Que veio abolir a Lei",
             option_b: "Que veio cumprir a Lei",
@@ -626,8 +614,7 @@ export const lessonsSeed = [
             correct_option: "B",
           },
           {
-            question:
-              "Como Paulo descreve a lei?",
+            question: "Como Paulo descreve a lei?",
             verse: "Romanos 7:12",
             option_a: "Fraca e inútil",
             option_b: "Desnecessária",
@@ -639,6 +626,7 @@ export const lessonsSeed = [
         conclusion:
           "Decido estudar mais profundamente as leis bíblicas para compreender melhor a vontade de Deus para minha vida e viver em harmonia com Seus princípios.",
       },
+
       {
         number: 9,
         title: "O Sábado",
@@ -646,13 +634,11 @@ export const lessonsSeed = [
           "O sábado é um dia especial instituído por Deus na criação, destinado ao descanso e à adoração. Para a Igreja Adventista do Sétimo Dia, a observância do sábado é uma expressão de fidelidade a Deus e um lembrete semanal de Sua criação e redenção. Este estudo busca explorar a importância bíblica do sábado através de perguntas baseadas nas Escrituras.",
         questions: [
           {
-            question:
-              "Qual é a origem do sábado?",
+            question: "Qual é a origem do sábado?",
             verse: "Gênesis 2:2-3",
             option_a: "Foi instituído por Moisés",
             option_b: "Foi criado por Jesus no Novo Testamento",
-            option_c:
-              "Deus descansou no sétimo dia após a criação",
+            option_c: "Deus descansou no sétimo dia após a criação",
             option_d: "Foi uma tradição iniciada por Abraão",
             correct_option: "C",
           },
@@ -667,19 +653,16 @@ export const lessonsSeed = [
             correct_option: "B",
           },
           {
-            question:
-              "O que Isaías diz sobre como devemos guardar o sábado?",
+            question: "Como devemos guardar o sábado?",
             verse: "Isaías 58:13-14",
             option_a: "Fazendo nossas próprias vontades",
-            option_b:
-              "Chamando o sábado de deleitoso e honrando-o",
+            option_b: "Chamando o sábado de deleitoso e honrando-o",
             option_c: "Ignorando-o completamente",
             option_d: "Trabalhando normalmente",
             correct_option: "B",
           },
           {
-            question:
-              "Qual é o dia da preparação mencionado na Bíblia?",
+            question: "Qual é o 'dia da preparação' mencionado na Bíblia?",
             verse: "Marcos 15:42",
             option_a: "Segunda-feira",
             option_b: "Quarta-feira",
@@ -688,26 +671,19 @@ export const lessonsSeed = [
             correct_option: "C",
           },
           {
-            question:
-              "Quando começa e termina o sábado bíblico?",
+            question: "Quando começa e termina o sábado bíblico?",
             verse: "Levítico 23:32",
-            option_a:
-              "Da meia-noite de sexta até a meia-noite de sábado",
+            option_a: "Da meia-noite de sexta até a meia-noite de sábado",
             option_b: "Do nascer ao pôr do sol de sábado",
-            option_c:
-              "Do amanhecer de sábado até o amanhecer de domingo",
-            option_d:
-              "Do pôr do sol de sexta até o pôr do sol de sábado",
+            option_c: "Do amanhecer de sábado até o amanhecer de domingo",
+            option_d: "Do pôr do sol de sexta até o pôr do sol de sábado",
             correct_option: "D",
           },
           {
-            question:
-              "Qual é o propósito do sábado?",
+            question: "Qual é o propósito do sábado?",
             verse: "Marcos 2:27",
-            option_a:
-              "O sábado foi feito por causa do homem",
-            option_b:
-              "O homem foi feito por causa do sábado",
+            option_a: "O sábado foi feito por causa do homem",
+            option_b: "O homem foi feito por causa do sábado",
             option_c: "Não tem propósito específico",
             option_d: "É apenas um dia cultural",
             correct_option: "A",
@@ -718,10 +694,8 @@ export const lessonsSeed = [
             verse: "Lucas 4:16",
             option_a: "Apenas descansando em casa",
             option_b: "Ignorando-o completamente",
-            option_c:
-              "Trabalhando como em qualquer outro dia",
-            option_d:
-              "Indo à sinagoga para ensinar e adorar",
+            option_c: "Trabalhando como em qualquer outro dia",
+            option_d: "Indo à sinagoga para ensinar e adorar",
             correct_option: "D",
           },
         ],
@@ -730,18 +704,19 @@ export const lessonsSeed = [
       },
       {
         number: 10,
-        title: "Adoração (Dízimo, Oferta e Saúde)",
+        title: "Adoração (Dízimo, Oferta, Saúde)",
         introduction:
-          "Adoração é um ato central na vida cristã, refletindo nosso amor e reverência por Deus. Ela se manifesta de várias formas, incluindo a devolução do dízimo, a oferta voluntária e o cuidado com nossa saúde.",
+          "Adoração é um ato central na vida cristã, refletindo nosso amor e reverência por Deus. Ela se manifesta de várias formas, incluindo a devolução do dízimo, a oferta voluntária e o cuidado com nossa saúde. Este estudo examina como essas práticas são expressões de adoração a Deus conforme descritas na Bíblia.",
         questions: [
           {
-            question: "Qual é o princípio bíblico para a devolução do dízimo?",
+            question:
+              "Qual é o princípio bíblico para a devolução do dízimo?",
             verse: "Malaquias 3:10",
             option_a: "Trazer todos os dízimos à casa do tesouro",
             option_b: "Dar apenas metade",
             option_c: "Guardar para si mesmo",
             option_d: "Dar apenas quando sobrar",
-            correct_option: "A"
+            correct_option: "A",
           },
           {
             question: "Qual é o propósito do dízimo?",
@@ -750,16 +725,17 @@ export const lessonsSeed = [
             option_b: "Ser santo ao Senhor",
             option_c: "Pagar impostos ao governo",
             option_d: "Comprar propriedades",
-            correct_option: "B"
+            correct_option: "B",
           },
           {
-            question: "O que Jesus observou sobre a oferta da viúva?",
+            question:
+              "O que Jesus observou sobre a oferta da viúva?",
             verse: "Marcos 12:41-44",
             option_a: "Que ela deu mais do que todos os outros",
             option_b: "Que ela deu muito pouco",
-            option_c: "Que deveria ter guardado para si",
+            option_c: "Que ela deveria ter guardado para si",
             option_d: "Que sua oferta não era significativa",
-            correct_option: "A"
+            correct_option: "A",
           },
           {
             question: "Como devemos dar nossas ofertas?",
@@ -768,44 +744,49 @@ export const lessonsSeed = [
             option_b: "Por obrigação",
             option_c: "Com alegria e generosidade",
             option_d: "Para ser visto pelos outros",
-            correct_option: "C"
+            correct_option: "C",
           },
           {
-            question: "Como devemos tratar nosso corpo em relação à saúde?",
+            question:
+              "Como devemos tratar nosso corpo em relação à saúde?",
             verse: "1 Coríntios 6:19-20",
             option_a: "Como algo sem importância",
             option_b: "Como templo do Espírito Santo",
             option_c: "Como propriedade pessoal",
             option_d: "Como algo separado da vida espiritual",
-            correct_option: "B"
+            correct_option: "B",
           },
           {
-            question: "O que Romanos 12:1 nos instrui a fazer com nossos corpos?",
+            question:
+              "O que Romanos 12:1 nos instrui a fazer com nossos corpos como parte da adoração?",
             verse: "Romanos 12:1",
             option_a: "Desprezar o corpo",
             option_b: "Ignorar as necessidades físicas",
             option_c: "Usar o corpo apenas para prazer pessoal",
-            option_d: "Oferecer nossos corpos como sacrifício vivo, santo e agradável a Deus",
-            correct_option: "D"
+            option_d:
+              "Oferecer nossos corpos como sacrifício vivo, santo e agradável a Deus",
+            correct_option: "D",
           },
           {
-            question: "Qual é a promessa associada ao cuidado com a saúde?",
+            question:
+              "Qual é a promessa associada ao cuidado com nossa saúde?",
             verse: "Provérbios 3:7-8",
             option_a: "Riqueza garantida",
             option_b: "Vida sem desafios",
             option_c: "Fama mundial",
             option_d: "Saúde para o corpo e vigor para os ossos",
-            correct_option: "D"
-          }
+            correct_option: "D",
+          },
         ],
         conclusion:
-          "Decido adorar a Deus não apenas por palavras, mas também pela fidelidade no dízimo, ofertas generosas e cuidando do meu corpo como templo do Espírito Santo.",
+          "Decido adorar a Deus não apenas através de palavras, mas também pela devoção fiel do dízimo, ofertas generosas e cuidando do meu corpo como templo do Espírito Santo.",
       },
+
       {
         number: 11,
         title: "Como Identificar a Igreja Verdadeira",
         introduction:
-          "A Bíblia apresenta características claras que identificam a igreja verdadeira nos últimos dias, guiando os cristãos na busca por fidelidade à verdade.",
+          "A busca pela igreja verdadeira é uma jornada espiritual significativa para muitos cristãos. A Bíblia oferece orientações claras sobre as características que definem a igreja de Deus nos últimos dias. Este estudo tem como objetivo ajudar você a identificar essas características com base nas Escrituras.",
         questions: [
           {
             question: "Qual é a base fundamental da igreja verdadeira?",
@@ -814,34 +795,37 @@ export const lessonsSeed = [
             option_b: "Filosofias modernas",
             option_c: "Escrituras inspiradas por Deus",
             option_d: "Experiências pessoais",
-            correct_option: "C"
+            correct_option: "C",
           },
           {
-            question: "Qual é o sinal distintivo dos seguidores de Cristo?",
+            question:
+              "Qual é o sinal distintivo dos seguidores de Cristo?",
             verse: "João 13:35",
             option_a: "Amor mútuo",
             option_b: "Conhecimento acadêmico",
             option_c: "Riqueza material",
             option_d: "Popularidade social",
-            correct_option: "A"
+            correct_option: "A",
           },
           {
-            question: "Como a igreja verdadeira deve tratar os mandamentos de Deus?",
+            question:
+              "Como a igreja verdadeira deve tratar os mandamentos de Deus?",
             verse: "Apocalipse 14:12",
             option_a: "Ignorar os mandamentos",
             option_b: "Selecionar quais obedecer",
             option_c: "Guardar todos os mandamentos",
             option_d: "Adaptar aos tempos modernos",
-            correct_option: "C"
+            correct_option: "C",
           },
           {
-            question: "Qual é a missão principal da igreja verdadeira?",
+            question:
+              "Qual é a missão principal da igreja verdadeira no mundo?",
             verse: "Mateus 28:19-20",
             option_a: "Acumular riquezas",
             option_b: "Fazer discípulos e ensinar todas as nações",
             option_c: "Construir templos grandiosos",
             option_d: "Manter tradições culturais",
-            correct_option: "B"
+            correct_option: "B",
           },
           {
             question: "Quem é o líder supremo da igreja verdadeira?",
@@ -850,44 +834,48 @@ export const lessonsSeed = [
             option_b: "O papa",
             option_c: "Cristo",
             option_d: "Um profeta moderno",
-            correct_option: "C"
+            correct_option: "C",
           },
           {
-            question: "Qual é o papel do Espírito Santo na igreja?",
+            question:
+              "Qual é o papel do Espírito Santo na igreja verdadeira?",
             verse: "João 16:13",
             option_a: "Confundir os crentes",
             option_b: "Promover divisões",
             option_c: "Substituir as Escrituras",
             option_d: "Guiar em toda a verdade",
-            correct_option: "D"
+            correct_option: "D",
           },
           {
-            question: "Como a igreja verdadeira deve se relacionar com o mundo?",
+            question:
+              "Como a igreja verdadeira deve se relacionar com o mundo?",
             verse: "Romanos 12:2",
             option_a: "Transformar-se pela renovação da mente",
-            option_b: "Isolar-se completamente",
+            option_b: "Isolar-se completamente do mundo",
             option_c: "Conformar-se com o mundo",
             option_d: "Comprometer-se com práticas mundanas",
-            correct_option: "A"
-          }
+            correct_option: "A",
+          },
         ],
         conclusion:
-          "Decido buscar e permanecer na igreja que se fundamenta nas Escrituras, guarda os mandamentos de Deus e é guiada pelo Espírito Santo.",
+          "Com base nas respostas corretas, podemos concluir que a igreja verdadeira é aquela que se fundamenta nas Escrituras, demonstra amor genuíno, guarda os mandamentos de Deus, cumpre sua missão evangelística, reconhece Cristo como seu líder supremo, é guiada pelo Espírito Santo e busca não se conformar com o mundo, mas ser transformada pela renovação da mente.",
       },
+
       {
         number: 12,
-        title: "Por Que Devo Ser Batizado",
+        title: "Porque Devo Ser Batizado",
         introduction:
-          "O batismo é um passo essencial na vida cristã, simbolizando a morte para o pecado e o nascimento para uma nova vida em Cristo.",
+          "O batismo é um passo importante na jornada cristã, simbolizando a morte para o pecado e o nascimento para uma nova vida em Cristo. Este estudo tem como objetivo esclarecer a importância do batismo e suas implicações espirituais.",
         questions: [
           {
             question: "Qual é o significado do batismo segundo a Bíblia?",
             verse: "Romanos 6:3-4",
-            option_a: "Sepultamento e ressurreição com Cristo",
+            option_a:
+              "Sepultamento dos pecados e ressurreição para uma nova vida com Cristo",
             option_b: "Um banho simbólico",
             option_c: "Um ritual cultural",
             option_d: "Uma tradição sem importância",
-            correct_option: "A"
+            correct_option: "A",
           },
           {
             question: "Quem deu o exemplo de ser batizado?",
@@ -896,58 +884,64 @@ export const lessonsSeed = [
             option_b: "João Batista",
             option_c: "Paulo",
             option_d: "Jesus",
-            correct_option: "D"
+            correct_option: "D",
           },
           {
             question: "Qual é a ordem de Jesus sobre o batismo?",
             verse: "Mateus 28:19-20",
             option_a: "Batizar apenas crianças",
             option_b: "Batizar em nome dos profetas",
-            option_c: "Fazer discípulos e batizá-los em nome do Pai, do Filho e do Espírito Santo",
+            option_c:
+              "Fazer discípulos e batizá-los em nome do Pai, do Filho e do Espírito Santo",
             option_d: "Batizar somente os ricos",
-            correct_option: "C"
+            correct_option: "C",
           },
           {
-            question: "O que acontece após o arrependimento?",
+            question:
+              "O que acontece após o arrependimento?",
             verse: "Atos 2:38",
             option_a: "Nada muda",
             option_b: "Deve-se ser batizado para perdão dos pecados",
             option_c: "Recebe-se um novo nome",
             option_d: "É necessário jejuar por 40 dias",
-            correct_option: "B"
+            correct_option: "B",
           },
           {
-            question: "O que o batismo simboliza em relação ao pecado?",
+            question:
+              "O que o batismo simboliza em relação ao pecado?",
             verse: "Atos 22:16",
             option_a: "Continuação no pecado",
             option_b: "Lavagem dos pecados",
             option_c: "Adiamento do arrependimento",
             option_d: "Esquecimento temporário dos pecados",
-            correct_option: "B"
+            correct_option: "B",
           },
           {
-            question: "Qual é a importância do batismo na salvação?",
+            question:
+              "Qual é a importância do batismo na salvação?",
             verse: "Marcos 16:16",
             option_a: "Não tem importância alguma",
             option_b: "É apenas uma cerimônia opcional",
             option_c: "Deve ser feito apenas em casos extremos",
             option_d: "Quem crer e for batizado será salvo",
-            correct_option: "D"
+            correct_option: "D",
           },
           {
-            question: "Como o Espírito Santo está relacionado ao batismo?",
+            question:
+              "Como o Espírito Santo está relacionado ao batismo?",
             verse: "João 3:5",
-            option_a: "Nascemos da água e do Espírito para entrar no reino de Deus",
+            option_a:
+              "Nascemos da água e do Espírito para entrarmos no reino de Deus",
             option_b: "O Espírito Santo só vem antes do batismo",
             option_c: "O Espírito Santo não tem relação com o batismo",
             option_d: "O Espírito Santo substitui a necessidade de batismo",
-            correct_option: "A"
-          }
+            correct_option: "A",
+          },
         ],
         conclusion:
-          "Decido seguir o exemplo de Jesus, sendo batizado como expressão pública da minha fé e compromisso com Deus.",
-      }
-    ]
+          "Com base nas respostas corretas, podemos concluir que o batismo é um ato essencial para os cristãos, simbolizando nossa união com Cristo na morte e ressurreição, representando a lavagem dos pecados, sendo uma ordem direta de Jesus e essencial para a salvação. Além disso, envolve o nascimento espiritual através do Espírito Santo.",
+      },
+    ],
   },
 
 
@@ -4704,7 +4698,7 @@ export const lessonsSeed = [
     category: "Família",
     guide: "Reconstruindo o Altar da Família - Semana da Família 2024",
     description: "Restaure e fortaleça sua família reconstruindo o altar familiar com base nos princípios divinos de fé e devoção",
-    
+
     lessons: [
       {
         number: 1,
